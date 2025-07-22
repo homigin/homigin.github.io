@@ -1,6 +1,6 @@
 baseURL: https://homigin.github.io
 languageCode: en-us
-title: Linus Torvalds
+title: Homigin
 theme: "PaperMod"
 
 params:
@@ -20,8 +20,8 @@ params:
     # - name: "rss"
     #   url: "https://XXX.github.io/index.xml"
   ShowReadingTime: true
-  author: "Linus Torvalds"
-  contact: "LinusT@example.com"
+  author: "Homigin"
+  contact: "dr.chiayuan.chen@gmail.com"
   feedlinks: true
   copyright: "<!--Creative Commons License-->This site is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).<!--/Creative Commons License-->"
   mobileMenu: true
