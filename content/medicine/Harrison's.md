@@ -318,7 +318,7 @@ General approach: 三個重點 1.找到位置 2.找到原因 3.後續治療
 
         + the most likely cause of small-fiber neuropathies (溫痛), when one is identified, is diabetes mellitus (DM) or glucose intoler- ance. Amyloid neuropathy should be considered as well in such cases
 
-Electrodiagnostic studies usually include [NCS]({{< ref "/pages/NCS" >}}) and EMG study
+Electrodiagnostic studies usually include [NCS]({{< ref "/medicine/NCS" >}}) and EMG study
 ![image.png](/assets/image_1701859447624_0.png)
 
         + NCS 可以區分 axonal degeneration 或是 segmental demyelination
