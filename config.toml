@@ -10,7 +10,7 @@ canonifyURLs = true
 
 [params]
   homeInfoParams = { 
-    Title = "Welcome 👋", 
+    Title = "Welcome "
     Content = "A digital garden of faith, medicine, and ideas." 
   }
 
