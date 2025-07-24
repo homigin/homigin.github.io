@@ -5,8 +5,10 @@ theme = "PaperMod"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
-paginate = 10
 canonifyURLs = true
+
+[pagination]
+  pagerSize = 10
 
 [params]
   [params.homeInfoParams]
