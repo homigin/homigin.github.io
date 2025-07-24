@@ -9,10 +9,9 @@ paginate = 10
 canonifyURLs = true
 
 [params]
-  homeInfoParams = { 
-    Title = "Welcome "
-    Content = "A digital garden of faith, medicine, and ideas." 
-  }
+  [params.homeInfoParams]
+  Title = "Welcome"
+  Content = "A digital garden of faith, medicine, and ideas."
 
   # UI features
   ShowReadingTime = true
