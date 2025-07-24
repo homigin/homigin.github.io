@@ -1,21 +1,15 @@
 ---
 specialty: CV
 url: https://linkinghub.elsevier.com/retrieve/pii/S2772374722001661
-issue: 4
-pages: 395-411
 doi: 10.1016/j.jacasi.2022.05.005
 tags:
 - stroke
 - atrial fibrillation
 journal-abbreviation: JACC: Asia
-links: [Local library](zotero://select/library/items/XGF5LEYI), [Web library](https://www.zotero.org/users/9469615/items/XGF5LEYI)
 title: Stroke Prevention in Atrial Fibrillation
-issn: 27723747
-volume: 2
 date: 08/2022
 item-type:
 - journalArticle
-categories:
 lastMod: 2025-07-18
 ---
 Attachments
