@@ -1,0 +1,95 @@
+baseURL = "https://homigin.github.io/"
+languageCode = "en"
+title = "Homigin's Garden"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false  # English at /
+enableRobotsTXT = true
+paginate = 10
+canonifyURLs = true
+
+[params]
+  homeInfoParams = { 
+    Title = "Welcome 👋", 
+    Content = "A digital garden of faith, medicine, and ideas." 
+  }
+
+  # UI features
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+
+  # Theme behavior
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowLanguageSwitcher = true
+  DateFormat = "2006-01-02"
+
+  # Social Icons (appear in footer)
+  socialIcons = [
+    { name = "github", url = "https://github.com/homigin" },
+    { name = "email", url = "mailto:dr.chiayuan.chen@gmail.com" },
+    { name = "rss", url = "https://homigin.github.io/index.xml" }
+  ]
+
+  # Footer
+  ShowFooter = true
+  footer = "© 2025 Homigin • Built with Hugo + PaperMod"
+
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content"
+
+    [languages.en.menu.main]
+      [[languages.en.menu.main]]
+        identifier = "life"
+        name = "Life"
+        url = "/life/"
+        weight = 1
+
+      [[languages.en.menu.main]]
+        identifier = "medicine"
+        name = "Medicine"
+        url = "/medicine/"
+        weight = 2
+
+      [[languages.en.menu.main]]
+        identifier = "garden"
+        name = "Garden"
+        url = "/garden/"
+        weight = 3
+
+  [languages.zh]
+    languageName = "繁體中文"
+    weight = 2
+    contentDir = "content"
+
+    [languages.zh.menu.main]
+      [[languages.zh.menu.main]]
+        identifier = "life"
+        name = "生活"
+        url = "/zh/life/"
+        weight = 1
+
+      [[languages.zh.menu.main]]
+        identifier = "medicine"
+        name = "醫學"
+        url = "/zh/medicine/"
+        weight = 2
+
+      [[languages.zh.menu.main]]
+        identifier = "garden"
+        name = "花園"
+        url = "/zh/garden/"
+        weight = 3
