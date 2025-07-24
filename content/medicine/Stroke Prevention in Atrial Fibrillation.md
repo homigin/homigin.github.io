@@ -1,6 +1,6 @@
 ---
 specialty: CV
-url: "https://linkinghub.elsevier.com/retrieve/pii/S2772374722001661"
+link: "https://linkinghub.elsevier.com/retrieve/pii/S2772374722001661"
 doi: "10.1016/j.jacasi.2022.05.005"
 tags:
 - stroke
