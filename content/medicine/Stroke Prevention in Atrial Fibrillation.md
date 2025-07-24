@@ -5,7 +5,7 @@ doi: 10.1016/j.jacasi.2022.05.005
 tags:
 - stroke
 - atrial fibrillation
-journal-abbreviation: JACC: Asia
+journal-abbreviation: "JACC: Asia"
 title: Stroke Prevention in Atrial Fibrillation
 date: 2022-08-01
 item-type:
