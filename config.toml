@@ -13,8 +13,11 @@ canonifyURLs = true
 [params]
   [params.homeInfoParams]
     Title = "Welcome"
-    Content = "Hi everyone, in case you accidentally stumbled across this place, this is a place where I share my notes in the form of unfinished ideas. Here, you'll find a variety of topics related to medicine, music, investment, programming. I draw inspiration Learn in Public by Swyx. The Learn in Public approach encourages individuals to share their learning process publicly, whether it's through writing, creating videos, or posting on social media. This method helps build a community around shared interests and fosters a sense of accountability.
-    Through this blog, I hope to share my thoughts and ideas with you, and I encourage you to engage in conversation with me. Thank you for visiting my home page!"
+    Content = """
+Hi everyone, in case you accidentally stumbled across this place, this is a place where I share my notes in the form of unfinished ideas.
+Here, you'll find a variety of topics related to medicine, music, investment, programming. I draw inspiration from Learn in Public by Swyx. The Learn in Public approach encourages individuals to share their learning process publicly, whether it's through writing, creating videos, or posting on social media. This method helps build a community around shared interests and fosters a sense of accountability.
+Through this blog, I hope to share my thoughts and ideas with you, and I encourage you to engage in conversation with me. Thank you for visiting my home page!
+"""
 
   ShowReadingTime = true
   ShowWordCount = true
