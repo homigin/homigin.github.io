@@ -7,7 +7,7 @@ tags:
 - atrial fibrillation
 journal-abbreviation: JACC: Asia
 title: Stroke Prevention in Atrial Fibrillation
-date: 08/2022
+date: 2022-08-01
 item-type:
 - journalArticle
 lastMod: 2025-07-18
