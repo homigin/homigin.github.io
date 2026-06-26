@@ -6,6 +6,8 @@ The site is a static Hugo page served at `/ortho-course-radar/`.
 
 - `static/ortho-course-radar/index.html` is the browser UI.
 - `static/ortho-course-radar/events.js` is the generated event data.
+- `static/ortho-course-radar/announcements.js` is the generated society announcement data.
+- `static/ortho-course-radar/webinars.js` is the generated webinar data.
 - `static/ortho-course-radar/last-run.json` is the latest scraper report.
 - `scripts/update_ortho_course_radar.py` fetches public society pages and regenerates data.
 - `.github/workflows/update-ortho-course-radar.yml` runs the scraper weekly and commits changes.
@@ -19,11 +21,11 @@ python scripts/update_ortho_course_radar.py
 hugo --minify
 ```
 
-Commit `events.js` and `last-run.json` if the data changed.
+Commit `events.js`, `announcements.js`, `webinars.js`, and `last-run.json` if the data changed.
 
 ## Add Or Fix A Source
 
-Edit the `SOURCES` list in `scripts/update_ortho_course_radar.py`.
+Edit `SOURCES`, `ANNOUNCEMENT_SOURCES`, or the webinar helpers in `scripts/update_ortho_course_radar.py`.
 
 - Use `wp="https://example.org"` for WordPress sites with `wp-json`.
 - Use `urls=(...)` for normal HTML pages.
@@ -35,5 +37,6 @@ The scraper is deliberately heuristic: it reads links and tables, keeps rows mat
 ## Known Limits
 
 - JS-rendered pages may need a site-specific parser.
-- AO and TWSS currently need better public entry URLs.
+- AO uses a filtered search fallback because the site blocks simple server fetches.
+- TWSS/TASM can timeout from GitHub Actions or local networks.
 - GitHub Actions is the "backend"; there is no running server.

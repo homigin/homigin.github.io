@@ -32,7 +32,7 @@ class Source:
 
 
 SOURCES = [
-    Source("TOA 台灣骨科醫學會", "綜合", ("https://bone.org.tw/education/", "https://www.toaa.org.tw/news/all/1", "https://www.toaa.org.tw/products/all/1"), verify=False),
+    Source("TOA 台灣骨科醫學會", "綜合", ("https://bone.org.tw/education/",), verify=False),
     Source("JRS 台灣關節重建醫學會", "關節重建", ("https://jrs.org.tw/events/",), wp="https://jrs.org.tw"),
     Source("台灣關節鏡及膝關節醫學會", "運動醫學", ("https://www.taiwanarthroscopy.org.tw/category/activity/",), wp="https://www.taiwanarthroscopy.org.tw"),
     Source("TOTA 台灣骨科創傷醫學會", "創傷", ("https://www.tota.org.tw/category/news/",), wp="https://www.tota.org.tw"),
@@ -47,8 +47,6 @@ SOURCES = [
     Source("台灣疼痛醫學會", "疼痛", ("https://pain.org.tw/index.php/news_page/news_page2_content", "https://pain.org.tw/")),
     Source("台灣介入性疼痛醫學會", "疼痛", ("https://rapm.org.tw/news", "https://rapm.org.tw/index")),
     Source("復健醫學會 MSK / sports / pain", "復健相關", ("https://www.pmr.org.tw/active_news/active.asp", "https://www.pmr.org.tw/hot/hot.asp")),
-    Source("AO Trauma Taiwan", "創傷", ("https://www.aofoundation.org/trauma/education/courses",)),
-    Source("AO Recon", "關節重建", ("https://www.aofoundation.org/recon/education/courses",)),
     Source("IRCAD Taiwan", "手術訓練", ("https://www.ircadtaiwan.com/",)),
     Source("Chang Gung STARC", "手術訓練", ("https://starc.cgmh.org.tw/",)),
 ]
@@ -66,10 +64,24 @@ KEEP = re.compile(
     r"TKA|THA|ACL|MSK|POCUS|arthroplasty|arthroscopy|spine|trauma",
     re.I,
 )
-DROP = re.compile(r"登入|隱私|privacy|cookie|聯絡|contact|關於|理監事|章程|會員|下載專區|facebook|line|通過名單|下載證書|宣導影片|^read more$|^continue reading$", re.I)
+DROP = re.compile(r"登入|隱私|privacy|cookie|聯絡|contact|關於|理監事|章程|會員|下載專區|facebook|line|通過名單|下載證書|宣導影片|read more|continue reading|comments?", re.I)
 DATE_PATTERNS = [
     re.compile(r"(20\d{2})[./\-年](\d{1,2})[./\-月](\d{1,2})"),
     re.compile(r"(1\d{2})[./\-年](\d{1,2})[./\-月](\d{1,2})"),
+]
+EN_DATE = re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?(?:day)?\s*(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})\b", re.I)
+EVENT_WORDS = re.compile(r"課程|活動|研討會|年會|論壇|工作坊|訓練|實作|webinar|workshop|course|event|meeting|conference|congress|cadaver|camp", re.I)
+ANN_DROP = re.compile(EVENT_WORDS.pattern + r"|報名|registration|replay|watch|video|直播|學分|同好會|歡迎參加|開跑|臨床實戰", re.I)
+AO_WEBINAR_URL = "https://www.aofoundation.org/spine/education/Courses-Events#f-medical_specialty=AO+Spine%7CAO+Trauma%7CAO+Recon&f-format=Webinar+%2F+Webcast&f-region=Asia+Pacific%7CGlobal&s-start_date_descending"
+EFORT_WEBINAR_URL = "https://www.efort.org/webinars/"
+
+ANNOUNCEMENT_SOURCES = [
+    Source("JRS 台灣關節重建醫學會", "公告", ("https://jrs.org.tw/news/", "https://jrs.org.tw/"), wp="https://jrs.org.tw"),
+    Source("TOTA 台灣骨科創傷醫學會", "公告", ("https://www.tota.org.tw/category/news/",), wp="https://www.tota.org.tw"),
+    Source("TSSH 台灣手外科醫學會", "公告", ("https://handsurgery.com.tw/category/new/",)),
+    Source("TSES 台灣肩肘醫學會", "公告", ("https://www.shoulder-elbow.org.tw/category/news/", "https://www.shoulder-elbow.org.tw/"), verify=False),
+    Source("TORS 台灣骨科研究學會", "公告", ("https://www.tors.org.tw/",)),
+    Source("TOFAS 台灣足踝醫學會", "公告", ("https://www.tofas.org.tw/",)),
 ]
 
 
@@ -87,6 +99,13 @@ def first_date(text: str, fallback: str | None = None) -> str | None:
             y += 1911
         try:
             return date(y, mo, d).isoformat()
+        except ValueError:
+            pass
+    m = EN_DATE.search(text)
+    if m:
+        d, mo, y = m.groups()
+        try:
+            return datetime.strptime(f"{d} {mo} {y}", "%d %B %Y").date().isoformat()
         except ValueError:
             pass
     return fallback
@@ -107,6 +126,15 @@ def category(source_cat: str, text: str) -> str:
         ("研究", r"research|研究|論文|registry"),
     ]
     return next((name for name, pat in tests if re.search(pat, text, re.I)), source_cat)
+
+
+def mode(text: str, place: str = "") -> str:
+    hay = f"{text} {place}"
+    if re.search(r"cadaver|大體|simulation|animal|動物實作", hay, re.I):
+        return "cadaver lab"
+    if re.search(r"webinar|線上|online|webcast|youtube|replay|直播", hay, re.I):
+        return "線上"
+    return "實體"
 
 
 def fetch(url: str, verify: bool = True) -> str:
@@ -147,6 +175,7 @@ def from_html(source: Source) -> list[dict[str, str]]:
                 "cat": category(source.cat, text),
                 "place": cells[4] if len(cells) > 4 else "原公告",
                 "url": urljoin(page, a["href"]),
+                "mode": mode(text, cells[4] if len(cells) > 4 else ""),
             })
         for a in soup.find_all("a", href=True):
             title = re.sub(r"^(閱讀全文|Read more|Continue Reading)\s*", "", clean(a.get_text(" ")), flags=re.I)
@@ -165,6 +194,7 @@ def from_html(source: Source) -> list[dict[str, str]]:
                 "cat": category(source.cat, text),
                 "place": "原公告",
                 "url": href,
+                "mode": mode(text),
             })
     if not fetched and last_error:
         raise last_error
@@ -193,8 +223,60 @@ def from_wp(source: Source) -> list[dict[str, str]]:
             "cat": category(source.cat, text),
             "place": "原公告",
             "url": post.get("link", source.wp),
+            "mode": mode(text),
         })
     return out
+
+
+def from_announcements(source: Source) -> list[dict[str, str]]:
+    out = []
+    pages = list(source.urls)
+    if source.wp:
+        try:
+            api = f"{source.wp.rstrip('/')}/wp-json/wp/v2/posts?per_page=30&_fields=link,title,excerpt,date"
+            for post in requests.get(api, timeout=TIMEOUT, verify=source.verify).json():
+                title = clean(post.get("title", {}).get("rendered", ""))
+                text = clean(title + " " + BeautifulSoup(str(post.get("excerpt", {}).get("rendered", "")), "html.parser").get_text(" "))
+                if title and not ANN_DROP.search(text):
+                    out.append({"date": str(post.get("date", ""))[:10], "title": title[:140], "source": source.name, "url": post.get("link", source.wp)})
+        except Exception:
+            pass
+    for page in pages:
+        try:
+            soup = BeautifulSoup(fetch(page, source.verify), "html.parser")
+        except Exception:
+            continue
+        for a in soup.find_all("a", href=True):
+            title = re.sub(r"^(閱讀全文|Read more|Continue Reading)\s*", "", clean(a.get_text(" ")), flags=re.I)
+            text = clean(a.parent.get_text(" ") if a.parent else title)
+            if len(title) < 4 or DROP.search(text) or ANN_DROP.search(text):
+                continue
+            item_date = first_date(text)
+            if not item_date:
+                continue
+            out.append({"date": item_date, "title": title[:140], "source": source.name, "url": urljoin(page, a["href"])})
+    return out[:12]
+
+
+def from_efort_webinars() -> list[dict[str, str]]:
+    soup = BeautifulSoup(fetch(EFORT_WEBINAR_URL), "html.parser")
+    out = []
+    for p in soup.find_all("p"):
+        text = clean(p.get_text(" "))
+        if "EFORT Webinar" not in text:
+            continue
+        event_date = first_date(text)
+        a = p.find("a", href=True)
+        if event_date:
+            title = re.sub(r"^EFORT Webinar\s*\|\s*", "", text, flags=re.I)
+            title = re.split(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?:day)?\s+\d{1,2}\s+", title, flags=re.I)[0]
+            out.append({"date": event_date, "title": title[:140], "source": "EFORT", "cat": category("Webinar", title), "place": "線上", "url": a["href"] if a else EFORT_WEBINAR_URL, "mode": "線上"})
+    return out
+
+
+def webinar_fallbacks() -> list[dict[str, str]]:
+    # ponytail: AO blocks simple server fetches; keep the filtered AO search one click away until they expose a stable API.
+    return [{"date": TODAY.isoformat(), "title": "AO Spine / Trauma / Recon webinars search", "source": "AO Foundation", "cat": "Webinar", "place": "線上", "url": AO_WEBINAR_URL, "mode": "線上"}]
 
 
 def keep_recent(event: dict[str, str]) -> bool:
@@ -208,6 +290,8 @@ def keep_recent(event: dict[str, str]) -> bool:
 def main() -> None:
     ROOT.mkdir(parents=True, exist_ok=True)
     events: list[dict[str, str]] = []
+    announcements: list[dict[str, str]] = []
+    webinars: list[dict[str, str]] = webinar_fallbacks()
     errors: dict[str, str] = {}
     for source in SOURCES:
         try:
@@ -217,6 +301,15 @@ def main() -> None:
                 events.extend(from_html(source))
         except Exception as exc:
             errors[source.name] = f"{type(exc).__name__}: {exc}"
+    for source in ANNOUNCEMENT_SOURCES:
+        try:
+            announcements.extend(from_announcements(source))
+        except Exception as exc:
+            errors[f"{source.name} announcements"] = f"{type(exc).__name__}: {exc}"
+    try:
+        webinars.extend(from_efort_webinars())
+    except Exception as exc:
+        errors["EFORT webinars"] = f"{type(exc).__name__}: {exc}"
 
     seen = set()
     deduped = []
@@ -226,24 +319,51 @@ def main() -> None:
             continue
         seen.add(key)
         deduped.append(event)
+    ann_seen = set()
+    ann_deduped = []
+    for item in sorted(announcements, key=lambda e: (e["source"], e["date"], e["title"]), reverse=True):
+        key = item["url"]
+        if key in ann_seen:
+            continue
+        ann_seen.add(key)
+        ann_deduped.append(item)
+    web_seen = set()
+    web_deduped = []
+    for item in sorted(webinars, key=lambda e: (e["date"], e["source"], e["title"]), reverse=True):
+        key = item["url"]
+        if key in web_seen:
+            continue
+        web_seen.add(key)
+        web_deduped.append(item)
 
     (ROOT / "events.js").write_text(
         "window.ORTHO_EVENTS = " + json.dumps(deduped, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+    (ROOT / "announcements.js").write_text(
+        "window.ORTHO_ANNOUNCEMENTS = " + json.dumps(ann_deduped, ensure_ascii=False, indent=2) + ";\n",
+        encoding="utf-8",
+    )
+    (ROOT / "webinars.js").write_text(
+        "window.ORTHO_WEBINARS = " + json.dumps(web_deduped, ensure_ascii=False, indent=2) + ";\n",
         encoding="utf-8",
     )
     (ROOT / "last-run.json").write_text(
         json.dumps({
             "updated": datetime.now().isoformat(timespec="seconds"),
             "events": len(deduped),
+            "announcements": len(ann_deduped),
+            "webinars": len(web_deduped),
             "errors": errors,
             "not_configured_yet": UNKNOWN_SOURCES,
         }, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"wrote {len(deduped)} events; {len(errors)} source errors")
+    print(f"wrote {len(deduped)} events, {len(ann_deduped)} announcements, {len(web_deduped)} webinars; {len(errors)} source errors")
 
     # ponytail: catches bad source edits without a test framework.
     assert all(e["date"] and e["title"] and e["url"].startswith(("http://", "https://")) for e in deduped)
+    assert all(e["date"] and e["title"] and e["url"].startswith(("http://", "https://")) for e in ann_deduped + web_deduped)
 
 
 if __name__ == "__main__":
