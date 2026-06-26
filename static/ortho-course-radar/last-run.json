@@ -1,0 +1,14 @@
+{
+  "updated": "2026-06-26T22:13:33",
+  "events": 25,
+  "errors": {
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x1048d6b90>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "AO Trauma Taiwan": "HTTPError: 404 Client Error: Not Found for url: https://www.aofoundation.org/trauma/education/courses",
+    "AO Recon": "HTTPError: 404 Client Error: Not Found for url: https://www.aofoundation.org/recon/education/courses"
+  },
+  "not_configured_yet": [
+    "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
+    "Cadaver Lab / Simulation Center：多數已由 TOA 學術活動頁 keyword 部分涵蓋",
+    "Resident Camp / Young Surgeon Forum / Fellowship announcement：需要指定可公開抓的入口頁"
+  ]
+}
