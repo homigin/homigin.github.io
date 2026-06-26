@@ -5,7 +5,8 @@ window.ORTHO_EVENTS = [
     "source": "TSSH 台灣手外科醫學會",
     "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://handsurgery.com.tw/2026-05-28-05-31-ircad-taiwan-arthroscopy-course-wrist-and-elbow/"
+    "url": "https://handsurgery.com.tw/2026-05-28-05-31-ircad-taiwan-arthroscopy-course-wrist-and-elbow/",
+    "mode": "實體"
   },
   {
     "date": "2026-06-13",
@@ -13,7 +14,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-06-13-2026%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e9%97%9c%e7%af%80%e9%8f%a1%e5%8f%8a%e8%86%9d%e9%97%9c%e7%af%80%e9%86%ab%e5%ad%b8%e6%9c%83%ef%a6%8e%e6%9c%83/"
+    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-06-13-2026%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e9%97%9c%e7%af%80%e9%8f%a1%e5%8f%8a%e8%86%9d%e9%97%9c%e7%af%80%e9%86%ab%e5%ad%b8%e6%9c%83%ef%a6%8e%e6%9c%83/",
+    "mode": "實體"
   },
   {
     "date": "2026-06-14",
@@ -21,7 +23,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-06-14-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-basic-knee-cadaver-course/"
+    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-06-14-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-basic-knee-cadaver-course/",
+    "mode": "cadaver lab"
   },
   {
     "date": "2026-06-27",
@@ -29,7 +32,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "運動醫學",
     "place": "國立成功大學醫學院 臨床手術技能發展創新教室",
-    "url": "https://bone.org.tw/education/events/11519/"
+    "url": "https://bone.org.tw/education/events/11519/",
+    "mode": "實體"
   },
   {
     "date": "2026-06-27",
@@ -37,7 +41,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "脊椎",
     "place": "臺中榮民總醫院教學大樓四樓",
-    "url": "https://bone.org.tw/education/events/11513/"
+    "url": "https://bone.org.tw/education/events/11513/",
+    "mode": "cadaver lab"
   },
   {
     "date": "2026-06-27",
@@ -45,7 +50,17 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "脊椎",
     "place": "上午：臺北榮民總醫院 致德樓第十會議室 下午：中正樓三樓麻醉部會議室及手術房",
-    "url": "https://bone.org.tw/education/events/11494/"
+    "url": "https://bone.org.tw/education/events/11494/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-27",
+    "title": "(VIPS-Essentials 2026) – Learning from the master 115.06.27(共1小時20分)、115.07.28(共4時30分)(1.3/2.3點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "疼痛",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4371.html",
+    "mode": "實體"
   },
   {
     "date": "2026-06-28",
@@ -53,7 +68,17 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "疼痛",
     "place": "中山醫學大學 誠愛樓10樓",
-    "url": "https://bone.org.tw/education/events/11520/"
+    "url": "https://bone.org.tw/education/events/11520/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "疼痛擂台6：真實病人工作坊-腰臀同源115.06.28(共6時20分)(4點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "疼痛",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4423.html",
+    "mode": "實體"
   },
   {
     "date": "2026-07-04",
@@ -61,7 +86,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "關節重建",
     "place": "臺北晶華酒店 3F 宴會廳",
-    "url": "https://bone.org.tw/education/events/11500/"
+    "url": "https://bone.org.tw/education/events/11500/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-04",
@@ -69,7 +95,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "綜合",
     "place": "和選旅THE HO HOTEL飯店一樓會議廳",
-    "url": "https://bone.org.tw/education/events/11533/"
+    "url": "https://bone.org.tw/education/events/11533/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-04",
@@ -77,7 +104,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "研究",
     "place": "高醫附院啟川大樓13ES骨科部討論室",
-    "url": "https://bone.org.tw/education/events/11528/"
+    "url": "https://bone.org.tw/education/events/11528/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-05",
@@ -85,7 +113,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "綜合",
     "place": "高雄福華大飯店七樓 金鳳廳",
-    "url": "https://bone.org.tw/education/events/11524/"
+    "url": "https://bone.org.tw/education/events/11524/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-10",
@@ -93,7 +122,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "創傷",
     "place": "埔基醫院-8樓謝緯紀念堂",
-    "url": "https://bone.org.tw/education/events/11526/"
+    "url": "https://bone.org.tw/education/events/11526/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-18",
@@ -101,7 +131,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "綜合",
     "place": "高雄醫學大學附設高醫岡山醫院",
-    "url": "https://bone.org.tw/education/events/11507/"
+    "url": "https://bone.org.tw/education/events/11507/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-18",
@@ -109,7 +140,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "脊椎",
     "place": "高雄長庚醫院 醫學大樓外科第二會議室",
-    "url": "https://bone.org.tw/education/events/11535/"
+    "url": "https://bone.org.tw/education/events/11535/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-19",
@@ -117,7 +149,8 @@ window.ORTHO_EVENTS = [
     "source": "TOA 台灣骨科醫學會",
     "cat": "骨鬆",
     "place": "中山醫學大學正心樓7樓0713教室",
-    "url": "https://bone.org.tw/education/events/11532/"
+    "url": "https://bone.org.tw/education/events/11532/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-19",
@@ -125,7 +158,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=606&t=0"
+    "url": "https://www.toa1997.org.tw/events/content.php?id=606&t=0",
+    "mode": "實體"
   },
   {
     "date": "2026-07-19",
@@ -133,7 +167,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=604&t=0"
+    "url": "https://www.toa1997.org.tw/events/content.php?id=604&t=0",
+    "mode": "實體"
   },
   {
     "date": "2026-07-25",
@@ -141,7 +176,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=622&t=0"
+    "url": "https://www.toa1997.org.tw/events/content.php?id=622&t=0",
+    "mode": "實體"
   },
   {
     "date": "2026-07-26",
@@ -149,7 +185,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/education/2026-07-26-%e4%bd%8f%e9%99%a2%e9%86%ab%e5%b8%ab%e8%81%af%e5%90%88%e6%95%99%e8%82%b2%e8%a8%93%e7%b7%b4%e8%aa%b2%e7%a8%8b/"
+    "url": "https://www.taiwanarthroscopy.org.tw/education/2026-07-26-%e4%bd%8f%e9%99%a2%e9%86%ab%e5%b8%ab%e8%81%af%e5%90%88%e6%95%99%e8%82%b2%e8%a8%93%e7%b7%b4%e8%aa%b2%e7%a8%8b/",
+    "mode": "實體"
   },
   {
     "date": "2026-08-15",
@@ -157,7 +194,8 @@ window.ORTHO_EVENTS = [
     "source": "TOTA 台灣骨科創傷醫學會",
     "cat": "創傷",
     "place": "原公告",
-    "url": "https://www.tota.org.tw/%e5%8c%af%e8%81%9a%e4%ba%9e%e6%b4%b2%e5%89%b5%e5%82%b7%e9%aa%a8%e7%a7%91%e6%96%b0%e8%a6%96%e9%87%8e%ef%bc%8c%e5%85%b1%e5%95%9f%e8%87%a8%e5%ba%8a%e5%89%b5%e6%96%b0%e8%88%87%e5%9c%8b%e9%9a%9b%e4%ba%a4/"
+    "url": "https://www.tota.org.tw/%e5%8c%af%e8%81%9a%e4%ba%9e%e6%b4%b2%e5%89%b5%e5%82%b7%e9%aa%a8%e7%a7%91%e6%96%b0%e8%a6%96%e9%87%8e%ef%bc%8c%e5%85%b1%e5%95%9f%e8%87%a8%e5%ba%8a%e5%89%b5%e6%96%b0%e8%88%87%e5%9c%8b%e9%9a%9b%e4%ba%a4/",
+    "mode": "實體"
   },
   {
     "date": "2026-08-15",
@@ -165,7 +203,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/"
+    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/",
+    "mode": "cadaver lab"
   },
   {
     "date": "2026-08-16",
@@ -173,7 +212,8 @@ window.ORTHO_EVENTS = [
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0"
+    "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0",
+    "mode": "實體"
   },
   {
     "date": "2026-09-19",
@@ -181,6 +221,7 @@ window.ORTHO_EVENTS = [
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0"
+    "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
+    "mode": "實體"
   }
 ];

@@ -100,13 +100,14 @@
       margin-top: 12px;
     }
     .views {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
       margin-bottom: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--line);
     }
+    .views button { min-height: 48px; font-weight: 800; }
     .filter-options {
       display: flex;
       flex-wrap: wrap;
@@ -222,6 +223,57 @@
     .announce {
       border-left: 4px solid var(--brand);
     }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .ics {
+      border-color: var(--brand);
+      color: var(--brand);
+      font-weight: 800;
+    }
+    .calendar-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .calendar-title { font-size: 24px; font-weight: 900; }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
+    }
+    .weekday {
+      color: var(--muted);
+      text-align: center;
+      font-weight: 800;
+    }
+    .cal-day {
+      min-height: 74px;
+      padding: 8px;
+      border-radius: 8px;
+      background: #f8faf9;
+      color: #687674;
+      font-weight: 700;
+    }
+    .cal-day.has {
+      background: #d4f0ea;
+      color: var(--brand);
+    }
+    .cal-day b { display: block; font-size: 20px; line-height: 1.1; }
+    .cal-day small { font-weight: 900; }
+    .source-group {
+      padding: 14px;
+    }
+    .source-group h3 {
+      margin: 0 0 8px;
+      color: var(--brand);
+    }
     .empty {
       display: none;
       padding: 28px;
@@ -237,10 +289,10 @@
       font-size: 14px;
     }
     @media (max-width: 760px) {
-      .stats, .filter-grid { grid-template-columns: 1fr; }
+      .stats, .filter-grid, .views { grid-template-columns: 1fr; }
       .event, .day-row { grid-template-columns: 1fr; }
       .date { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
-      .list-head { display: block; }
+      .list-head, .calendar-nav { display: block; }
     }
   </style>
 </head>
@@ -262,6 +314,7 @@
     <div class="views" aria-label="顯示模式">
       <button class="active" data-view="list">課程清單</button>
       <button data-view="calendar">📅 活動行事曆</button>
+      <button data-view="webinars">Webinars</button>
       <button data-view="announcements">📢 最新公告</button>
     </div>
     <div class="filter-grid">
@@ -270,9 +323,10 @@
     </div>
     <div class="filter-options">
       <label class="check"><input id="hideExpired" type="checkbox" checked>排除過期</label>
-      <span>排序：一律依活動日期由近到遠</span>
+      <span id="sortHint">排序：一律依活動日期由近到遠</span>
     </div>
     <div class="chips" id="timeChips" aria-label="時間快速篩選"></div>
+    <div class="chips" id="modeChips" aria-label="形式快速篩選"></div>
     <div class="chips" id="catChips" aria-label="分類"></div>
     <div class="chips" id="sourceChips" aria-label="來源"></div>
   </nav>
@@ -280,7 +334,10 @@
   <main class="wrap">
     <div class="list-head">
       <h2 id="viewTitle">近期骨科課程與工作坊</h2>
-      <span class="muted" id="resultCount"></span>
+      <div class="actions">
+        <span class="muted" id="resultCount"></span>
+        <button class="ics" id="exportICS">加入目前篩選</button>
+      </div>
     </div>
     <section class="events" id="events" aria-live="polite"></section>
     <p class="empty" id="empty">沒有符合條件的課程。換個關鍵字或清掉日期看看。</p>
@@ -293,6 +350,8 @@
   </footer>
 
   <script src="events.js"></script>
+  <script src="announcements.js"></script>
+  <script src="webinars.js"></script>
   <script>
     const demoEvents = [
       { date: "2026-07-04", title: "進階人工膝關節置換實作工作坊：困難 primary TKA", source: "關節重建醫學會", cat: "關節重建", place: "台北", url: "https://www.jrs.org.tw/" },
@@ -306,20 +365,34 @@
       { date: "2026-09-20", title: "骨科研究方法：registry、propensity score 與論文寫作", source: "骨科醫學會", cat: "研究", place: "線上", url: "https://www.toa.org.tw/" }
     ];
     const events = window.ORTHO_EVENTS?.length ? window.ORTHO_EVENTS : demoEvents;
+    const announcements = window.ORTHO_ANNOUNCEMENTS || [];
+    const webinars = window.ORTHO_WEBINARS || [];
+    const searchable = [...events, ...webinars, ...announcements];
 
-    const state = { cat: "", source: "", time: "", view: "list" };
+    const state = { cat: "", source: "", time: "", mode: "", view: "list", month: "" };
+    let rowsCache = [];
     const $ = (id) => document.getElementById(id);
-    const cats = ["全部", ...new Set(events.map(e => e.cat))];
-    const sources = ["全部來源", ...new Set(events.map(e => e.source))];
+    const cats = ["全部", ...new Set(searchable.map(e => e.cat).filter(Boolean))];
+    const sources = ["全部來源", ...new Set(searchable.map(e => e.source).filter(Boolean))];
     const timeRanges = [
       ["全部日期", ""],
       ["本月", "thisMonth"],
       ["下月", "nextMonth"],
       ["90 天內", "90d"]
     ];
+    const modeRanges = [
+      ["全部形式", ""],
+      ["實體", "實體"],
+      ["線上", "線上"],
+      ["cadaver lab", "cadaver lab"]
+    ];
 
     function makeChips(root, items, key) {
-      root.innerHTML = items.map((name, i) => `<button data-${key}="${i ? name : ""}" class="${i ? "" : "active"}">${name}</button>`).join("");
+      root.innerHTML = items.map((item, i) => {
+        const name = Array.isArray(item) ? item[0] : item;
+        const value = Array.isArray(item) ? item[1] : (i ? item : "");
+        return `<button data-${key}="${esc(value)}" class="${i ? "" : "active"}">${esc(name)}</button>`;
+      }).join("");
       root.addEventListener("click", (e) => {
         if (e.target.tagName !== "BUTTON") return;
         state[key] = e.target.dataset[key];
@@ -336,8 +409,22 @@
         && (!from || e.date >= from)
         && (!$("hideExpired").checked || e.date >= today)
         && inTimeRange(e.date)
+        && (!state.mode || modeOf(e) === state.mode)
         && (!state.cat || e.cat === state.cat)
         && (!state.source || e.source === state.source);
+    }
+
+    function matchesAnnouncement(e) {
+      const q = $("q").value.trim().toLowerCase();
+      return (!q || `${e.title} ${e.source}`.toLowerCase().includes(q))
+        && (!state.source || e.source === state.source);
+    }
+
+    function modeOf(e) {
+      const text = `${e.mode || ""} ${e.title || ""} ${e.place || ""}`;
+      if (/cadaver|大體|simulation|動物實作/i.test(text)) return "cadaver lab";
+      if (/線上|online|webinar|webcast|youtube|replay|直播/i.test(text)) return "線上";
+      return "實體";
     }
 
     function todayISO() {
@@ -393,58 +480,121 @@
           <div class="date">${esc(e.date.slice(5))}<small>${esc(e.date.slice(0, 4))}</small></div>
           <div>
             <h3>${esc(e.title)}</h3>
-            <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
+            <div class="meta"><span class="tag">${esc(e.cat || modeOf(e))}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place || "")}</span></div>
           </div>
-          <a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">原站</a>
+          <div class="actions"><button class="ics" data-ics="${esc(e.url)}">加入</button><a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">原站</a></div>
         </article>
       `;
     }
 
     function renderCalendar(rows) {
-      const months = rows.reduce((acc, e) => {
-        const key = e.date.slice(0, 7);
-        (acc[key] ||= []).push(e);
+      if (!state.month) state.month = (rows[0]?.date || todayISO()).slice(0, 7);
+      const [year, month] = state.month.split("-").map(Number);
+      const first = new Date(year, month - 1, 1);
+      const days = new Date(year, month, 0).getDate();
+      const counts = rows.filter(e => e.date.startsWith(state.month)).reduce((acc, e) => {
+        acc[Number(e.date.slice(8, 10))] = (acc[Number(e.date.slice(8, 10))] || 0) + 1;
         return acc;
       }, {});
-      return Object.entries(months).map(([month, items]) => `
+      const cells = Array(first.getDay()).fill(`<div></div>`).concat(
+        Array.from({ length: days }, (_, i) => {
+          const day = i + 1;
+          return `<div class="cal-day ${counts[day] ? "has" : ""}"><b>${day}</b>${counts[day] ? `<small>${counts[day]}場</small>` : ""}</div>`;
+        })
+      );
+      const monthRows = rows.filter(e => e.date.startsWith(state.month));
+      return `
         <section class="month-group">
-          <h3>${esc(month)}</h3>
-          ${items.map(e => `
+          <div class="calendar-nav">
+            <button data-month="-1">‹</button>
+            <div class="calendar-title">${esc(state.month.replace("-", "年"))}月</div>
+            <button data-month="1">›</button>
+          </div>
+          <div class="calendar-grid">
+            ${["日", "一", "二", "三", "四", "五", "六"].map(d => `<div class="weekday">${d}</div>`).join("")}
+            ${cells.join("")}
+          </div>
+        </section>
+        <section class="month-group">
+          <h3>${esc(state.month)} 場次</h3>
+          ${monthRows.map(e => `
             <div class="day-row">
               <div class="day">${esc(e.date.slice(5))}</div>
               <div>
                 <a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">${esc(e.title)}</a>
-                <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
+                <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
               </div>
+            </div>
+          `).join("")}
+        </section>
+      `;
+    }
+
+    function renderAnnouncements(rows) {
+      const groups = rows.reduce((acc, e) => {
+        (acc[e.source] ||= []).push(e);
+        return acc;
+      }, {});
+      return Object.entries(groups).map(([source, items]) => `
+        <section class="month-group source-group">
+          <h3>${esc(source)}</h3>
+          ${items.map(e => `
+            <div class="day-row">
+              <div class="day">${esc(e.date)}</div>
+              <div><a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">${esc(e.title)}</a></div>
             </div>
           `).join("")}
         </section>
       `).join("");
     }
 
+    function activeDataset() {
+      return state.view === "webinars" ? webinars : events;
+    }
+
     function render() {
-      const rows = events.filter(matches).sort((a, b) => a.date.localeCompare(b.date));
+      const rows = state.view === "announcements"
+        ? announcements.filter(matchesAnnouncement).sort((a, b) => b.date.localeCompare(a.date))
+        : activeDataset().filter(matches).sort((a, b) => a.date.localeCompare(b.date));
+      rowsCache = rows;
       const titles = {
         list: "近期骨科課程與工作坊",
         calendar: "📅 活動行事曆",
+        webinars: "Webinars",
         announcements: "📢 最新公告"
       };
       $("viewTitle").textContent = titles[state.view];
-      $("events").innerHTML = state.view === "calendar"
-        ? renderCalendar(rows)
-        : rows.map(e => eventCard(e, state.view)).join("");
-      $("resultCount").textContent = `${rows.length} / ${events.length} 筆`;
+      $("sortHint").textContent = state.view === "announcements" ? "排序：公告依日期新到舊，並按學會分組" : "排序：一律依活動日期由近到遠";
+      $("exportICS").style.display = state.view === "announcements" ? "none" : "";
+      $("events").innerHTML = state.view === "announcements"
+        ? renderAnnouncements(rows)
+        : state.view === "calendar"
+          ? renderCalendar(rows)
+          : rows.map(e => eventCard(e, state.view)).join("");
+      $("resultCount").textContent = `${rows.length} / ${(state.view === "announcements" ? announcements : activeDataset()).length} 筆`;
       $("empty").style.display = rows.length ? "none" : "block";
     }
 
     document.querySelector(".views").addEventListener("click", (e) => {
       if (e.target.tagName !== "BUTTON") return;
       state.view = e.target.dataset.view;
+      state.month = "";
       [...e.currentTarget.children].forEach(btn => btn.classList.toggle("active", btn === e.target));
       render();
     });
-    makeChips($("timeChips"), timeRanges.map(([label]) => label), "time");
-    $("timeChips").querySelectorAll("button").forEach((btn, i) => { btn.dataset.time = timeRanges[i][1]; });
+    $("events").addEventListener("click", (e) => {
+      if (e.target.dataset.month) {
+        state.month = shiftMonth(state.month, Number(e.target.dataset.month));
+        render();
+      }
+      if (e.target.dataset.ics) {
+        const item = rowsCache.find(row => row.url === e.target.dataset.ics);
+        if (item) downloadICS([item]);
+      }
+    });
+    $("exportICS").addEventListener("click", () => downloadICS(rowsCache));
+    makeChips($("timeChips"), timeRanges, "time");
+    makeChips($("modeChips"), modeRanges, "mode");
     makeChips($("catChips"), cats, "cat");
     makeChips($("sourceChips"), sources, "source");
     $("q").addEventListener("input", render);
@@ -453,8 +603,32 @@
     $("totalCount").textContent = events.length;
     render();
 
+    function downloadICS(rows) {
+      if (!rows.length) return;
+      const body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Homigin//Ortho Radar//ZH-TW", ...rows.map(toICS), "END:VCALENDAR"].join("\r\n");
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([body], { type: "text/calendar;charset=utf-8" }));
+      a.download = rows.length === 1 ? `${safeName(rows[0].title)}.ics` : "ortho-radar.ics";
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function toICS(e) {
+      const start = e.date.replaceAll("-", "");
+      const end = addDays(e.date, 1).replaceAll("-", "");
+      return ["BEGIN:VEVENT", `UID:${btoa(unescape(encodeURIComponent(e.url))).slice(0, 48)}@ortho-radar`, `DTSTART;VALUE=DATE:${start}`, `DTEND;VALUE=DATE:${end}`, `SUMMARY:${icsText(e.title)}`, `LOCATION:${icsText(e.place || "")}`, `URL:${safeUrl(e.url)}`, `DESCRIPTION:${icsText(`${e.source || ""} ${e.cat || ""}`)}`, "END:VEVENT"].join("\r\n");
+    }
+
+    function icsText(text) {
+      return String(text || "").replace(/[\\,;]/g, "\\$&").replace(/\n/g, "\\n");
+    }
+
+    function safeName(text) {
+      return String(text || "event").replace(/[\\/:*?"<>|]+/g, "_").slice(0, 60);
+    }
+
     // ponytail: tiny in-page check, replace with real tests if this grows beyond a static prototype.
-    console.assert(events.every(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.title && e.url), "bad event data");
+    console.assert([...events, ...webinars].every(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.title && e.url), "bad event data");
   </script>
 </body>
 </html>
