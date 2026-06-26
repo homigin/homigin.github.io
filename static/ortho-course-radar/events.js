@@ -48,28 +48,12 @@ window.ORTHO_EVENTS = [
     "url": "https://bone.org.tw/education/events/11494/"
   },
   {
-    "date": "2026-06-27",
-    "title": "(VIPS-Essentials 2026) – Learning from the master 115.06.27(共1小時20分)、115.07.28(共4時30分)(1.3/2.3點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4371.html"
-  },
-  {
     "date": "2026-06-28",
     "title": "台灣區域麻醉暨止痛醫學會【疼痛擂台6：真實病人工作坊-腰臀同源】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "疼痛",
     "place": "中山醫學大學 誠愛樓10樓",
     "url": "https://bone.org.tw/education/events/11520/"
-  },
-  {
-    "date": "2026-06-28",
-    "title": "疼痛擂台6：真實病人工作坊-腰臀同源115.06.28(共6時20分)(4點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4423.html"
   },
   {
     "date": "2026-07-04",

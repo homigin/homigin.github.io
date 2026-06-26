@@ -69,6 +69,12 @@ Through this blog, I hope to share my thoughts and ideas with you, and I encoura
     url = "/garden/"
     weight = 3
 
+  [[languages.en.menu.main]]
+    identifier = "ortho-course-radar"
+    name = "Ortho Radar"
+    url = "/ortho-course-radar/"
+    weight = 4
+
   [languages.zh]
     languageName = "繁體中文"
     weight = 2
@@ -91,3 +97,9 @@ Through this blog, I hope to share my thoughts and ideas with you, and I encoura
     name = "花園"
     url = "/zh/garden/"
     weight = 3
+
+  [[languages.zh.menu.main]]
+    identifier = "ortho-course-radar"
+    name = "骨科雷達"
+    url = "/ortho-course-radar/"
+    weight = 4

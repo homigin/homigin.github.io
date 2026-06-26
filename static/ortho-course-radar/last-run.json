@@ -1,8 +1,9 @@
 {
-  "updated": "2026-06-26T22:13:33",
-  "events": 25,
+  "updated": "2026-06-26T23:47:20",
+  "events": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x1048d6b90>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x1091a18d0>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "TASM 台灣運動醫學醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.tasm.org.tw', port=443): Max retries exceeded with url: /news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tasm.org.tw', port=443) at 0x109652090>, 'Connection to www.tasm.org.tw timed out. (connect timeout=6)'))",
     "AO Trauma Taiwan": "HTTPError: 404 Client Error: Not Found for url: https://www.aofoundation.org/trauma/education/courses",
     "AO Recon": "HTTPError: 404 Client Error: Not Found for url: https://www.aofoundation.org/recon/education/courses"
   },
