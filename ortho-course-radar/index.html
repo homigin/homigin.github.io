@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>骨科進修雷達</title>
+  <meta name="description" content="彙整骨科年會、工作坊、手術實作、影像與研究課程的入口頁。">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --card: #fffdf8;
+      --ink: #1d2b2a;
+      --muted: #687674;
+      --line: #dde5df;
+      --brand: #0f766e;
+      --brand2: #f59e0b;
+      --soft: #e7f3ef;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(15, 118, 110, .12), transparent 32rem),
+        radial-gradient(circle at 90% 10%, rgba(245, 158, 11, .14), transparent 26rem),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .hero {
+      padding: 52px 0 26px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin: 0 0 14px;
+      color: var(--brand);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 68px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+    .stat, .filters, .event {
+      background: color-mix(in srgb, var(--card) 92%, transparent);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    .stat { padding: 14px 16px; }
+    .stat b { display: block; font-size: 26px; line-height: 1.1; }
+    .stat span { color: var(--muted); font-size: 13px; }
+    .filters {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      margin: 22px auto;
+      padding: 14px;
+      backdrop-filter: blur(14px);
+    }
+    .filter-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .8fr;
+      gap: 12px;
+    }
+    input[type="search"], input[type="date"] {
+      width: 100%;
+      min-height: 44px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    button {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--ink);
+      padding: 0 13px;
+      font: inherit;
+      cursor: pointer;
+    }
+    button.active {
+      border-color: var(--brand);
+      background: var(--brand);
+      color: white;
+    }
+    main { padding: 0 0 42px; }
+    .list-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 26px 0 12px;
+    }
+    h2 { margin: 0; font-size: 24px; }
+    .muted { color: var(--muted); }
+    .events {
+      display: grid;
+      gap: 10px;
+    }
+    .event {
+      display: grid;
+      grid-template-columns: 112px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 16px;
+    }
+    .date {
+      border-right: 1px solid var(--line);
+      color: var(--brand);
+      font-weight: 800;
+    }
+    .date small {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .event h3 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .open {
+      color: var(--brand);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .empty {
+      display: none;
+      padding: 28px;
+      text-align: center;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+    }
+    footer {
+      padding: 24px 0 36px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .stats, .filter-grid { grid-template-columns: 1fr; }
+      .event { grid-template-columns: 1fr; }
+      .date { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+      .list-head { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">ORTHO COURSE RADAR</p>
+      <h1>骨科進修雷達</h1>
+      <p class="lead">把骨科年會、關節重建、創傷、脊椎、運動醫學、影像與研究方法課程集中在一頁，快速找下一個值得報名的場次。</p>
+      <div class="stats" aria-label="課程統計">
+        <div class="stat"><b id="totalCount">0</b><span>筆課程公告</span></div>
+        <div class="stat"><b>7</b><span>骨科分類</span></div>
+        <div class="stat"><b>2026-06-26</b><span>頁面更新</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="wrap filters" aria-label="課程篩選">
+    <div class="filter-grid">
+      <input id="q" type="search" placeholder="搜尋：TKA、spine、trauma、ultrasound..." aria-label="搜尋課程">
+      <input id="from" type="date" aria-label="起始日期">
+    </div>
+    <div class="chips" id="catChips" aria-label="分類"></div>
+    <div class="chips" id="sourceChips" aria-label="來源"></div>
+  </nav>
+
+  <main class="wrap">
+    <div class="list-head">
+      <h2>近期骨科課程與工作坊</h2>
+      <span class="muted" id="resultCount"></span>
+    </div>
+    <section class="events" id="events" aria-live="polite"></section>
+    <p class="empty" id="empty">沒有符合條件的課程。換個關鍵字或清掉日期看看。</p>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>資料由 <code>update_events.py</code> 抓取各學會／機構公開公告頁，只顯示標題與連結並導回原站；實際資訊以原公告為準。</p>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+  <script>
+    const demoEvents = [
+      { date: "2026-07-04", title: "進階人工膝關節置換實作工作坊：困難 primary TKA", source: "關節重建醫學會", cat: "關節重建", place: "台北", url: "https://www.jrs.org.tw/" },
+      { date: "2026-07-12", title: "骨科住院醫師創傷固定基礎課程：distal radius 到 ankle fracture", source: "骨科醫學會", cat: "創傷", place: "台中", url: "https://www.toa.org.tw/" },
+      { date: "2026-07-19", title: "脊椎退化性疾病手術決策與併發症討論會", source: "脊椎外科醫學會", cat: "脊椎", place: "高雄", url: "https://www.tss.org.tw/" },
+      { date: "2026-07-26", title: "肩膝運動傷害關節鏡 cadaver lab", source: "運動醫學醫學會", cat: "運動醫學", place: "台北", url: "https://www.tasm.org.tw/" },
+      { date: "2026-08-02", title: "骨腫瘤影像判讀與 biopsy planning 精要", source: "骨科醫學會", cat: "影像", place: "線上", url: "https://www.toa.org.tw/" },
+      { date: "2026-08-09", title: "小兒髖關節發育不良超音波與轉介策略", source: "小兒骨科醫學會", cat: "小兒骨科", place: "台北", url: "https://www.toa.org.tw/" },
+      { date: "2026-08-23", title: "骨質疏鬆與 fragility fracture secondary prevention", source: "骨質疏鬆症學會", cat: "骨鬆", place: "台南", url: "https://www.toa.org.tw/" },
+      { date: "2026-09-06", title: "髖關節置換術前 planning：templating、offset 與 leg length", source: "關節重建醫學會", cat: "關節重建", place: "新竹", url: "https://www.jrs.org.tw/" },
+      { date: "2026-09-20", title: "骨科研究方法：registry、propensity score 與論文寫作", source: "骨科醫學會", cat: "研究", place: "線上", url: "https://www.toa.org.tw/" }
+    ];
+    const events = window.ORTHO_EVENTS?.length ? window.ORTHO_EVENTS : demoEvents;
+
+    const state = { cat: "", source: "" };
+    const $ = (id) => document.getElementById(id);
+    const cats = ["全部", ...new Set(events.map(e => e.cat))];
+    const sources = ["全部來源", ...new Set(events.map(e => e.source))];
+
+    function makeChips(root, items, key) {
+      root.innerHTML = items.map((name, i) => `<button data-${key}="${i ? name : ""}" class="${i ? "" : "active"}">${name}</button>`).join("");
+      root.addEventListener("click", (e) => {
+        if (e.target.tagName !== "BUTTON") return;
+        state[key] = e.target.dataset[key];
+        [...root.children].forEach(btn => btn.classList.toggle("active", btn === e.target));
+        render();
+      });
+    }
+
+    function matches(e) {
+      const q = $("q").value.trim().toLowerCase();
+      const from = $("from").value;
+      return (!q || `${e.title} ${e.source} ${e.cat} ${e.place}`.toLowerCase().includes(q))
+        && (!from || e.date >= from)
+        && (!state.cat || e.cat === state.cat)
+        && (!state.source || e.source === state.source);
+    }
+
+    function render() {
+      const rows = events.filter(matches).sort((a, b) => a.date.localeCompare(b.date));
+      $("events").innerHTML = rows.map(e => `
+        <article class="event">
+          <div class="date">${e.date.slice(5)}<small>${e.date.slice(0, 4)}</small></div>
+          <div>
+            <h3>${e.title}</h3>
+            <div class="meta"><span class="tag">${e.cat}</span><span>${e.source}</span><span>${e.place}</span></div>
+          </div>
+          <a class="open" href="${e.url}" target="_blank" rel="noopener">原站</a>
+        </article>
+      `).join("");
+      $("resultCount").textContent = `${rows.length} / ${events.length} 筆`;
+      $("empty").style.display = rows.length ? "none" : "block";
+    }
+
+    makeChips($("catChips"), cats, "cat");
+    makeChips($("sourceChips"), sources, "source");
+    $("q").addEventListener("input", render);
+    $("from").addEventListener("input", render);
+    $("totalCount").textContent = events.length;
+    render();
+
+    // ponytail: tiny in-page check, replace with real tests if this grows beyond a static prototype.
+    console.assert(events.every(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.title && e.url), "bad event data");
+  </script>
+</body>
+</html>
