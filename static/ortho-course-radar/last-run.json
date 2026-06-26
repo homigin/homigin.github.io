@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-27T00:33:12",
-  "events": 25,
+  "updated": "2026-06-27T00:57:22",
+  "events": 33,
   "announcements": 13,
   "webinars": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x1050a1650>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
-    "TASM 台灣運動醫學醫學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.tasm.org.tw/news/"
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x11323b910>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))"
   },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
     "Cadaver Lab / Simulation Center：多數已由 TOA 學術活動頁 keyword 部分涵蓋",
-    "Resident Camp / Young Surgeon Forum / Fellowship announcement：需要指定可公開抓的入口頁"
+    "Resident Camp / Young Surgeon Forum / Fellowship announcement：需要指定可公開抓的入口頁",
+    "AAHKS/ESSKA：目前公開頁會跳轉或 Cloudflare challenge，先不放進 weekly scraper"
   ]
 }

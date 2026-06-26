@@ -24,7 +24,7 @@ window.ORTHO_EVENTS = [
     "cat": "運動醫學",
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-06-14-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-basic-knee-cadaver-course/",
-    "mode": "cadaver lab"
+    "mode": "lab"
   },
   {
     "date": "2026-06-27",
@@ -33,7 +33,7 @@ window.ORTHO_EVENTS = [
     "cat": "運動醫學",
     "place": "國立成功大學醫學院 臨床手術技能發展創新教室",
     "url": "https://bone.org.tw/education/events/11519/",
-    "mode": "實體"
+    "mode": "lab"
   },
   {
     "date": "2026-06-27",
@@ -42,7 +42,7 @@ window.ORTHO_EVENTS = [
     "cat": "脊椎",
     "place": "臺中榮民總醫院教學大樓四樓",
     "url": "https://bone.org.tw/education/events/11513/",
-    "mode": "cadaver lab"
+    "mode": "lab"
   },
   {
     "date": "2026-06-27",
@@ -69,7 +69,7 @@ window.ORTHO_EVENTS = [
     "cat": "疼痛",
     "place": "中山醫學大學 誠愛樓10樓",
     "url": "https://bone.org.tw/education/events/11520/",
-    "mode": "實體"
+    "mode": "lab"
   },
   {
     "date": "2026-06-28",
@@ -78,7 +78,7 @@ window.ORTHO_EVENTS = [
     "cat": "疼痛",
     "place": "原公告",
     "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4423.html",
-    "mode": "實體"
+    "mode": "lab"
   },
   {
     "date": "2026-07-04",
@@ -141,7 +141,7 @@ window.ORTHO_EVENTS = [
     "cat": "脊椎",
     "place": "高雄長庚醫院 醫學大樓外科第二會議室",
     "url": "https://bone.org.tw/education/events/11535/",
-    "mode": "實體"
+    "mode": "lab"
   },
   {
     "date": "2026-07-19",
@@ -172,6 +172,24 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-25",
+    "title": "中華民國骨質疏鬆症學會【2026/07/25 2026年骨鬆管理新座標-北區場 精準順序療法與病患中心】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "台北艾麗飯店",
+    "url": "https://bone.org.tw/education/events/11540/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "臺大醫院骨科部【115 年度臺大醫院骨科部教學研究合作醫院學術論文發表會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "研究",
+    "place": "臺大醫學院 303講堂",
+    "url": "https://bone.org.tw/education/events/11539/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
     "title": "【歡迎報名】2026/07/25 2026年骨鬆管理新座標-北區場 精準順序療法與病患中心",
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
@@ -189,6 +207,42 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-08-01",
+    "title": "中華民國小兒骨科醫學會【國際健康專業教育亞太地區重點超音波教育訓練大師課程】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "臺大護理學館",
+    "url": "https://bone.org.tw/education/events/11534/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-01",
+    "title": "中華民國骨質疏鬆症學會【2026/08/01 2026年骨鬆管理新座標-中南區場 精準順序療法與病患中心】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "台中洲際酒店",
+    "url": "https://bone.org.tw/education/events/11541/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-15",
+    "title": "中華民國小兒骨科醫學會【中華民國小兒骨科醫學會2026嬰兒髖關節超音波研習課程】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "關節重建",
+    "place": "林口長庚醫院研究大樓1F簡報室二",
+    "url": "https://bone.org.tw/education/events/11501/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-15",
+    "title": "中華民國關節鏡及膝關節醫學會【中華民國關節鏡及膝關節醫學會 大體膝關節鏡實作研習會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "運動醫學",
+    "place": "林口長庚醫院研究大樓八樓手術中心",
+    "url": "https://bone.org.tw/education/events/11489/",
+    "mode": "lab"
+  },
+  {
     "date": "2026-08-15",
     "title": "匯聚亞洲創傷骨科新視野，共啟臨床創新與國際交流新篇章",
     "source": "TOTA 台灣骨科創傷醫學會",
@@ -204,7 +258,7 @@ window.ORTHO_EVENTS = [
     "cat": "運動醫學",
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/",
-    "mode": "cadaver lab"
+    "mode": "lab"
   },
   {
     "date": "2026-08-16",
@@ -217,11 +271,29 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-09-19",
+    "title": "中華民國骨質疏鬆症學會【2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Clinician】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "衛生福利部臺南醫院 急診大樓6樓 大會議廳",
+    "url": "https://bone.org.tw/education/events/11529/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-19",
     "title": "【7/19開始報名(技術師班)】2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Technologist ",
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-19",
+    "title": "中華民國小兒骨科醫學會【2026 台灣小兒骨科骨盆足踝進階模擬手術研習營】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "足踝",
+    "place": "花蓮慈濟大學模擬醫學中心",
+    "url": "https://bone.org.tw/education/events/11536/",
     "mode": "實體"
   }
 ];
