@@ -246,7 +246,13 @@
     .calendar-grid {
       display: grid;
       grid-template-columns: repeat(7, minmax(0, 1fr));
-      gap: 6px;
+      gap: 4px;
+    }
+    .calendar-layout {
+      display: grid;
+      grid-template-columns: minmax(300px, .85fr) 1.15fr;
+      gap: 10px;
+      align-items: start;
     }
     .weekday {
       color: var(--muted);
@@ -254,16 +260,24 @@
       font-weight: 800;
     }
     .cal-day {
+      width: 100%;
       min-height: 74px;
       padding: 8px;
       border-radius: 8px;
+      border: 0;
       background: #f8faf9;
       color: #687674;
       font-weight: 700;
+      text-align: left;
     }
     .cal-day.has {
       background: #d4f0ea;
       color: var(--brand);
+    }
+    .cal-day.selected {
+      outline: 2px solid var(--brand);
+      background: var(--brand);
+      color: white;
     }
     .cal-day b { display: block; font-size: 20px; line-height: 1.1; }
     .cal-day small { font-weight: 900; }
@@ -289,7 +303,7 @@
       font-size: 14px;
     }
     @media (max-width: 760px) {
-      .stats, .filter-grid, .views { grid-template-columns: 1fr; }
+      .stats, .filter-grid, .views, .calendar-layout { grid-template-columns: 1fr; }
       .event, .day-row { grid-template-columns: 1fr; }
       .date { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
       .list-head, .calendar-nav { display: block; }
@@ -369,7 +383,7 @@
     const webinars = window.ORTHO_WEBINARS || [];
     const searchable = [...events, ...webinars, ...announcements];
 
-    const state = { cat: "", source: "", time: "", mode: "", view: "list", month: "" };
+    const state = { cat: "", source: "", time: "", mode: "", view: "list", month: "", day: "" };
     let rowsCache = [];
     const $ = (id) => document.getElementById(id);
     const cats = ["全部", ...new Set(searchable.map(e => e.cat).filter(Boolean))];
@@ -382,9 +396,7 @@
     ];
     const modeRanges = [
       ["全部形式", ""],
-      ["實體", "實體"],
-      ["線上", "線上"],
-      ["cadaver lab", "cadaver lab"]
+      ["lab", "lab"]
     ];
 
     function makeChips(root, items, key) {
@@ -409,7 +421,7 @@
         && (!from || e.date >= from)
         && (!$("hideExpired").checked || e.date >= today)
         && inTimeRange(e.date)
-        && (!state.mode || modeOf(e) === state.mode)
+        && (state.view === "webinars" || !state.mode || modeOf(e) === state.mode)
         && (!state.cat || e.cat === state.cat)
         && (!state.source || e.source === state.source);
     }
@@ -422,7 +434,7 @@
 
     function modeOf(e) {
       const text = `${e.mode || ""} ${e.title || ""} ${e.place || ""}`;
-      if (/cadaver|大體|simulation|動物實作/i.test(text)) return "cadaver lab";
+      if (/cadaver|大體|simulation|simulator|動物實作|仿真|模型手術|手術體驗|手術.*實作|實作.*手術|真實病人|hands-?on|臨床手術技能|arthroscopic workshop|lab/i.test(text)) return "lab";
       if (/線上|online|webinar|webcast|youtube|replay|直播/i.test(text)) return "線上";
       return "實體";
     }
@@ -499,34 +511,38 @@
       const cells = Array(first.getDay()).fill(`<div></div>`).concat(
         Array.from({ length: days }, (_, i) => {
           const day = i + 1;
-          return `<div class="cal-day ${counts[day] ? "has" : ""}"><b>${day}</b>${counts[day] ? `<small>${counts[day]}場</small>` : ""}</div>`;
+          const fullDate = `${state.month}-${String(day).padStart(2, "0")}`;
+          return `<button class="cal-day ${counts[day] ? "has" : ""} ${state.day === fullDate ? "selected" : ""}" data-day="${esc(fullDate)}"><b>${day}</b>${counts[day] ? `<small>${counts[day]}場</small>` : ""}</button>`;
         })
       );
       const monthRows = rows.filter(e => e.date.startsWith(state.month));
+      const shownRows = state.day ? monthRows.filter(e => e.date === state.day) : monthRows;
       return `
-        <section class="month-group">
-          <div class="calendar-nav">
-            <button data-month="-1">‹</button>
-            <div class="calendar-title">${esc(state.month.replace("-", "年"))}月</div>
-            <button data-month="1">›</button>
-          </div>
-          <div class="calendar-grid">
-            ${["日", "一", "二", "三", "四", "五", "六"].map(d => `<div class="weekday">${d}</div>`).join("")}
-            ${cells.join("")}
-          </div>
-        </section>
-        <section class="month-group">
-          <h3>${esc(state.month)} 場次</h3>
-          ${monthRows.map(e => `
-            <div class="day-row">
-              <div class="day">${esc(e.date.slice(5))}</div>
-              <div>
-                <a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">${esc(e.title)}</a>
-                <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
-              </div>
+        <div class="calendar-layout">
+          <section class="month-group">
+            <div class="calendar-nav">
+              <button data-month="-1">‹</button>
+              <div class="calendar-title">${esc(state.month.replace("-", "年"))}月</div>
+              <button data-month="1">›</button>
             </div>
-          `).join("")}
-        </section>
+            <div class="calendar-grid">
+              ${["日", "一", "二", "三", "四", "五", "六"].map(d => `<div class="weekday">${d}</div>`).join("")}
+              ${cells.join("")}
+            </div>
+          </section>
+          <section class="month-group">
+            <h3>${esc(state.day || state.month)} 場次</h3>
+            ${shownRows.map(e => `
+              <div class="day-row">
+                <div class="day">${esc(e.date.slice(5))}</div>
+                <div>
+                  <a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">${esc(e.title)}</a>
+                  <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
+                </div>
+              </div>
+            `).join("")}
+          </section>
+        </div>
       `;
     }
 
@@ -566,6 +582,7 @@
       $("viewTitle").textContent = titles[state.view];
       $("sortHint").textContent = state.view === "announcements" ? "排序：公告依日期新到舊，並按學會分組" : "排序：一律依活動日期由近到遠";
       $("exportICS").style.display = state.view === "announcements" ? "none" : "";
+      $("modeChips").style.display = ["list", "calendar"].includes(state.view) ? "" : "none";
       $("events").innerHTML = state.view === "announcements"
         ? renderAnnouncements(rows)
         : state.view === "calendar"
@@ -579,12 +596,19 @@
       if (e.target.tagName !== "BUTTON") return;
       state.view = e.target.dataset.view;
       state.month = "";
+      state.day = "";
       [...e.currentTarget.children].forEach(btn => btn.classList.toggle("active", btn === e.target));
       render();
     });
     $("events").addEventListener("click", (e) => {
       if (e.target.dataset.month) {
         state.month = shiftMonth(state.month, Number(e.target.dataset.month));
+        state.day = "";
+        render();
+      }
+      const dayButton = e.target.closest("[data-day]");
+      if (dayButton) {
+        state.day = state.day === dayButton.dataset.day ? "" : dayButton.dataset.day;
         render();
       }
       if (e.target.dataset.ics) {
