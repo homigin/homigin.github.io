@@ -1,14 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-05-28",
-    "title": "2026/05/28-05/31 IRCAD Taiwan Arthroscopy course (wrist and elbow)",
-    "source": "TSSH 台灣手外科醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://handsurgery.com.tw/2026-05-28-05-31-ircad-taiwan-arthroscopy-course-wrist-and-elbow/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-06-13",
     "title": "2026.06.13 2026年中華民國關節鏡及膝關節醫學會年會-雙城論壇, Tokyo vs. Taipei",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -27,58 +18,94 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-06-27",
-    "title": "Taiwan Shoulder and Elbow Society【2026 Knee Arthroscopic Workshop Course】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "運動醫學",
-    "place": "國立成功大學醫學院 臨床手術技能發展創新教室",
-    "url": "https://bone.org.tw/education/events/11519/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-06-27",
-    "title": "臺中榮民總醫院骨科部【微創脊椎內視鏡手術動物實作工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "臺中榮民總醫院教學大樓四樓",
-    "url": "https://bone.org.tw/education/events/11513/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-06-27",
-    "title": "臺北榮總骨科部 中華醫學會【2026第三屆脊柱側彎關懷月研討會： 矢狀面曲線的重要性，術後快速恢復暨手術工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "上午：臺北榮民總醫院 致德樓第十會議室 下午：中正樓三樓麻醉部會議室及手術房",
-    "url": "https://bone.org.tw/education/events/11494/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-06-27",
-    "title": "(VIPS-Essentials 2026) – Learning from the master 115.06.27(共1小時20分)、115.07.28(共4時30分)(1.3/2.3點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
+    "date": "2026-06-28",
+    "title": "2025 AAHKS Annual Meeting CME Course Now Available on LEARN",
+    "source": "AAHKS",
+    "cat": "關節重建",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4371.html",
+    "url": "https://www.aahks.org/2025-aahks-annual-meeting-cme-course-now-available-on-learn/",
     "mode": "實體"
   },
   {
     "date": "2026-06-28",
-    "title": "台灣區域麻醉暨止痛醫學會【疼痛擂台6：真實病人工作坊-腰臀同源】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "疼痛",
-    "place": "中山醫學大學 誠愛樓10樓",
-    "url": "https://bone.org.tw/education/events/11520/",
-    "mode": "lab"
+    "title": "2026 AAHKS Annual Meeting Keynote Speaker Announced",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/2026-aahks-annual-meeting-keynote-speaker-announced/",
+    "mode": "實體"
   },
   {
     "date": "2026-06-28",
-    "title": "疼痛擂台6：真實病人工作坊-腰臀同源115.06.28(共6時20分)(4點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
+    "title": "2026 AAHKS Annual Meeting Registration Opens Today!",
+    "source": "AAHKS",
+    "cat": "關節重建",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4423.html",
-    "mode": "lab"
+    "url": "https://www.aahks.org/2026-aahks-annual-meeting-registration-opens-today/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "AAHKS-Branded Events at OTA Annual Meeting",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/aahks-branded-events-at-ota-annual-meeting/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Final Reminder for Residents: YAG OITE Review Course",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/final-reminder-for-residents-yag-oite-review-course/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Fitness Instructor Robin Arzón Announced as Keynote Speaker for the 2026 AAHKS Annual Meeting",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/newsroom/press-releases/robin-arzon-2026-keynote-speaker/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "New Augment Highlights Final Paper of the 2025 Annual Meeting",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/new-augment-highlights-final-paper-of-the-2025-annual-meeting/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Resident Course Applications Open Monday, May 11",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/resident-course-applications-open-monday-may-11/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Residents: Register Now for YAG OITE Review Course",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/residents-register-now-for-yag-oite-review-course-2/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-06-28",
+    "title": "Special Courses Enhance #AAHKS2025 Education",
+    "source": "AAHKS",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://www.aahks.org/special-courses-enhance-aahks2025-education/",
+    "mode": "實體"
   },
   {
     "date": "2026-07-04",
@@ -108,6 +135,15 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-07-04",
+    "title": "老人肌力訓練工作坊-理論班115.07.04(共50分)(0.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "骨鬆",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4441.html",
+    "mode": "實體"
+  },
+  {
     "date": "2026-07-05",
     "title": "高高屏骨科聯誼會【肌關算盡，髖韌有餘】",
     "source": "TOA 台灣骨科醫學會",
@@ -123,6 +159,15 @@ window.ORTHO_EVENTS = [
     "cat": "創傷",
     "place": "埔基醫院-8樓謝緯紀念堂",
     "url": "https://bone.org.tw/education/events/11526/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-11",
+    "title": "肌肉骨骼系統超音波檢查工作坊—2026入門班115.07.11 (共6時40分)(6點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4453.html",
     "mode": "實體"
   },
   {
@@ -153,24 +198,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-07-19",
-    "title": "【5/19報名】2026/07/19骨鬆專科醫師學分班(台中)(僅限本會醫師報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=606&t=0",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-19",
-    "title": "【5/19報名】2026/07/19骨鬆衛教師認證課程及考試(台中)(僅限本會醫事人員報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=604&t=0",
-    "mode": "實體"
-  },
-  {
     "date": "2026-07-25",
     "title": "中華民國骨質疏鬆症學會【2026/07/25 2026年骨鬆管理新座標-北區場 精準順序療法與病患中心】",
     "source": "TOA 台灣骨科醫學會",
@@ -186,15 +213,6 @@ window.ORTHO_EVENTS = [
     "cat": "研究",
     "place": "臺大醫學院 303講堂",
     "url": "https://bone.org.tw/education/events/11539/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-25",
-    "title": "【歡迎報名】2026/07/25 2026年骨鬆管理新座標-北區場 精準順序療法與病患中心",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=622&t=0",
     "mode": "實體"
   },
   {
@@ -261,12 +279,12 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-08-16",
-    "title": "【6/16報名】2026/08/16骨鬆專科醫師學分班(台南)(僅限本會醫師報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
+    "date": "2026-08-20",
+    "title": "2026手術觀摩醫師交流計劃",
+    "source": "台灣關節鏡及膝關節醫學會",
+    "cat": "運動醫學",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0",
+    "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
   },
   {
@@ -276,15 +294,6 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "衛生福利部臺南醫院 急診大樓6樓 大會議廳",
     "url": "https://bone.org.tw/education/events/11529/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "【7/19開始報名(技術師班)】2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Technologist ",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
     "mode": "實體"
   },
   {
