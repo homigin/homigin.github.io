@@ -1,12 +1,11 @@
 {
-  "updated": "2026-06-28T21:06:00",
-  "events": 34,
+  "updated": "2026-07-05T21:04:42",
+  "events": 32,
   "announcements": 13,
   "webinars": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7f8eed5f8650>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
-    "TSES 台灣肩肘醫學會": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-    "台灣骨質疏鬆症學會": "ReadTimeout: HTTPSConnectionPool(host='www.toa1997.org.tw', port=443): Read timed out. (read timeout=6)",
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7fac063cfb60>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "台灣骨質疏鬆症學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.toa1997.org.tw/",
     "Chang Gung STARC": "HTTPError: 403 Client Error: Forbidden for url: https://starc.cgmh.org.tw/",
     "OTA": "HTTPError: 403 Client Error: Forbidden for url: https://ota.org/education/person-events/meetings-and-courses"
   },
