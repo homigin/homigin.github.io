@@ -1,14 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-05-28",
-    "title": "2026/05/28-05/31 IRCAD Taiwan Arthroscopy course (wrist and elbow)",
-    "source": "TSSH 台灣手外科醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://handsurgery.com.tw/2026-05-28-05-31-ircad-taiwan-arthroscopy-course-wrist-and-elbow/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-06-13",
     "title": "2026.06.13 2026年中華民國關節鏡及膝關節醫學會年會-雙城論壇, Tokyo vs. Taipei",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -27,102 +18,39 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-06-27",
-    "title": "Taiwan Shoulder and Elbow Society【2026 Knee Arthroscopic Workshop Course】",
-    "source": "TOA 台灣骨科醫學會",
+    "date": "2026-07-11",
+    "title": "【活動取消】2026.07.11 大體膝關節鏡實作研習會 2026 Knee Arthroscopic Workshop Course",
+    "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
-    "place": "國立成功大學醫學院 臨床手術技能發展創新教室",
-    "url": "https://bone.org.tw/education/events/11519/",
+    "place": "原公告",
+    "url": "https://www.taiwanarthroscopy.org.tw/conference/%e3%80%90%e6%b4%bb%e5%8b%95%e5%8f%96%e6%b6%88%e3%80%912026-07-11-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-knee-arthroscopic-workshop-cou/",
     "mode": "lab"
   },
   {
-    "date": "2026-06-27",
-    "title": "臺中榮民總醫院骨科部【微創脊椎內視鏡手術動物實作工作坊】",
+    "date": "2026-07-12",
+    "title": "台灣延緩衰老暨細胞再生醫學會【第二十屆諾貝爾大健康論壇 / Forum 4 整合醫學暨再生醫學論壇 Symposium 9 第十八屆 延緩衰老與再生醫學研討會】",
     "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "臺中榮民總醫院教學大樓四樓",
-    "url": "https://bone.org.tw/education/events/11513/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-06-27",
-    "title": "臺北榮總骨科部 中華醫學會【2026第三屆脊柱側彎關懷月研討會： 矢狀面曲線的重要性，術後快速恢復暨手術工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "上午：臺北榮民總醫院 致德樓第十會議室 下午：中正樓三樓麻醉部會議室及手術房",
-    "url": "https://bone.org.tw/education/events/11494/",
+    "cat": "綜合",
+    "place": "張榮發基金會國際會議中心 10樓 1003會議室",
+    "url": "https://bone.org.tw/education/events/11550/",
     "mode": "實體"
   },
   {
-    "date": "2026-06-27",
-    "title": "(VIPS-Essentials 2026) – Learning from the master 115.06.27(共1小時20分)、115.07.28(共4時30分)(1.3/2.3點)",
+    "date": "2026-07-12",
+    "title": "失眠與疼痛 -- 運用腦心連結找出最適合你的芳香醫學 115.07.12(共6時30分)(3點)",
     "source": "復健醫學會 MSK / sports / pain",
     "cat": "疼痛",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4371.html",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4461.html",
     "mode": "實體"
   },
   {
-    "date": "2026-06-28",
-    "title": "台灣區域麻醉暨止痛醫學會【疼痛擂台6：真實病人工作坊-腰臀同源】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "疼痛",
-    "place": "中山醫學大學 誠愛樓10樓",
-    "url": "https://bone.org.tw/education/events/11520/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-06-28",
-    "title": "疼痛擂台6：真實病人工作坊-腰臀同源115.06.28(共6時20分)(4點)",
+    "date": "2026-07-17",
+    "title": "Vision Interventional Pain Symposium (VIPS 2026) 115.07.17(共50分)、115.07.18(共5時40分)、115.07.19(共5時40分)(0.8/2.8/2.8點)",
     "source": "復健醫學會 MSK / sports / pain",
     "cat": "疼痛",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4423.html",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-07-04",
-    "title": "台灣人工關節教育學會【TAES Annual Current Concepts in Knee Joint Replacement】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "關節重建",
-    "place": "臺北晶華酒店 3F 宴會廳",
-    "url": "https://bone.org.tw/education/events/11500/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-04",
-    "title": "新竹臺大分院骨科部【桃竹苗地區骨科學術研討論】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "和選旅THE HO HOTEL飯店一樓會議廳",
-    "url": "https://bone.org.tw/education/events/11533/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-04",
-    "title": "高醫附院骨科部【AI時代的臨床研究：高效研究者養成與無程式碼研究計畫實作工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "研究",
-    "place": "高醫附院啟川大樓13ES骨科部討論室",
-    "url": "https://bone.org.tw/education/events/11528/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-05",
-    "title": "高高屏骨科聯誼會【肌關算盡，髖韌有餘】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "高雄福華大飯店七樓 金鳳廳",
-    "url": "https://bone.org.tw/education/events/11524/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-10",
-    "title": "埔基醫療財團法人埔里基督教醫院【創傷休克】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "創傷",
-    "place": "埔基醫院-8樓謝緯紀念堂",
-    "url": "https://bone.org.tw/education/events/11526/",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4372.html",
     "mode": "實體"
   },
   {
@@ -136,12 +64,39 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-18",
+    "title": "中華民國骨質疏鬆症學會【20260718 From Access to Action Opening a New Era in Osteoporosis Care】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "台北寒舍艾麗酒店（Humble House Taipei）三樓宴會廳",
+    "url": "https://bone.org.tw/education/events/11543/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-18",
     "title": "台灣脊椎微創內視鏡醫學會【2026 脊椎微創內視鏡醫學會仿真模型手術體驗工作坊-高雄長庚場】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "脊椎",
     "place": "高雄長庚醫院 醫學大樓外科第二會議室",
     "url": "https://bone.org.tw/education/events/11535/",
     "mode": "lab"
+  },
+  {
+    "date": "2026-07-18",
+    "title": "台灣骨鬆肌少關節防治學會【TBMJ 骨骼優化論壇-骨肌關新視野 (線上研討會)】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "線上研討會",
+    "url": "https://bone.org.tw/education/events/11546/",
+    "mode": "線上"
+  },
+  {
+    "date": "2026-07-18",
+    "title": "TBMJ 骨骼優化論壇-骨肌關新視野 (線上研討會) 115.07.18(共1時15分)(0.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "骨鬆",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4450.html",
+    "mode": "線上"
   },
   {
     "date": "2026-07-19",
@@ -154,7 +109,7 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-19",
-    "title": "【5/19報名】2026/07/19骨鬆專科醫師學分班(台中)(僅限本會醫師報名)",
+    "title": "【歡迎報名】2026/07/19骨鬆專科醫師學分班(台中)(僅限本會醫師報名)",
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
@@ -163,11 +118,20 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-19",
-    "title": "【5/19報名】2026/07/19骨鬆衛教師認證課程及考試(台中)(僅限本會醫事人員報名)",
+    "title": "【歡迎報名】2026/07/19骨鬆衛教師認證課程及考試(台中)(僅限本會醫事人員報名)",
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=604&t=0",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "三軍總醫院【三軍總醫院【中華民國骨科醫學會115年度7月份北區月會】】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "三軍總醫院地下一樓 第二演講廳",
+    "url": "https://bone.org.tw/education/events/11551/",
     "mode": "實體"
   },
   {
@@ -199,6 +163,15 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-26",
+    "title": "中華民國關節鏡及膝關節醫學會【住院醫師聯合教育訓練課程】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "運動醫學",
+    "place": "林口長庚醫院兒童醫院12K會議廳",
+    "url": "https://bone.org.tw/education/events/11547/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-26",
     "title": "2026.07.26 住院醫師聯合教育訓練課程",
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
@@ -222,6 +195,15 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "台中洲際酒店",
     "url": "https://bone.org.tw/education/events/11541/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-01",
+    "title": "台灣骨科足踝醫學會【2026 台灣骨科足踝醫學會年會暨台灣足踝醫學聯合學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "足踝",
+    "place": "臺中榮民總醫院研究大樓1F 第二、四會議室",
+    "url": "https://bone.org.tw/education/events/11548/",
     "mode": "實體"
   },
   {
@@ -262,11 +244,20 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-08-16",
-    "title": "【6/16報名】2026/08/16骨鬆專科醫師學分班(台南)(僅限本會醫師報名)",
+    "title": "【歡迎報名】2026/08/16骨鬆專科醫師學分班(台南)(僅限本會醫師報名)",
     "source": "台灣骨質疏鬆症學會",
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-20",
+    "title": "2026手術觀摩醫師交流計劃",
+    "source": "台灣關節鏡及膝關節醫學會",
+    "cat": "運動醫學",
+    "place": "原公告",
+    "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
   },
   {

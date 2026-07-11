@@ -1,15 +1,15 @@
 window.ORTHO_WEBINARS = [
   {
-    "date": "2026-06-29",
-    "title": "SALVAGE OF ANKLE FRACTURES – HOW FAR CAN WE GO? ",
+    "date": "2026-08-31",
+    "title": "EFORT EDUCATIONAL WEBINAR AUGUST 2026 EFORT Webinar | DIGITALISATION & AI IN ORTHOPAEDICS & TRAUMATOLOGY SERIES: TRANSLATING APPLICATIONS OF",
     "source": "EFORT",
     "cat": "創傷",
     "place": "線上",
-    "url": "https://efort.webinargeek.com/20260629",
+    "url": "https://efort.webinargeek.com/20260831",
     "mode": "線上"
   },
   {
-    "date": "2026-06-27",
+    "date": "2026-07-11",
     "title": "AO Spine / Trauma / Recon webinars search",
     "source": "AO Foundation",
     "cat": "Webinar",

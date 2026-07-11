@@ -1,95 +1,112 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Homigin's Garden</title><link>https://homigin.github.io/</link><description>Recent content on Homigin's Garden</description><generator>Hugo -- 0.146.0</generator><language>en</language><lastBuildDate>Sat, 26 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://homigin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>I finally found a solution for my messy youtube subscriptions</title><link>https://homigin.github.io/life/i-finally-found-a-solution-for-my-messy-youtube-subscriptions_zh/</link><pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate><guid>https://homigin.github.io/life/i-finally-found-a-solution-for-my-messy-youtube-subscriptions_zh/</guid><description>&lt;p>我是一個會訂閱超多 YouTube 頻道的人：健身、程式、音樂、videography、醫學、旅遊、美食、奇怪知識……你可能跟我一樣，興趣太廣，最後變成每次打開 YouTube 都在雜亂的訂閱裡翻找。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Homigin's Garden</title><link>https://homigin.github.io/</link><description>Recent content on Homigin's Garden</description><generator>Hugo -- 0.163.3</generator><language>zh-TW</language><managingEditor>dr.chiayuan.chen@gmail.com (Homigin)</managingEditor><webMaster>dr.chiayuan.chen@gmail.com (Homigin)</webMaster><lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://homigin.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>資源</title><link>https://homigin.github.io/resources/</link><pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/resources/</guid><description>我常用的工具、外部文章與覺得值得收藏的好資源。</description></item><item><title>工具</title><link>https://homigin.github.io/tools/</link><pubDate>Sat, 27 Jun 2026 00:00:00 +0800</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/tools/</guid><description>我把骨科學習、臨床整理與重複查找的麻煩，做成自己會用的小工具。</description></item><item><title>關於我</title><link>https://homigin.github.io/about/</link><pubDate>Sat, 27 Jun 2026 00:00:00 +0800</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/about/</guid><description>Chia-Yuan / Homigin, MD 的學經歷、專長、發表與聯繫方式。</description></item><item><title>I finally found a solution for my messy youtube subscriptions</title><link>https://homigin.github.io/life/i-finally-found-a-solution-for-my-messy-youtube-subscriptions_zh/</link><pubDate>Fri, 25 Jul 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/life/i-finally-found-a-solution-for-my-messy-youtube-subscriptions_zh/</guid><description>&lt;p&gt;我是一個會訂閱超多 YouTube 頻道的人：健身、程式、音樂、videography、醫學、旅遊、美食、奇怪知識……你可能跟我一樣，興趣太廣，最後變成每次打開 YouTube 都在雜亂的訂閱裡翻找。
 有時只是想放鬆看個音樂，卻不小心被演算法帶去看了一堆投資頻道；或者明明有幾個很愛的創作者更新了影片，卻被淹沒在茫茫通知海裡，根本找不到。
-直到我找到一個超實用的工具：&lt;strong>PocketTube&lt;/strong>。&lt;/p>
-&lt;h2 id="為什麼是-pockettube">為什麼是 PocketTube？&lt;/h2>
-&lt;p>我嘗試過把喜歡的頻道加入播放清單、用瀏覽器書籤分類，但都不夠直覺、不夠方便。PocketTube 完全解決了我的痛點：
-✅ 可以像資料夾一樣&lt;strong>分類你的 YouTube 訂閱&lt;/strong>
-✅ 每個分類可以&lt;strong>顯示當日有新影片的頻道&lt;/strong>
+直到我找到一個超實用的工具：&lt;strong&gt;PocketTube&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id="為什麼是-pockettube"&gt;為什麼是 PocketTube？&lt;/h2&gt;
+&lt;p&gt;我嘗試過把喜歡的頻道加入播放清單、用瀏覽器書籤分類，但都不夠直覺、不夠方便。PocketTube 完全解決了我的痛點：
+✅ 可以像資料夾一樣&lt;strong&gt;分類你的 YouTube 訂閱&lt;/strong&gt;
+✅ 每個分類可以&lt;strong&gt;顯示當日有新影片的頻道&lt;/strong&gt;
 ✅ 在 YouTube 介面直接整合，不用切來切去
-✅ 還可以用標籤、顏色標記，更好找影片&lt;/p>
-&lt;p>我終於可以依照各種分類來看影片了。比起用演算法亂推薦，現在是我自己決定我要看什麼，超有掌控感。&lt;/p>
-&lt;h2 id="pockettube-適合誰">PocketTube 適合誰？&lt;/h2>
-&lt;ul>
-&lt;li>像我一樣訂閱超過 700 個頻道的重度使用者&lt;/li>
-&lt;li>想建立學習路線（例如分成醫學、寫作、健身）的人&lt;/li>
-&lt;li>想減少演算法干擾、自己挑影片看的人&lt;/li>
-&lt;li>喜歡整理資訊、提升效率的人（你會愛上分類功能）&lt;/li>
-&lt;/ul>
-&lt;h2 id="怎麼使用">怎麼使用？&lt;/h2>
-&lt;p>PocketTube 是一個&lt;strong>Chrome / Firefox 擴充套件&lt;/strong>，也有 Android / iOS App。
-只要安裝後登入 YouTube 帳號，就可以開始拖拉分類，建立自己的影片資料庫。還能同步手機與電腦，隨時管理。他的官方youtube 也有詳細的介紹影片可以參考喔。&lt;/p>
-&lt;p>希望這篇小分享能幫助也被 YouTube 訂閱困擾的你，重新找回觀看的自由與效率。
-👉 PocketTube 官網：&lt;a href="https://yousub.info/">https://yousub.info&lt;/a>&lt;/p>
-&lt;p>歡迎留言跟我分享你會怎麼分類你的訂閱！&lt;/p></description></item><item><title>Essentials of Strength Training and Conditioning</title><link>https://homigin.github.io/garden/essentials-of-strength-training-and-conditioning/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><guid>https://homigin.github.io/garden/essentials-of-strength-training-and-conditioning/</guid><description>&lt;p>Essentials of Strength Training and Conditioning 考點&lt;/p>
-&lt;h1 id="ch1-structure-and-function">Ch.1 Structure and Function&lt;/h1>
-&lt;p>describe both the macrostructure and microstructure of muscle and bone,• describe the sliding-filament theory of muscular contraction,• describe the specific morphological and physiological characteristics of different muscle fiber types and predict their relative involvement in different sport events, and• describe the anatomical and physiological characteristics of the cardiovascular and respiratory systems.
-ls-type:: annotation
-hl-page:: 17
-hl-color:: blue&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="structures-of-muscle-and-bone">Structures of muscle and bone&lt;/h3>
-&lt;ul>
-&lt;li>
-&lt;p>Muscle belly → fascicle → fiber → myofibril → myofilaments（actin &amp;amp; myosin）&lt;/p></description></item><item><title>Harrison's</title><link>https://homigin.github.io/medicine/harrisons/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><guid>https://homigin.github.io/medicine/harrisons/</guid><description>&lt;p>&lt;img alt="Harrison&amp;rsquo;s 21ed.pdf" loading="lazy" src="https://homigin.github.io/assets/harrison's_21ed_1706760046551_0.pdf">
-page + 40&lt;/p>
-&lt;h2 id="part-1-the-profession-of-medicine">Part 1 The profession of medicine&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;h2 id="the-practice-of-medicine">The practice of medicine&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>To wrest from nature the secrets which have perplexed philosophers in all ages, to track to their sources the causes of disease, to correlate the vast stores of knowledge, that they may be quickly available for the prevention and cure of disease—these are our ambitions.
-—William Osler, 1849–1919&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Jameson JL, Longo DL: Precision medicine—personalized, problem-
-atic, and promising. N Engl J Med 372:2229, 2015.&lt;/p></description></item><item><title>NCS</title><link>https://homigin.github.io/medicine/ncs/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><guid>https://homigin.github.io/medicine/ncs/</guid><description/></item><item><title>Stroke Prevention in Atrial Fibrillation</title><link>https://homigin.github.io/medicine/stroke-prevention-in-atrial-fibrillation/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://homigin.github.io/medicine/stroke-prevention-in-atrial-fibrillation/</guid><description>&lt;p>Attachments&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="https://vbn.aau.dk/ws/files/484295076/Chiang_et_al._2022_Stroke_Prevention_in_Atrial_Fibrillation.pdf">Chiang et al_2022_Stroke Prevention in Atrial Fibrillation.pdf&lt;/a> {{zotero-imported-file WAMDXZGJ, &amp;ldquo;Chiang et al_2022_Stroke Prevention in Atrial Fibrillation.pdf&amp;rdquo;}}&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001648-fx1_lrg.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001648-fx1_lrg.jpg">&lt;/p>
-&lt;h2 id="prevalence-of-af-in-asia">Prevalence of Af in Asia&lt;/h2>
-&lt;ul>
-&lt;li>亞洲台灣地區在2020年的 Afib 患病率約為1.5％，預計到2050年將達到4.0％。&lt;/li>
-&lt;/ul>
-&lt;p>亞洲的 Afib 患病率正在增加，可以使用多種評分方案（例如C2HEST 和 Taiwan AF scores）來預測亞洲患者發生房顫的風險。
-&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001661-gr1.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001661-gr1.jpg">&lt;/p>
-&lt;h2 id="assessmentre-assessment-of-stroke-and-bleeding-risks">Assessment/re-Assessment of Stroke and Bleeding Risks&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>亞洲Afib 患者每年中風風險約為3.0%&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>對於亞洲房顫患者，我們建議使用CHA2DS2-VASc和HAS-BLED評分來評估中風和出血風險。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>對於CHA2DS2-VASc評分男性≥1分，女性≥2分的亞洲房顫患者，應提供口服抗凝藥物。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>患者年齡增長和併發症的發生會使中風和出血風險發生變化，因此，CHA2DS2-VASc和HAS-BLED評分應定期重新評估，最好在每次看門診時進行評估。&lt;/p>
-&lt;ul>
-&lt;li>亞太地區心律協會(APHRS)建議：中風風險應定期重新評估
-（至少每年一次，如有可能，每4個月一次）。&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>強調高HAS-BLED評分不應成為不給房顫患者處方或停用口服抗凝藥物的原因。&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>HAS-BLED評分≥3的 afib 患者，使用口服抗凝藥物與缺血性中風、顱內出血或死亡的綜合不良事件風險較低（4.19/100人年 vs 5.22/100人年，調整HR：0.781，P = 0.04）。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>對於baseline HAS-BLED評分為0-2且增加到≥3的服用抗凝藥物的房顫患者，繼續使用口服抗凝藥物與更好的臨床結果相關。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>HAS-BLED score 可以幫助醫生識別和糾正可改變的出血風險因素，對正在抗凝治療的房顫患者進行干預。&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="abc-pathway">ABC Pathway&lt;/h2>
-&lt;p>&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001661-fx1.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001661-fx1.jpg">&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>ABC pathway - 較低的 all-cause death, cardiovascular death, stroke, and major bleeding 風險&lt;/p></description></item></channel></rss>
+✅ 還可以用標籤、顏色標記，更好找影片&lt;/p&gt;
+&lt;p&gt;我終於可以依照各種分類來看影片了。比起用演算法亂推薦，現在是我自己決定我要看什麼，超有掌控感。&lt;/p&gt;
+&lt;h2 id="pockettube-適合誰"&gt;PocketTube 適合誰？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;像我一樣訂閱超過 700 個頻道的重度使用者&lt;/li&gt;
+&lt;li&gt;想建立學習路線（例如分成醫學、寫作、健身）的人&lt;/li&gt;
+&lt;li&gt;想減少演算法干擾、自己挑影片看的人&lt;/li&gt;
+&lt;li&gt;喜歡整理資訊、提升效率的人（你會愛上分類功能）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="怎麼使用"&gt;怎麼使用？&lt;/h2&gt;
+&lt;p&gt;PocketTube 是一個&lt;strong&gt;Chrome / Firefox 擴充套件&lt;/strong&gt;，也有 Android / iOS App。
+只要安裝後登入 YouTube 帳號，就可以開始拖拉分類，建立自己的影片資料庫。還能同步手機與電腦，隨時管理。他的官方youtube 也有詳細的介紹影片可以參考喔。&lt;/p&gt;
+&lt;p&gt;希望這篇小分享能幫助也被 YouTube 訂閱困擾的你，重新找回觀看的自由與效率。
+👉 PocketTube 官網：&lt;a href="https://yousub.info/"&gt;https://yousub.info&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;歡迎留言跟我分享你會怎麼分類你的訂閱！&lt;/p&gt;</description></item><item><title>Ch. 13 Administration, Scoring, and Interpretation of Selected Tests</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch13-administration-scoring-and-interpretation-of-selected-tests/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch13-administration-scoring-and-interpretation-of-selected-tests/</guid><description>Study notes for Ch. 13 Administration, Scoring, and Interpretation of Selected Tests from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch. 17 Program Design for Resistance Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch17-program-design-for-resistance-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch17-program-design-for-resistance-training/</guid><description>Study notes for Ch. 17 Program Design for Resistance Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch. 21 Periodization</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch21-periodization/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch21-periodization/</guid><description>Study notes for Ch. 21 Periodization from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.1 Structure and Function</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch01-structure-and-function/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch01-structure-and-function/</guid><description>Study notes for Ch.1 Structure and Function from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.10 Nutrition Strategies for Maximizing Performance</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch10-nutrition-strategies-for-maximizing-performance/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch10-nutrition-strategies-for-maximizing-performance/</guid><description>Study notes for Ch.10 Nutrition Strategies for Maximizing Performance from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.11 Performance-Enhancing Substances and Methods</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch11-performance-enhancing-substances-and-methods/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch11-performance-enhancing-substances-and-methods/</guid><description>Study notes for Ch.11 Performance-Enhancing Substances and Methods from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.12 Principles of Test Selection and Administration</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch12-principles-of-test-selection-and-administration/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch12-principles-of-test-selection-and-administration/</guid><description>Study notes for Ch.12 Principles of Test Selection and Administration from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.14 Warm-Up and Flexibility Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch14-warm-up-and-flexibility-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch14-warm-up-and-flexibility-training/</guid><description>Study notes for Ch.14 Warm-Up and Flexibility Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.15 Exercise Technique for Free Weight and Machine Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch15-exercise-technique-for-free-weight-and-machine-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch15-exercise-technique-for-free-weight-and-machine-training/</guid><description>Study notes for Ch.15 Exercise Technique for Free Weight and Machine Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.16 Exercise Technique for Alternative Modes and Nontraditional Implement Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch16-exercise-technique-for-alternative-modes-and-nontraditional-implement-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch16-exercise-technique-for-alternative-modes-and-nontraditional-implement-training/</guid><description>Study notes for Ch.16 Exercise Technique for Alternative Modes and Nontraditional Implement Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.18 Program Design and Technique for Plyometric Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch18-program-design-and-technique-for-plyometric-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch18-program-design-and-technique-for-plyometric-training/</guid><description>Study notes for Ch.18 Program Design and Technique for Plyometric Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.19 Program Design and Technique for Speed and Agility Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch19-program-design-and-technique-for-speed-and-agility-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch19-program-design-and-technique-for-speed-and-agility-training/</guid><description>Study notes for Ch.19 Program Design and Technique for Speed and Agility Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.2 Biomechanics</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch02-biomechanics/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch02-biomechanics/</guid><description>Study notes for Ch.2 Biomechanics from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.20 Program Design and Technique for Aerobic Endurance Training</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch20-program-design-and-technique-for-aerobic-endurance-training/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch20-program-design-and-technique-for-aerobic-endurance-training/</guid><description>Study notes for Ch.20 Program Design and Technique for Aerobic Endurance Training from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.22 Rehabilitation and Reconditioning</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch22-rehabilitation-and-reconditioning/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch22-rehabilitation-and-reconditioning/</guid><description>Study notes for Ch.22 Rehabilitation and Reconditioning from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.23 Facility Design, Layout, and Organization</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch23-facility-design-layout-and-organization/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch23-facility-design-layout-and-organization/</guid><description>Study notes for Ch.23 Facility Design, Layout, and Organization from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.24 Facility Policies, Procedures, and Legal Issues</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch24-facility-policies-procedures-and-legal-issues/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch24-facility-policies-procedures-and-legal-issues/</guid><description>Study notes for Ch.24 Facility Policies, Procedures, and Legal Issues from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.3 Bioenergetics</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch03-bioenergetics/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch03-bioenergetics/</guid><description>Study notes for Ch.3 Bioenergetics from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.4 Endocrine Responses to Resistance Exercise</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch04-endocrine-responses-to-resistance-exercise/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch04-endocrine-responses-to-resistance-exercise/</guid><description>Study notes for Ch.4 Endocrine Responses to Resistance Exercise from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.5 Adaptations to Anaerobic Training Programs</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch05-adaptations-to-anaerobic-training-programs/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch05-adaptations-to-anaerobic-training-programs/</guid><description>Study notes for Ch.5 Adaptations to Anaerobic Training Programs from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.6 Adaptations to Aerobic Endurance Training Programs</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch06-adaptations-to-aerobic-endurance-training-programs/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch06-adaptations-to-aerobic-endurance-training-programs/</guid><description>Study notes for Ch.6 Adaptations to Aerobic Endurance Training Programs from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.7 Age- and Sex-Related Differences and Their Implications for Resistance Exercise</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch07-age-and-sex-related-differences-and-their-implications-for-resistance-exercise/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch07-age-and-sex-related-differences-and-their-implications-for-resistance-exercise/</guid><description>Study notes for Ch.7 Age- and Sex-Related Differences and Their Implications for Resistance Exercise from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.8 Psychology of Athletic Preparation and Performance</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch08-psychology-of-athletic-preparation-and-performance/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch08-psychology-of-athletic-preparation-and-performance/</guid><description>Study notes for Ch.8 Psychology of Athletic Preparation and Performance from Essentials of Strength Training and Conditioning.</description></item><item><title>Ch.9 Basic Nutrition Factors in Health</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch09-basic-nutrition-factors-in-health/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/ch09-basic-nutrition-factors-in-health/</guid><description>Study notes for Ch.9 Basic Nutrition Factors in Health from Essentials of Strength Training and Conditioning.</description></item><item><title>Essentials of Strength Training and Conditioning</title><link>https://homigin.github.io/garden/essentials-strength-training-conditioning/</link><pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/garden/essentials-strength-training-conditioning/</guid><description>&lt;h1 id="essentials-of-strength-training-and-conditioning-考點"&gt;Essentials of Strength Training and Conditioning 考點&lt;/h1&gt;
+&lt;p&gt;這份筆記已依章節拆成獨立文章。&lt;/p&gt;
+&lt;h2 id="chapters"&gt;Chapters&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch01-structure-and-function/"&gt;Ch.1 Structure and Function&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch02-biomechanics/"&gt;Ch.2 Biomechanics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch03-bioenergetics/"&gt;Ch.3 Bioenergetics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch04-endocrine-responses-to-resistance-exercise/"&gt;Ch.4 Endocrine Responses to Resistance Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch05-adaptations-to-anaerobic-training-programs/"&gt;Ch.5 Adaptations to Anaerobic Training Programs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch06-adaptations-to-aerobic-endurance-training-programs/"&gt;Ch.6 Adaptations to Aerobic Endurance Training Programs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch07-age-and-sex-related-differences-and-their-implications-for-resistance-exercise/"&gt;Ch.7 Age- and Sex-Related Differences and Their Implications for Resistance Exercise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch08-psychology-of-athletic-preparation-and-performance/"&gt;Ch.8 Psychology of Athletic Preparation and Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch09-basic-nutrition-factors-in-health/"&gt;Ch.9 Basic Nutrition Factors in Health&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch10-nutrition-strategies-for-maximizing-performance/"&gt;Ch.10 Nutrition Strategies for Maximizing Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch11-performance-enhancing-substances-and-methods/"&gt;Ch.11 Performance-Enhancing Substances and Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch12-principles-of-test-selection-and-administration/"&gt;Ch.12 Principles of Test Selection and Administration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch13-administration-scoring-and-interpretation-of-selected-tests/"&gt;Ch. 13 Administration, Scoring, and Interpretation of Selected Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch14-warm-up-and-flexibility-training/"&gt;Ch.14 Warm-Up and Flexibility Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch15-exercise-technique-for-free-weight-and-machine-training/"&gt;Ch.15 Exercise Technique for Free Weight and Machine Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch16-exercise-technique-for-alternative-modes-and-nontraditional-implement-training/"&gt;Ch.16 Exercise Technique for Alternative Modes and Nontraditional Implement Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch17-program-design-for-resistance-training/"&gt;Ch. 17 Program Design for Resistance Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch18-program-design-and-technique-for-plyometric-training/"&gt;Ch.18 Program Design and Technique for Plyometric Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch19-program-design-and-technique-for-speed-and-agility-training/"&gt;Ch.19 Program Design and Technique for Speed and Agility Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch20-program-design-and-technique-for-aerobic-endurance-training/"&gt;Ch.20 Program Design and Technique for Aerobic Endurance Training&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch21-periodization/"&gt;Ch. 21 Periodization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch22-rehabilitation-and-reconditioning/"&gt;Ch.22 Rehabilitation and Reconditioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch23-facility-design-layout-and-organization/"&gt;Ch.23 Facility Design, Layout, and Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://homigin.github.io/garden/essentials-strength-training-conditioning/ch24-facility-policies-procedures-and-legal-issues/"&gt;Ch.24 Facility Policies, Procedures, and Legal Issues&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Harrison's</title><link>https://homigin.github.io/medicine/harrisons/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/medicine/harrisons/</guid><description>&lt;p&gt;&lt;img alt="Harrison&amp;rsquo;s 21ed.pdf" loading="lazy" src="https://homigin.github.io/assets/harrison's_21ed_1706760046551_0.pdf"&gt;
+page + 40&lt;/p&gt;
+&lt;h2 id="part-1-the-profession-of-medicine"&gt;Part 1 The profession of medicine&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2 id="the-practice-of-medicine"&gt;The practice of medicine&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To wrest from nature the secrets which have perplexed philosophers in all ages, to track to their sources the causes of disease, to correlate the vast stores of knowledge, that they may be quickly available for the prevention and cure of disease—these are our ambitions.
+—William Osler, 1849–1919&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Jameson JL, Longo DL: Precision medicine—personalized, problem-
+atic, and promising. N Engl J Med 372:2229, 2015.&lt;/p&gt;</description></item><item><title>NCS</title><link>https://homigin.github.io/medicine/ncs/</link><pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/medicine/ncs/</guid><description/></item><item><title>Stroke Prevention in Atrial Fibrillation</title><link>https://homigin.github.io/medicine/stroke-prevention-in-atrial-fibrillation/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><author>dr.chiayuan.chen@gmail.com (Homigin)</author><guid>https://homigin.github.io/medicine/stroke-prevention-in-atrial-fibrillation/</guid><description>&lt;p&gt;Attachments&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vbn.aau.dk/ws/files/484295076/Chiang_et_al._2022_Stroke_Prevention_in_Atrial_Fibrillation.pdf"&gt;Chiang et al_2022_Stroke Prevention in Atrial Fibrillation.pdf&lt;/a&gt; {{zotero-imported-file WAMDXZGJ, &amp;ldquo;Chiang et al_2022_Stroke Prevention in Atrial Fibrillation.pdf&amp;rdquo;}}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001648-fx1_lrg.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001648-fx1_lrg.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="prevalence-of-af-in-asia"&gt;Prevalence of Af in Asia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;亞洲台灣地區在2020年的 Afib 患病率約為1.5％，預計到2050年將達到4.0％。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;亞洲的 Afib 患病率正在增加，可以使用多種評分方案（例如C2HEST 和 Taiwan AF scores）來預測亞洲患者發生房顫的風險。
+&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001661-gr1.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001661-gr1.jpg"&gt;&lt;/p&gt;
+&lt;h2 id="assessmentre-assessment-of-stroke-and-bleeding-risks"&gt;Assessment/re-Assessment of Stroke and Bleeding Risks&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;亞洲Afib 患者每年中風風險約為3.0%&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對於亞洲房顫患者，我們建議使用CHA2DS2-VASc和HAS-BLED評分來評估中風和出血風險。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對於CHA2DS2-VASc評分男性≥1分，女性≥2分的亞洲房顫患者，應提供口服抗凝藥物。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;患者年齡增長和併發症的發生會使中風和出血風險發生變化，因此，CHA2DS2-VASc和HAS-BLED評分應定期重新評估，最好在每次看門診時進行評估。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;亞太地區心律協會(APHRS)建議：中風風險應定期重新評估
+（至少每年一次，如有可能，每4個月一次）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;強調高HAS-BLED評分不應成為不給房顫患者處方或停用口服抗凝藥物的原因。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;HAS-BLED評分≥3的 afib 患者，使用口服抗凝藥物與缺血性中風、顱內出血或死亡的綜合不良事件風險較低（4.19/100人年 vs 5.22/100人年，調整HR：0.781，P = 0.04）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;對於baseline HAS-BLED評分為0-2且增加到≥3的服用抗凝藥物的房顫患者，繼續使用口服抗凝藥物與更好的臨床結果相關。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HAS-BLED score 可以幫助醫生識別和糾正可改變的出血風險因素，對正在抗凝治療的房顫患者進行干預。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="abc-pathway"&gt;ABC Pathway&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="https://ars.els-cdn.com/content/image/1-s2.0-S2772374722001661-fx1.jpg" loading="lazy" src="https://ars.els-cdn.com/content/image/1-s2.0-s2772374722001661-fx1.jpg"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ABC pathway - 較低的 all-cause death, cardiovascular death, stroke, and major bleeding 風險&lt;/p&gt;</description></item></channel></rss>
