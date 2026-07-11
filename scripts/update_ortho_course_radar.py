@@ -81,6 +81,9 @@ ANN_DROP = re.compile(EVENT_WORDS.pattern + r"|報名|registration|replay|watch|
 AO_WEBINAR_URL = "https://www.aofoundation.org/spine/education/Courses-Events#f-medical_specialty=AO+Spine%7CAO+Trauma%7CAO+Recon&f-format=Webinar+%2F+Webcast&f-region=Asia+Pacific%7CGlobal&s-start_date_descending"
 EFORT_WEBINAR_URL = "https://www.efort.org/webinars/"
 AAHKS_SEARCH_API = "https://www.aahks.org/wp-json/wp/v2/search?per_page=5&search="
+AAHKS_KEEP = re.compile(r"register now|registration now open|applications open|join .+course", re.I)
+AAHKS_DROP = re.compile(r"keynote|speaker|CME|highlight|abstract|exhibitor|paper|press release|branded events|agenda", re.I)
+AAHKS_MONTH = re.compile(r"\b(Jan\.?|January|Feb\.?|February|Mar\.?|March|Apr\.?|April|May|Jun\.?|June|Jul\.?|July|Aug\.?|August|Sep\.?|Sept\.?|September|Oct\.?|October|Nov\.?|November|Dec\.?|December)\s+(\d{1,2})(?:,?\s+(20\d{2}))?", re.I)
 
 ANNOUNCEMENT_SOURCES = [
     Source("JRS 台灣關節重建醫學會", "公告", ("https://jrs.org.tw/news/", "https://jrs.org.tw/"), wp="https://jrs.org.tw"),
@@ -116,6 +119,25 @@ def first_date(text: str, fallback: str | None = None) -> str | None:
         except ValueError:
             pass
     return fallback
+
+
+def month_number(name: str) -> int:
+    return datetime.strptime(name[:3].title().rstrip("."), "%b").month
+
+
+def aahks_date(text: str, fallback_year: int | None = None) -> str | None:
+    if exact := first_date(text):
+        return exact
+    m = AAHKS_MONTH.search(text)
+    if not m:
+        return None
+    month, day, year = m.groups()
+    if not year and not fallback_year:
+        return None
+    try:
+        return date(int(year or fallback_year), month_number(month), int(day)).isoformat()
+    except ValueError:
+        return None
 
 
 def category(source_cat: str, text: str) -> str:
@@ -292,12 +314,20 @@ def from_efort_webinars() -> list[dict[str, str]]:
 
 def from_aahks_search() -> list[dict[str, str]]:
     out = []
-    for term in ("annual meeting", "course"):
+    for term in ("registration", "register course", "applications open"):
         for item in requests.get(AAHKS_SEARCH_API + requests.utils.quote(term), timeout=TIMEOUT).json():
             title = clean(item.get("title", ""))
             url = item.get("url", "")
-            if title and url and KEEP.search(title):
-                out.append({"date": first_date(title, TODAY.isoformat()) or TODAY.isoformat(), "title": title[:140], "source": "AAHKS", "cat": "關節重建", "place": "原公告", "url": url, "mode": "實體"})
+            if not (title and url and AAHKS_KEEP.search(title)) or AAHKS_DROP.search(title):
+                continue
+            soup = BeautifulSoup(fetch(url), "html.parser")
+            desc = soup.find("meta", property="og:description") or soup.find("meta", attrs={"name": "description"})
+            published = soup.find("meta", property="article:published_time")
+            fallback_year = int(published["content"][:4]) if published and published.get("content", "")[:4].isdigit() else None
+            text = " ".join([title, desc.get("content", "") if desc else "", clean(soup.get_text(" "))[:3000]])
+            event_date = aahks_date(text, fallback_year)
+            if event_date:
+                out.append({"date": event_date, "title": title[:140], "source": "AAHKS", "cat": "關節重建", "place": "原公告", "url": url, "mode": mode(title)})
     return out
 
 
