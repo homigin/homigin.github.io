@@ -27,24 +27,6 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-07-12",
-    "title": "台灣延緩衰老暨細胞再生醫學會【第二十屆諾貝爾大健康論壇 / Forum 4 整合醫學暨再生醫學論壇 Symposium 9 第十八屆 延緩衰老與再生醫學研討會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "張榮發基金會國際會議中心 10樓 1003會議室",
-    "url": "https://bone.org.tw/education/events/11550/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-12",
-    "title": "失眠與疼痛 -- 運用腦心連結找出最適合你的芳香醫學 115.07.12(共6時30分)(3點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4461.html",
-    "mode": "實體"
-  },
-  {
     "date": "2026-07-17",
     "title": "Vision Interventional Pain Symposium (VIPS 2026) 115.07.17(共50分)、115.07.18(共5時40分)、115.07.19(共5時40分)(0.8/2.8/2.8點)",
     "source": "復健醫學會 MSK / sports / pain",
@@ -108,24 +90,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-07-19",
-    "title": "【歡迎報名】2026/07/19骨鬆專科醫師學分班(台中)(僅限本會醫師報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=606&t=0",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-19",
-    "title": "【歡迎報名】2026/07/19骨鬆衛教師認證課程及考試(台中)(僅限本會醫事人員報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=604&t=0",
-    "mode": "實體"
-  },
-  {
     "date": "2026-07-25",
     "title": "三軍總醫院【三軍總醫院【中華民國骨科醫學會115年度7月份北區月會】】",
     "source": "TOA 台灣骨科醫學會",
@@ -154,11 +118,11 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-25",
-    "title": "【歡迎報名】2026/07/25 2026年骨鬆管理新座標-北區場 精準順序療法與病患中心",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
+    "title": "膝踝疼痛之肌肉骨骼超音波臨床實戰課程115.07.25 (共5時20分)(5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
     "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=622&t=0",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4457.html",
     "mode": "實體"
   },
   {
@@ -243,15 +207,6 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-08-16",
-    "title": "【歡迎報名】2026/08/16骨鬆專科醫師學分班(台南)(僅限本會醫師報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0",
-    "mode": "實體"
-  },
-  {
     "date": "2026-08-20",
     "title": "2026手術觀摩醫師交流計劃",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -267,15 +222,6 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "衛生福利部臺南醫院 急診大樓6樓 大會議廳",
     "url": "https://bone.org.tw/education/events/11529/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "【7/19開始報名(技術師班)】2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Technologist ",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
     "mode": "實體"
   },
   {
