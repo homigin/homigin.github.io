@@ -1,23 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-06-13",
-    "title": "2026.06.13 2026年中華民國關節鏡及膝關節醫學會年會-雙城論壇, Tokyo vs. Taipei",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-06-13-2026%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e9%97%9c%e7%af%80%e9%8f%a1%e5%8f%8a%e8%86%9d%e9%97%9c%e7%af%80%e9%86%ab%e5%ad%b8%e6%9c%83%ef%a6%8e%e6%9c%83/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-06-14",
-    "title": "2026.06.14 大體膝關節鏡實作研習會 Basic Knee Cadaver Course",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-06-14-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-basic-knee-cadaver-course/",
-    "mode": "lab"
-  },
-  {
     "date": "2026-07-11",
     "title": "【活動取消】2026.07.11 大體膝關節鏡實作研習會 2026 Knee Arthroscopic Workshop Course",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -25,69 +7,6 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/conference/%e3%80%90%e6%b4%bb%e5%8b%95%e5%8f%96%e6%b6%88%e3%80%912026-07-11-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-knee-arthroscopic-workshop-cou/",
     "mode": "lab"
-  },
-  {
-    "date": "2026-07-17",
-    "title": "Vision Interventional Pain Symposium (VIPS 2026) 115.07.17(共50分)、115.07.18(共5時40分)、115.07.19(共5時40分)(0.8/2.8/2.8點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4372.html",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-18",
-    "title": "中華民國小兒骨科醫學會【2026 台灣DDH疾病認證交流與學術討論會暨中華民國小兒骨科醫學會年會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "高雄醫學大學附設高醫岡山醫院",
-    "url": "https://bone.org.tw/education/events/11507/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-18",
-    "title": "中華民國骨質疏鬆症學會【20260718 From Access to Action Opening a New Era in Osteoporosis Care】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "台北寒舍艾麗酒店（Humble House Taipei）三樓宴會廳",
-    "url": "https://bone.org.tw/education/events/11543/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-18",
-    "title": "台灣脊椎微創內視鏡醫學會【2026 脊椎微創內視鏡醫學會仿真模型手術體驗工作坊-高雄長庚場】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "高雄長庚醫院 醫學大樓外科第二會議室",
-    "url": "https://bone.org.tw/education/events/11535/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-07-18",
-    "title": "台灣骨鬆肌少關節防治學會【TBMJ 骨骼優化論壇-骨肌關新視野 (線上研討會)】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "線上研討會",
-    "url": "https://bone.org.tw/education/events/11546/",
-    "mode": "線上"
-  },
-  {
-    "date": "2026-07-18",
-    "title": "TBMJ 骨骼優化論壇-骨肌關新視野 (線上研討會) 115.07.18(共1時15分)(0.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4450.html",
-    "mode": "線上"
-  },
-  {
-    "date": "2026-07-19",
-    "title": "中華民國骨質疏鬆症學會【骨質疏鬆症專科醫師學分班】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "中山醫學大學正心樓7樓0713教室",
-    "url": "https://bone.org.tw/education/events/11532/",
-    "mode": "實體"
   },
   {
     "date": "2026-07-25",
@@ -118,6 +37,15 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-07-25",
+    "title": "台日韓隊醫經驗分享及座談115.07.25(共4小時55分)(3點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "運動醫學",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4435.html",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
     "title": "膝踝疼痛之肌肉骨骼超音波臨床實戰課程115.07.25 (共5時20分)(5點)",
     "source": "復健醫學會 MSK / sports / pain",
     "cat": "超音波",
@@ -141,6 +69,15 @@ window.ORTHO_EVENTS = [
     "cat": "運動醫學",
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/education/2026-07-26-%e4%bd%8f%e9%99%a2%e9%86%ab%e5%b8%ab%e8%81%af%e5%90%88%e6%95%99%e8%82%b2%e8%a8%93%e7%b7%b4%e8%aa%b2%e7%a8%8b/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-26",
+    "title": "超音波解剖暨臨床實戰經驗分享工作坊115.07.26(共9時)(4.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4467.html",
     "mode": "實體"
   },
   {
@@ -204,6 +141,15 @@ window.ORTHO_EVENTS = [
     "cat": "運動醫學",
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/",
+    "mode": "lab"
+  },
+  {
+    "date": "2026-08-16",
+    "title": "Apply for the APKASS-SLARD Travelling Fellowship 2027! (by 16 August 2026)",
+    "source": "台灣關節鏡及膝關節醫學會",
+    "cat": "運動醫學",
+    "place": "原公告",
+    "url": "https://www.taiwanarthroscopy.org.tw/activity/apply-for-the-apkass-slard-travelling-fellowship-2027-by-16-august-2026/",
     "mode": "lab"
   },
   {
