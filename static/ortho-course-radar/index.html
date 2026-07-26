@@ -424,7 +424,7 @@
       const today = todayISO();
       return (!q || `${e.title} ${e.source} ${e.cat} ${e.place}`.toLowerCase().includes(q))
         && (!from || e.date >= from)
-        && (!$("hideExpired").checked || e.date >= today)
+        && (!$("hideExpired").checked || (e.end_date || e.date) >= today)
         && inTimeRange(e.date)
         && (state.view === "webinars" || !state.mode || modeOf(e) === state.mode)
         && (!state.cat || e.cat === state.cat)
@@ -492,9 +492,12 @@
     }
 
     function eventCard(e, mode = "list") {
+      const dateLabel = e.end_date && e.end_date !== e.date
+        ? `${e.date.slice(5)}–${e.end_date.slice(5)}`
+        : e.date.slice(5);
       return `
         <article class="event ${mode === "announcements" ? "announce" : ""}">
-          <div class="date">${esc(e.date.slice(5))}<small>${esc(e.date.slice(0, 4))}</small></div>
+          <div class="date">${esc(dateLabel)}<small>${esc(e.date.slice(0, 4))}</small></div>
           <div>
             <h3>${esc(e.title)}</h3>
             <div class="meta"><span class="tag">${esc(e.cat || modeOf(e))}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place || "")}</span></div>
@@ -648,7 +651,7 @@
 
     function toICS(e) {
       const start = e.date.replaceAll("-", "");
-      const end = addDays(e.date, 1).replaceAll("-", "");
+      const end = addDays(e.end_date || e.date, 1).replaceAll("-", "");
       return ["BEGIN:VEVENT", `UID:${btoa(unescape(encodeURIComponent(e.url))).slice(0, 48)}@ortho-radar`, `DTSTART;VALUE=DATE:${start}`, `DTEND;VALUE=DATE:${end}`, `SUMMARY:${icsText(e.title)}`, `LOCATION:${icsText(e.place || "")}`, `URL:${safeUrl(e.url)}`, `DESCRIPTION:${icsText(`${e.source || ""} ${e.cat || ""}`)}`, "END:VEVENT"].join("\r\n");
     }
 
@@ -661,7 +664,12 @@
     }
 
     // ponytail: tiny in-page check, replace with real tests if this grows beyond a static prototype.
-    console.assert([...events, ...webinars].every(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date) && e.title && e.url), "bad event data");
+    console.assert([...events, ...webinars].every(e =>
+      /^\d{4}-\d{2}-\d{2}$/.test(e.date)
+      && (!e.end_date || /^\d{4}-\d{2}-\d{2}$/.test(e.end_date))
+      && e.title
+      && e.url
+    ), "bad event data");
   </script>
 </body>
 </html>

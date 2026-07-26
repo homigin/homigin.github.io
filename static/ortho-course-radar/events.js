@@ -9,6 +9,34 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
+    "date": "2026-07-25",
+    "title": "2026年台灣骨科創傷醫學會年會夥伴廠商招商區",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e5%b9%b4%e6%9c%83%e5%a4%a5%e4%bc%b4%e5%bb%a0%e5%95%86%e6%8b%9b%e5%95%86%e5%8d%80/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "2026年台灣骨科創傷醫學會年會暨國際學研討會開跑",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e5%b9%b4%e6%9c%83%e6%9a%a8%e5%9c%8b%e9%9a%9b%e5%ad%b8%e7%a0%94%e8%a8%8e%e6%9c%83%e9%96%8b%e8%b7%91/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-07-25",
+    "title": "2026年骨創年會議程發表!",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/19917-2/",
+    "mode": "實體",
+    "end_date": "2026-07-26"
+  },
+  {
     "date": "2026-07-26",
     "title": "中華民國關節鏡及膝關節醫學會【住院醫師聯合教育訓練課程】",
     "source": "TOA 台灣骨科醫學會",
@@ -192,10 +220,10 @@ window.ORTHO_EVENTS = [
     "date": "2026-08-16",
     "title": "Apply for the APKASS-SLARD Travelling Fellowship 2027! (by 16 August 2026)",
     "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
+    "cat": "關節重建",
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/activity/apply-for-the-apkass-slard-travelling-fellowship-2027-by-16-august-2026/",
-    "mode": "lab"
+    "mode": "實體"
   },
   {
     "date": "2026-08-16",
@@ -213,15 +241,6 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=605&t=0",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-20",
-    "title": "2026手術觀摩醫師交流計劃",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
   },
   {
@@ -267,6 +286,15 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-29",
+    "title": "2026手術觀摩醫師交流計劃",
+    "source": "台灣關節鏡及膝關節醫學會",
+    "cat": "運動醫學",
+    "place": "原公告",
+    "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
   },
   {

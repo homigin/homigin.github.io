@@ -76,6 +76,11 @@ DATE_PATTERNS = [
     re.compile(r"(1\d{2})[./\-年](\d{1,2})[./\-月](\d{1,2})"),
 ]
 EN_DATE = re.compile(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)?(?:day)?\s*(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})\b", re.I)
+EN_DATE_MDY = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)"
+    r"\s+(\d{1,2})(?:\s*[–—-]\s*(\d{1,2}))?,?\s+(20\d{2})\b",
+    re.I,
+)
 EVENT_WORDS = re.compile(r"課程|活動|研討會|年會|論壇|工作坊|訓練|實作|webinar|workshop|course|event|meeting|conference|congress|cadaver|camp", re.I)
 ANN_DROP = re.compile(EVENT_WORDS.pattern + r"|報名|registration|replay|watch|video|直播|學分|同好會|歡迎參加|開跑|臨床實戰", re.I)
 AO_WEBINAR_URL = "https://www.aofoundation.org/spine/education/Courses-Events#f-medical_specialty=AO+Spine%7CAO+Trauma%7CAO+Recon&f-format=Webinar+%2F+Webcast&f-region=Asia+Pacific%7CGlobal&s-start_date_descending"
@@ -118,7 +123,25 @@ def first_date(text: str, fallback: str | None = None) -> str | None:
             return datetime.strptime(f"{d} {mo} {y}", "%d %B %Y").date().isoformat()
         except ValueError:
             pass
+    m = EN_DATE_MDY.search(text)
+    if m:
+        mo, start_day, _, y = m.groups()
+        try:
+            return datetime.strptime(f"{mo} {start_day} {y}", "%B %d %Y").date().isoformat()
+        except ValueError:
+            pass
     return fallback
+
+
+def end_date(text: str) -> str | None:
+    m = EN_DATE_MDY.search(text)
+    if not m or not m.group(3):
+        return None
+    mo, _, end_day, y = m.groups()
+    try:
+        return datetime.strptime(f"{mo} {end_day} {y}", "%B %d %Y").date().isoformat()
+    except ValueError:
+        return None
 
 
 def month_number(name: str) -> int:
@@ -173,6 +196,19 @@ def fetch(url: str, verify: bool = True) -> str:
     if not r.encoding or "charset=" not in r.headers.get("content-type", "").lower():
         r.encoding = r.apparent_encoding
     return r.text
+
+
+def fetch_json(url: str, verify: bool = True, timeout: int = TIMEOUT) -> Any:
+    last_error: requests.RequestException | None = None
+    for _ in range(2):
+        try:
+            response = requests.get(url, timeout=timeout, verify=verify)
+            response.raise_for_status()
+            return response.json()
+        except requests.RequestException as exc:
+            last_error = exc
+    assert last_error
+    raise last_error
 
 
 def from_html(source: Source) -> list[dict[str, str]]:
@@ -241,28 +277,48 @@ def from_html(source: Source) -> list[dict[str, str]]:
 
 def from_wp(source: Source) -> list[dict[str, str]]:
     assert source.wp
-    api = f"{source.wp.rstrip('/')}/wp-json/wp/v2/posts?per_page=50&_fields=link,title,excerpt,content,date"
-    posts: list[dict[str, Any]] = requests.get(api, timeout=TIMEOUT, verify=source.verify).json()
+    api_root = f"{source.wp.rstrip('/')}/wp-json/wp/v2/posts"
+    api = f"{api_root}?per_page=50&_fields=id,link,title,excerpt,date"
+    posts: list[dict[str, Any]] = fetch_json(api, source.verify, timeout=15)
     out = []
     for post in posts:
         title = clean(post.get("title", {}).get("rendered", ""))
-        body = BeautifulSoup(str(post.get("excerpt", {}).get("rendered", "")) + str(post.get("content", {}).get("rendered", "")), "html.parser").get_text(" ")
-        text = clean(f"{title} {body}")
-        if not title or DROP.search(text) or not KEEP.search(text):
+        excerpt = BeautifulSoup(str(post.get("excerpt", {}).get("rendered", "")), "html.parser").get_text(" ")
+        text = clean(f"{title} {excerpt}")
+        if not title or DROP.search(title) or not (KEEP.search(text) or EVENT_WORDS.search(text)):
             continue
         published = str(post.get("date", ""))[:10] or None
-        event_date = first_date(text, published)
+        event_date = first_date(text)
+        event_end = end_date(text)
+        recently_published = bool(
+            published
+            and date.fromisoformat(published) >= TODAY - timedelta(days=120)
+        )
+        if not event_date and post.get("id") and EVENT_WORDS.search(title) and recently_published:
+            detail_url = f"{api_root}/{post['id']}?_fields=content"
+            try:
+                content = fetch_json(detail_url, source.verify, timeout=15).get("content", {}).get("rendered", "")
+            except requests.RequestException:
+                continue
+            body = BeautifulSoup(str(content), "html.parser").get_text(" ")
+            text = clean(f"{text} {body}")
+            event_date = first_date(text)
+            event_end = end_date(text)
+        event_date = event_date or published
         if not event_date:
             continue
-        out.append({
+        event = {
             "date": event_date,
             "title": title[:140],
             "source": source.name,
-            "cat": category(source.cat, text),
+            "cat": category(source.cat, clean(f"{title} {excerpt}")),
             "place": "原公告",
             "url": post.get("link", source.wp),
-            "mode": mode(text),
-        })
+            "mode": mode(clean(f"{title} {excerpt}")),
+        }
+        if event_end:
+            event["end_date"] = event_end
+        out.append(event)
     return out
 
 
