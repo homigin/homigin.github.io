@@ -303,7 +303,12 @@
       font-size: 14px;
     }
     @media (max-width: 760px) {
-      .stats, .filter-grid, .views, .calendar-layout { grid-template-columns: 1fr; }
+      .filters {
+        position: static;
+        top: auto;
+      }
+      .stats, .filter-grid, .calendar-layout { grid-template-columns: 1fr; }
+      .views { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .event, .day-row { grid-template-columns: 1fr; }
       .date { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
       .list-head, .calendar-nav { display: block; }
@@ -319,7 +324,7 @@
       <div class="stats" aria-label="課程統計">
         <div class="stat"><b id="totalCount">0</b><span>筆課程公告</span></div>
         <div class="stat"><b>7</b><span>骨科分類</span></div>
-        <div class="stat"><b>2026-06-26</b><span>頁面更新</span></div>
+        <div class="stat"><b id="updatedAt">—</b><span>資料更新</span></div>
       </div>
     </div>
   </header>
@@ -625,6 +630,10 @@
     $("from").addEventListener("input", render);
     $("hideExpired").addEventListener("change", render);
     $("totalCount").textContent = events.length;
+    fetch("last-run.json")
+      .then(response => response.ok ? response.json() : Promise.reject())
+      .then(run => $("updatedAt").textContent = String(run.updated || "").slice(0, 10) || "—")
+      .catch(() => {});
     render();
 
     function downloadICS(rows) {
