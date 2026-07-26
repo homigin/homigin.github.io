@@ -344,8 +344,25 @@ def keep_recent(event: dict[str, str]) -> bool:
     return d >= TODAY - timedelta(days=30)
 
 
+def load_existing(filename: str, variable: str) -> list[dict[str, str]]:
+    path = ROOT / filename
+    if not path.exists():
+        return []
+    match = re.search(rf"window\.{re.escape(variable)}\s*=\s*(\[.*\]);\s*$", path.read_text(encoding="utf-8"), re.S)
+    if not match:
+        return []
+    try:
+        data = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return []
+    return data if isinstance(data, list) else []
+
+
 def main() -> None:
     ROOT.mkdir(parents=True, exist_ok=True)
+    existing_events = load_existing("events.js", "ORTHO_EVENTS")
+    existing_announcements = load_existing("announcements.js", "ORTHO_ANNOUNCEMENTS")
+    existing_webinars = load_existing("webinars.js", "ORTHO_WEBINARS")
     events: list[dict[str, str]] = []
     announcements: list[dict[str, str]] = []
     webinars: list[dict[str, str]] = webinar_fallbacks()
@@ -358,19 +375,23 @@ def main() -> None:
                 events.extend(from_html(source))
         except Exception as exc:
             errors[source.name] = f"{type(exc).__name__}: {exc}"
+            events.extend(e for e in existing_events if e.get("source") == source.name)
     for source in ANNOUNCEMENT_SOURCES:
         try:
             announcements.extend(from_announcements(source))
         except Exception as exc:
             errors[f"{source.name} announcements"] = f"{type(exc).__name__}: {exc}"
+            announcements.extend(e for e in existing_announcements if e.get("source") == source.name)
     try:
         webinars.extend(from_efort_webinars())
     except Exception as exc:
         errors["EFORT webinars"] = f"{type(exc).__name__}: {exc}"
+        webinars.extend(e for e in existing_webinars if e.get("source") == "EFORT")
     try:
         events.extend(from_aahks_search())
     except Exception as exc:
         errors["AAHKS"] = f"{type(exc).__name__}: {exc}"
+        events.extend(e for e in existing_events if e.get("source") == "AAHKS")
 
     seen = set()
     deduped = []
