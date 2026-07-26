@@ -63,6 +63,8 @@ UNKNOWN_SOURCES = [
     "ESSKA：目前公開頁 Cloudflare challenge，先不放進 weekly scraper",
 ]
 
+TOA_SOURCE = "TOA 台灣骨科醫學會"
+
 KEEP = re.compile(
     r"骨科|關節|膝|髖|肩|肘|手|腕|足|踝|脊椎|脊柱|創傷|骨折|骨鬆|骨質疏鬆|"
     r"運動醫學|關節鏡|超音波|疼痛|神經阻斷|cadaver|simulation|simulator|仿真|模型|實作|resident|"
@@ -414,6 +416,49 @@ def load_existing(filename: str, variable: str) -> list[dict[str, str]]:
     return data if isinstance(data, list) else []
 
 
+def event_title_core(title: str) -> str:
+    bracketed = list(re.finditer(r"【([^】]+)】", title))
+    last_bracket = bracketed[-1] if bracketed else None
+    text = last_bracket.group(1) if last_bracket and not title[last_bracket.end():].strip() else title
+    text = re.sub(r"(?:20\d{2}|1\d{2})[./\-年]\d{1,2}(?:[./\-月]\d{1,2})?日?", " ", text)
+    text = re.sub(r"[（(][^）)]*(?:共\s*\d+|學分|小時|\d+(?:\.\d+)?\s*點)[^）)]*[）)]", " ", text)
+    return re.sub(r"[^0-9A-Za-z\u3400-\u9fff]+", "", text).lower()
+
+
+def same_event(left: dict[str, str], right: dict[str, str]) -> bool:
+    if left.get("date") != right.get("date"):
+        return False
+    left_core = event_title_core(left.get("title", ""))
+    right_core = event_title_core(right.get("title", ""))
+    if not left_core or not right_core:
+        return False
+    return (
+        left_core == right_core
+        or min(len(left_core), len(right_core)) >= 8
+        and (left_core in right_core or right_core in left_core)
+    )
+
+
+def dedupe_events(events: list[dict[str, str]]) -> list[dict[str, str]]:
+    candidates = sorted(
+        filter(keep_recent, events),
+        key=lambda event: (
+            event["date"],
+            0 if event.get("source") == TOA_SOURCE else 1,
+            event["source"],
+            event["title"],
+        ),
+    )
+    seen_urls = set()
+    chosen = []
+    for event in candidates:
+        if event["url"] in seen_urls or any(same_event(event, existing) for existing in chosen):
+            continue
+        seen_urls.add(event["url"])
+        chosen.append(event)
+    return sorted(chosen, key=lambda event: (event["date"], event["source"], event["title"]))
+
+
 def main() -> None:
     ROOT.mkdir(parents=True, exist_ok=True)
     existing_events = load_existing("events.js", "ORTHO_EVENTS")
@@ -449,14 +494,7 @@ def main() -> None:
         errors["AAHKS"] = f"{type(exc).__name__}: {exc}"
         events.extend(e for e in existing_events if e.get("source") == "AAHKS")
 
-    seen = set()
-    deduped = []
-    for event in sorted(filter(keep_recent, events), key=lambda e: (e["date"], e["source"], e["title"])):
-        key = event["url"]
-        if key in seen:
-            continue
-        seen.add(key)
-        deduped.append(event)
+    deduped = dedupe_events(events)
     ann_seen = set()
     ann_deduped = []
     for item in sorted(announcements, key=lambda e: (e["source"], e["date"], e["title"]), reverse=True):
