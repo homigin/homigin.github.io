@@ -1,15 +1,15 @@
 {
-  "updated": "2026-07-26T12:25:06",
-  "events": 31,
-  "announcements": 5,
-  "webinars": 2,
+  "updated": "2026-07-26T13:48:47",
+  "events": 34,
+  "announcements": 13,
+  "webinars": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x106490cd0>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
-    "TSES 台灣肩肘醫學會": "ReadTimeout: HTTPSConnectionPool(host='www.shoulder-elbow.org.tw', port=443): Read timed out. (read timeout=6)",
-    "AAOS": "ConnectionError: HTTPSConnectionPool(host='www.aaos.org', port=443): Read timed out.",
+    "JRS 台灣關節重建醫學會": "ReadTimeout: HTTPSConnectionPool(host='jrs.org.tw', port=443): Read timed out. (read timeout=6)",
+    "TOTA 台灣骨科創傷醫學會": "ReadTimeout: HTTPSConnectionPool(host='www.tota.org.tw', port=443): Read timed out. (read timeout=6)",
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x107191c90>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "IRCAD Taiwan": "ConnectTimeout: HTTPSConnectionPool(host='www.ircadtaiwan.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ircadtaiwan.com', port=443) at 0x10b5ac9d0>, 'Connection to www.ircadtaiwan.com timed out. (connect timeout=6)'))",
     "NASS": "ConnectionError: HTTPSConnectionPool(host='www.spine.org', port=443): Read timed out.",
-    "EFORT webinars": "ConnectionError: HTTPSConnectionPool(host='www.efort.org', port=443): Read timed out.",
-    "AAHKS": "ReadTimeout: HTTPSConnectionPool(host='www.aahks.org', port=443): Read timed out. (read timeout=6)"
+    "AAHKS": "ConnectTimeout: HTTPSConnectionPool(host='www.aahks.org', port=443): Max retries exceeded with url: /residents-register-now-for-yag-oite-review-course-2/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.aahks.org', port=443) at 0x1210cca10>, 'Connection to www.aahks.org timed out. (connect timeout=6)'))"
   },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
