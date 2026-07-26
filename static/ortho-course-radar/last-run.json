@@ -1,15 +1,14 @@
 {
-  "updated": "2026-07-26T13:48:47",
-  "events": 30,
+  "updated": "2026-07-26T21:01:11",
+  "events": 36,
   "announcements": 13,
   "webinars": 23,
   "errors": {
-    "JRS 台灣關節重建醫學會": "ReadTimeout: HTTPSConnectionPool(host='jrs.org.tw', port=443): Read timed out. (read timeout=6)",
-    "TOTA 台灣骨科創傷醫學會": "ReadTimeout: HTTPSConnectionPool(host='www.tota.org.tw', port=443): Read timed out. (read timeout=6)",
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x107191c90>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
-    "IRCAD Taiwan": "ConnectTimeout: HTTPSConnectionPool(host='www.ircadtaiwan.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.ircadtaiwan.com', port=443) at 0x10b5ac9d0>, 'Connection to www.ircadtaiwan.com timed out. (connect timeout=6)'))",
-    "NASS": "ConnectionError: HTTPSConnectionPool(host='www.spine.org', port=443): Read timed out.",
-    "AAHKS": "ConnectTimeout: HTTPSConnectionPool(host='www.aahks.org', port=443): Max retries exceeded with url: /residents-register-now-for-yag-oite-review-course-2/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.aahks.org', port=443) at 0x1210cca10>, 'Connection to www.aahks.org timed out. (connect timeout=6)'))"
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7f5b21bbade0>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "TSES 台灣肩肘醫學會": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "台灣骨質疏鬆症學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.toa1997.org.tw/",
+    "Chang Gung STARC": "HTTPError: 403 Client Error: Forbidden for url: https://starc.cgmh.org.tw/",
+    "OTA": "HTTPError: 403 Client Error: Forbidden for url: https://ota.org/education/person-events/meetings-and-courses"
   },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
