@@ -10,6 +10,8 @@ canonifyURLs = true
   pagerSize = 10
 
 [params]
+  mainSections = ["posts"]
+
   [params.author]
     name = "Homigin"
     email = "dr.chiayuan.chen@gmail.com"
@@ -21,7 +23,7 @@ canonifyURLs = true
 
 我把自己正在學的東西公開，也把重複麻煩的流程做成小工具。這裡會放醫學筆記、課程心得、工具作品、好用資源，還有一些音樂、投資、程式與學習方法的旁支。
 
-[讀文章](/) · [看工具](/tools/) · [資源清單](/resources/) · [關於我](/about/)
+[讀文章](/posts/) · [依標籤瀏覽](/tags/) · [看工具](/tools/) · [資源清單](/resources/) · [關於我](/about/)
 """
 
   ShowReadingTime = true
@@ -52,29 +54,35 @@ canonifyURLs = true
 [[menu.main]]
   identifier = "posts"
   name = "文章"
-  url = "/"
+  url = "/posts/"
   weight = 1
+
+[[menu.main]]
+  identifier = "tags"
+  name = "標籤"
+  url = "/tags/"
+  weight = 2
 
 [[menu.main]]
   identifier = "tools"
   name = "工具"
   url = "/tools/"
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   identifier = "resources"
   name = "資源"
   url = "/resources/"
-  weight = 3
+  weight = 4
 
 [[menu.main]]
   identifier = "ortho-course-radar"
   name = "骨科雷達"
   url = "/ortho-course-radar/"
-  weight = 4
+  weight = 5
 
 [[menu.main]]
   identifier = "about"
   name = "關於我"
   url = "/about/"
-  weight = 5
+  weight = 6

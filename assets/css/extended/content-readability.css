@@ -1,0 +1,52 @@
+/* Keep long study notes readable without changing PaperMod's overall look. */
+.post-content {
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.post-content h4 {
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.post-content h5 {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.post-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.toc .inner {
+  max-height: min(60vh, 36rem);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+@media (max-width: 760px) {
+  .post-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .post-content h2 {
+    font-size: 1.55rem;
+  }
+
+  .post-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .post-content table {
+    font-size: 0.9rem;
+  }
+}

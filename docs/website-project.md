@@ -1,6 +1,6 @@
 ---
 status: active
-updated: 2026-06-27
+updated: 2026-07-25
 ---
 
 # Homigin Website Project
@@ -16,10 +16,9 @@ This repo is the project folder for the public website. Keep website planning, c
 ## Current Structure
 
 - `content/about/index.md`: professional CV / about page
-- `content/tools/index.md`: public tools and external writing
-- `content/medicine/`: medical notes
-- `content/garden/`: learning notes
-- `content/life/`: life notes
+- `content/posts/`: all articles, categorized with front matter `tags`
+- `content/tools/index.md`: public tools
+- `content/resources/index.md`: recommended links and resources
 - `config.toml`: Hugo / PaperMod site config and menu
 
 ## Current Direction
@@ -38,8 +37,12 @@ This repo is the project folder for the public website. Keep website planning, c
 
 - Add self-built projects to `content/tools/index.md`.
 - Add recommended links and tools I use to `content/resources/index.md`.
-- Keep the main menu short: articles, tools, resources, radar, about.
-- Keep unpolished notes in existing sections; promote only useful public pieces to the homepage flow.
+- Add new articles under `content/posts/` and classify them with `tags`; do not create topic sections.
+- Keep the main menu short: articles, tags, tools, resources, radar, about.
+- When moving a published article, preserve its previous URL in front matter `aliases`.
+- Keep unfinished or empty notes as `draft: true` instead of publishing placeholder pages.
+- Keep long series such as CSCS chapters out of the homepage with `hiddenInHomeList: true`; link them from one overview article.
+- Use collapsed TOCs and compact Markdown lists for long study notes. Shared readability styles live in `assets/css/extended/content-readability.css`.
 
 ## Useful Codex Skills
 
