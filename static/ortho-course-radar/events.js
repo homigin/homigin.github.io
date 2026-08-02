@@ -46,33 +46,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-08-01",
-    "title": "中華民國小兒骨科醫學會【國際健康專業教育亞太地區重點超音波教育訓練大師課程】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "臺大護理學館",
-    "url": "https://bone.org.tw/education/events/11534/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-01",
-    "title": "中華民國骨質疏鬆症學會【2026/08/01 2026年骨鬆管理新座標-中南區場 精準順序療法與病患中心】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "台中洲際酒店",
-    "url": "https://bone.org.tw/education/events/11541/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-01",
-    "title": "台灣骨科足踝醫學會【2026 台灣骨科足踝醫學會年會暨台灣足踝醫學聯合學術研討會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "足踝",
-    "place": "臺中榮民總醫院研究大樓1F 第二、四會議室",
-    "url": "https://bone.org.tw/education/events/11548/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-08-08",
     "title": "中華民國醫用超音波學會【風濕免疫超音波講習課程】",
     "source": "TOA 台灣骨科醫學會",
@@ -161,6 +134,15 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/",
     "mode": "lab"
+  },
+  {
+    "date": "2026-08-15",
+    "title": "MABC-3兒童動作評估工具之施測、計分查表與臨床實作115.8.15 (共3時)(1.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "復健相關",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4479.html",
+    "mode": "實體"
   },
   {
     "date": "2026-08-16",
