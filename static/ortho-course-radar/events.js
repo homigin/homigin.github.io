@@ -46,48 +46,21 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-08-08",
-    "title": "中華民國醫用超音波學會【風濕免疫超音波講習課程】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "高雄長庚兒童醫院六樓 第二會議室",
-    "url": "https://bone.org.tw/education/events/11568/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-08",
-    "title": "中華民國醫用超音波學會【骨骼肌肉系統學基礎工作坊-高雄場】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "高雄醫學大學附設醫院臨床教育訓練部第五講堂",
-    "url": "https://bone.org.tw/education/events/11567/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-08",
-    "title": "臺中榮民總醫院骨科部【台灣脊椎外科醫學會2026夏季會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "清新溫泉飯店",
-    "url": "https://bone.org.tw/education/events/11564/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-08",
-    "title": "臺中榮民總醫院骨科部【臺中榮總第十屆脊椎融合手術大體實作工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "清新溫泉飯店、臺中榮民總醫院",
-    "url": "https://bone.org.tw/education/events/11565/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-08-09",
-    "title": "疼痛擂台7：真實病人工作坊-決戰上肢115.08.09(共6時30分)(3.2點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
+    "date": "2026-07-31",
+    "title": "2026年第9屆 Young Surgeon Forum 得獎名單揭曉",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4477.html",
+    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e7%ac%ac9%e5%b1%86-young-surgeon-forum-%e5%be%97%e7%8d%8e%e5%90%8d%e5%96%ae%e6%8f%ad%e6%9b%89/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-07",
+    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
     "mode": "lab"
   },
   {
@@ -181,6 +154,15 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-08-16",
+    "title": "跨領域骨盆障礙與疼痛之評估及訓練工作坊115.8.16(7時)(3.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "疼痛",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4432.html",
+    "mode": "實體"
+  },
+  {
     "date": "2026-08-21",
     "title": "澄清綜合醫院【關節鏡治療重度膝骨關節炎：十年經驗分享】",
     "source": "TOA 台灣骨科醫學會",
@@ -190,12 +172,30 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-08-22",
+    "title": "高雄榮總骨科部【中華民國骨科醫學會南區月會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "高雄榮民總醫院急診大樓六樓 第五會議室",
+    "url": "https://bone.org.tw/education/events/11572/",
+    "mode": "實體"
+  },
+  {
     "date": "2026-08-29",
-    "title": "2026.08.29-30 2026 Taiwan Advanced knee Arthroscopic course",
-    "source": "台灣關節鏡及膝關節醫學會",
+    "title": "中華民國關節鏡及膝關節醫學會【2026 Taiwan Advanced knee Arthroscopic course】",
+    "source": "TOA 台灣骨科醫學會",
     "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-08-29-30-2026-taiwan-advanced-knee-arthroscopic-course/",
+    "place": "中山醫學大學 解剖教室",
+    "url": "https://bone.org.tw/education/events/11577/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-29",
+    "title": "台灣脊椎微創醫學會【台灣脊椎微創醫學會/台灣脊椎微創內視鏡醫學會秋季國際研討會暨 部桃/北醫脊椎實作工作坊】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "脊椎",
+    "place": "COZZI Blu 和逸飯店 桃園館",
+    "url": "https://bone.org.tw/education/events/11573/",
     "mode": "實體"
   },
   {
