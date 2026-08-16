@@ -1,11 +1,10 @@
 {
-  "updated": "2026-08-09T20:36:01",
-  "events": 34,
-  "announcements": 6,
+  "updated": "2026-08-16T20:25:32",
+  "events": 29,
+  "announcements": 14,
   "webinars": 23,
   "errors": {
-    "JRS 台灣關節重建醫學會": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7ff7a75e8e90>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7ff7ab270e00>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
     "TSES 台灣肩肘醫學會": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
     "台灣骨質疏鬆症學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.toa1997.org.tw/",
     "Chang Gung STARC": "HTTPError: 403 Client Error: Forbidden for url: https://starc.cgmh.org.tw/",
