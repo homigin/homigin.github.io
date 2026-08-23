@@ -1,15 +1,6 @@
 window.ORTHO_EVENTS = [
   {
     "date": "2026-07-25",
-    "title": "2026年台灣骨科創傷醫學會年會夥伴廠商招商區",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e5%b9%b4%e6%9c%83%e5%a4%a5%e4%bc%b4%e5%bb%a0%e5%95%86%e6%8b%9b%e5%95%86%e5%8d%80/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-07-25",
     "title": "2026年骨創年會議程發表!",
     "source": "TOTA 台灣骨科創傷醫學會",
     "cat": "創傷",
@@ -35,15 +26,6 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.tota.org.tw/2026%e5%b9%b4%e7%ac%ac9%e5%b1%86-young-surgeon-forum-%e5%be%97%e7%8d%8e%e5%90%8d%e5%96%ae%e6%8f%ad%e6%9b%89/",
     "mode": "實體"
-  },
-  {
-    "date": "2026-08-11",
-    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
-    "mode": "lab"
   },
   {
     "date": "2026-08-15",
@@ -91,39 +73,30 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-08-21",
-    "title": "澄清綜合醫院【關節鏡治療重度膝骨關節炎：十年經驗分享】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "運動醫學",
-    "place": "澄清綜合醫院(平等)3F第一會議室—台中市中區平等街139號",
-    "url": "https://bone.org.tw/education/events/11552/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-22",
-    "title": "高雄榮總骨科部【中華民國骨科醫學會南區月會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "高雄榮民總醫院急診大樓六樓 第五會議室",
-    "url": "https://bone.org.tw/education/events/11572/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-22",
-    "title": "老人肌力訓練工作坊-實務班115.08.22(共1時30分)(0.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "骨鬆",
+    "date": "2026-08-20",
+    "title": "Tw-DRGs 特材支付制度調整及骨科創傷相關品項說明",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4445.html",
+    "url": "https://www.tota.org.tw/tw-drgs-%e7%89%b9%e6%9d%90%e6%94%af%e4%bb%98%e5%88%b6%e5%ba%a6%e8%aa%bf%e6%95%b4%e5%8f%8a%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e7%9b%b8%e9%97%9c%e5%93%81%e9%a0%85%e8%aa%aa%e6%98%8e/",
     "mode": "實體"
+  },
+  {
+    "date": "2026-08-22",
+    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
+    "mode": "lab"
   },
   {
     "date": "2026-08-27",
-    "title": "DR. BONE Webinar 115.08.27(共50分)(0.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
+    "title": "台灣骨鬆肌少關節防治學會【DR. BONE Webinar (線上研討會)】",
+    "source": "TOA 台灣骨科醫學會",
     "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4495.html",
+    "place": "線上研討會",
+    "url": "https://bone.org.tw/education/events/11588/",
     "mode": "線上"
   },
   {
@@ -142,6 +115,24 @@ window.ORTHO_EVENTS = [
     "cat": "脊椎",
     "place": "COZZI Blu 和逸飯店 桃園館",
     "url": "https://bone.org.tw/education/events/11573/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-30",
+    "title": "新竹臺大分院護理部、小兒部、骨科部、復健部、教學部、臺大護理學系【115 年度DDH發展性髖關節發育不良重點超音波教育訓練課程】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "關節重建",
+    "place": "新竹台大分院生醫醫院竹北院區 五樓第一會議室",
+    "url": "https://bone.org.tw/education/events/11601/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-08-30",
+    "title": "超音波導引下的復健治療策略與設備實戰應用115.08.30 (共5時20分)(5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4497.html",
     "mode": "實體"
   },
   {
@@ -167,7 +158,7 @@ window.ORTHO_EVENTS = [
     "title": "September 15, 2026",
     "source": "NASS",
     "cat": "關節重建",
-    "place": "Register Now View Agenda Bertolotti syndrome is an underrecognized cause of chronic low back pain associated with a lumbosacral transitional vertebra (LSTV). Because the condition is often overlooked and the available literature remains limited, patients may experience delayed diagnosis and inconsistent management. This webinar will provide a multidisciplinary overview of the evaluation and treatment of Bertolotti syndrome, including clinical presentation, patient selection, imaging considerations, interventional pain management, psychosocial factors that influence outcomes, and surgical treatment strategies. Through expert perspectives from spine surgery, interventional spine care, psychology, and advanced practice providers, participants will gain practical approaches to improving recognition and individualized management of this complex condition. Unable to attend the live webinar? Register and watch the webinar recording OnDemand at a time and place convenient to you. Available 5-10 business days after the live event concludes. Up to 1.0 CME available. Chairs Kush K. Goyal, MD Michael Steinmentz, MD Faculty Erin Anderson, PA-C Sarah Rispinto, PsyD Faculty names and images are provided solely for educational context. This activity is planned and implemented in accordance with the ACCME Standards for Integrity and Independence. Audience This activity is designed for orthopedic spine surgeons, neurosurgeons, physiatrists, pain medicine physicians, radiologists, advanced practice providers (PAs and NPs), fellows, residents, and other healthcare professionals involved in the evaluation and management of patients with spine disorders.",
+    "place": "Register Now View Agenda Bertolotti syndrome is an underrecognized cause of chronic low back pain associated with a lumbosacral transitional vertebra (LSTV). Because the condition is often overlooked and the available literature remains limited, patients may experience delayed diagnosis and inconsistent management. This webinar will provide a multidisciplinary overview of the evaluation and treatment of Bertolotti syndrome, including clinical presentation, patient selection, imaging considerations, interventional pain management, psychosocial factors that influence outcomes, and surgical treatment strategies. Through expert perspectives from spine surgery, interventional spine care, psychology, and advanced practice providers, participants will gain practical approaches to improving recognition and individualized management of this complex condition. Unable to attend the live webinar? Register and watch the webinar recording OnDemand at a time and place convenient to you. Available 5-10 business days after the live event concludes. Up to 1.0 CME available. Chairs Kush K. Goyal, MD Michael Steinmentz, MD Faculty Erin Anderson, PA-C Sarah Rispinto, PhD Faculty names and images are provided solely for educational context. This activity is planned and implemented in accordance with the ACCME Standards for Integrity and Independence. Audience This activity is designed for orthopedic spine surgeons, neurosurgeons, physiatrists, pain medicine physicians, radiologists, advanced practice providers (PAs and NPs), fellows, residents, and other healthcare professionals involved in the evaluation and management of patients with spine disorders.",
     "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={ACC37F58-5F84-F111-AB0F-6045BDF0AE24}",
     "mode": "lab"
   },
@@ -190,6 +181,15 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-09-20",
+    "title": "社團法人台灣中西醫結合復健醫學會【超音波解剖暨臨床實戰經驗分享工作坊】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "台北維醫診所",
+    "url": "https://bone.org.tw/education/events/11581/",
+    "mode": "實體"
+  },
+  {
     "date": "2026-09-24",
     "title": "September 24, 2026",
     "source": "NASS",
@@ -206,6 +206,15 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "2026/10/03 第十九屆第一次CME (I) – Comprehensive Management of DRUJ Disorders (實體及線上課程)",
+    "source": "TSSH 台灣手外科醫學會",
+    "cat": "手外科",
+    "place": "原公告",
+    "url": "https://handsurgery.com.tw/2026-10-03-%e7%ac%ac%e5%8d%81%e4%b9%9d%e5%b1%86%e7%ac%ac%e4%b8%80%e6%ac%a1cme-i-comprehensive-management-of-druj-disorders-%e5%af%a6%e9%ab%94%e5%8f%8a%e7%b7%9a%e4%b8%8a%e8%aa%b2%e7%a8%8b/",
+    "mode": "線上"
   },
   {
     "date": "2026-10-06",
@@ -244,6 +253,15 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-11-01",
+    "title": "中華民國骨質疏鬆症學會【2026/11/01 ISCD Body Composition Analysis Course (台中)】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "光田醫院向上院區",
+    "url": "https://bone.org.tw/education/events/11585/",
+    "mode": "實體"
+  },
+  {
     "date": "2026-11-13",
     "title": "November 13, 2026",
     "source": "NASS",
@@ -251,6 +269,24 @@ window.ORTHO_EVENTS = [
     "place": "Register Now The field of spinal biologics is rapidly evolving as patients, researchers, and clinicians are recognizing its potential to treat challenging painful conditions. While the roles of both nonoperative and surgical treatment are relatively well-defined in the algorithm of spine care, the indications, risks, and concerns regarding biologics for a variety of spinal conditions have not been agreed upon. Because of the differences in regulatory pathways for many of these products, the availability of data is variable making administrative decision-making difficult. This meeting will bring together exciting minds from academia and industry to discuss the pertinent technologies and relevant issues in biologics use for spinal conditions. Unable to attend in person? Subscribe to NASS Anytime to view the course OnDemand later at your own pace- in addition to 100+ hours of additional spine content. Recordings are available 1-2 weeks after the live event concludes. Subscribe Now No CME available. Chairs Zorica Buser, PhD, MBA NYU Grossman School of Medicine, New York Christopher D. Chaput, MD UT Health, San Antonio, Texas Raymond J. Hah, MD Keck School of Medicine of USC, Los Angeles, California What You Will Learn Upon completion of this course, participants should gain strategies to: Review the evidence supporting current osteobiologics and graft materials used in spine care; Explore emerging regenerative and disc restoration technologies; Understand regulatory and translational challenges affecting biologics adoption; Assess how implants, surface technologies, and patient factors influence fusion outcomes Audience This course is designed for researchers, engineers, spine surgeons, and industry leaders involved in the development and clinical application of biologic technologies for spinal conditions. It is particularly valuable for professionals working at the intersection of biomaterials, regenerative medicine, implant innovation, and regulatory strategy who want a clearer understanding of emerging evidence and translational pathways. The program provides a forum for interdisciplinary discussion among stakeholders shaping the future of spine biologics.",
     "url": "https://www.spine.org/Biologics-Course",
     "mode": "lab"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "社團法人台灣中西醫結合復健醫學會【超音波解剖暨臨床實戰經驗分享工作坊】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "台北維醫診所",
+    "url": "https://bone.org.tw/education/events/11582/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-12-20",
+    "title": "社團法人台灣中西醫結合復健醫學會【超音波解剖暨臨床實戰經驗分享工作坊】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "台北維醫診所",
+    "url": "https://bone.org.tw/education/events/11583/",
+    "mode": "實體"
   },
   {
     "date": "2027-07-25",
