@@ -12,6 +12,18 @@ window.ORTHO_ANNOUNCEMENTS = [
     "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%a6%9c%e5%96%ae/"
   },
   {
+    "date": "2026-08-20",
+    "title": "Tw-DRGs 特材支付制度調整及骨科創傷相關品項說明",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/tw-drgs-%e7%89%b9%e6%9d%90%e6%94%af%e4%bb%98%e5%88%b6%e5%ba%a6%e8%aa%bf%e6%95%b4%e5%8f%8a%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e7%9b%b8%e9%97%9c%e5%93%81%e9%a0%85%e8%aa%aa%e6%98%8e/"
+  },
+  {
+    "date": "2026-07-31",
+    "title": "2026年第9屆 Young Surgeon Forum 得獎名單揭曉",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e7%ac%ac9%e5%b1%86-young-surgeon-forum-%e5%be%97%e7%8d%8e%e5%90%8d%e5%96%ae%e6%8f%ad%e6%9b%89/"
+  },
+  {
     "date": "2025-07-15",
     "title": "My Best Case優勝案例- 翻轉絕境：十九歲女孩的重生之路",
     "source": "TOTA 台灣骨科創傷醫學會",
