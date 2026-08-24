@@ -21,62 +21,72 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background:
-        radial-gradient(circle at 15% 0%, rgba(15, 118, 110, .12), transparent 32rem),
-        radial-gradient(circle at 90% 10%, rgba(245, 158, 11, .14), transparent 26rem),
-        var(--bg);
+      background: var(--bg);
       color: var(--ink);
       line-height: 1.65;
     }
     a { color: inherit; }
     .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
     .hero {
-      padding: 52px 0 26px;
-      border-bottom: 1px solid var(--line);
+      padding: 22px 0 18px;
+      background: linear-gradient(135deg, #075f5a, #0f766e 58%, #16877e);
+      color: white;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, .08);
+    }
+    .hero-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 26px;
+      align-items: end;
     }
     .eyebrow {
       display: inline-flex;
       gap: 8px;
       align-items: center;
-      margin: 0 0 14px;
-      color: var(--brand);
-      font-size: 14px;
+      margin: 0 0 4px;
+      color: #c5f3ec;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: .08em;
     }
     h1 {
       margin: 0;
-      font-size: clamp(34px, 6vw, 68px);
-      line-height: 1.05;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.1;
       letter-spacing: 0;
     }
     .lead {
       max-width: 760px;
-      margin: 18px 0 0;
-      color: var(--muted);
-      font-size: 18px;
+      margin: 6px 0 0;
+      color: rgba(255, 255, 255, .82);
+      font-size: 14px;
     }
     .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin: 28px 0 0;
+      display: flex;
+      gap: 8px;
+      margin: 0;
     }
     .stat, .filters, .event, .month-group {
       background: color-mix(in srgb, var(--card) 92%, transparent);
       border: 1px solid var(--line);
       border-radius: 8px;
     }
-    .stat { padding: 14px 16px; }
-    .stat b { display: block; font-size: 26px; line-height: 1.1; }
-    .stat span { color: var(--muted); font-size: 13px; }
+    .stat {
+      min-width: 100px;
+      padding: 9px 12px;
+      background: rgba(255, 255, 255, .12);
+      border-color: rgba(255, 255, 255, .22);
+    }
+    .stat b { display: block; font-size: 20px; line-height: 1.1; }
+    .stat span { color: rgba(255, 255, 255, .72); font-size: 11px; }
     .filters {
       position: sticky;
       top: 0;
       z-index: 2;
-      margin: 22px auto;
-      padding: 14px;
+      margin: 14px auto;
+      padding: 10px;
       backdrop-filter: blur(14px);
+      box-shadow: 0 8px 30px rgba(29, 43, 42, .06);
     }
     .filter-grid {
       display: grid;
@@ -103,11 +113,34 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid var(--line);
+      margin-bottom: 10px;
     }
-    .views button { min-height: 48px; font-weight: 800; }
+    .views button { min-height: 42px; font-weight: 800; }
+    .tab-count {
+      display: inline-grid;
+      min-width: 22px;
+      height: 22px;
+      margin-left: 5px;
+      padding: 0 6px;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--brand);
+      font-size: 12px;
+    }
+    .views button.active .tab-count { background: rgba(255, 255, 255, .2); color: white; }
+    .filter-toolbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+    }
+    .filter-panel { display: none; }
+    .filter-panel.open { display: block; }
+    .filter-toggle {
+      border-color: var(--brand);
+      color: var(--brand);
+      font-weight: 800;
+    }
     .filter-options {
       display: flex;
       flex-wrap: wrap;
@@ -155,10 +188,11 @@
     }
     .event {
       display: grid;
-      grid-template-columns: 112px 1fr auto;
-      gap: 16px;
+      grid-template-columns: 78px minmax(0, 1fr) auto;
+      gap: 14px;
       align-items: center;
-      padding: 16px;
+      padding: 13px 14px;
+      box-shadow: 0 2px 10px rgba(29, 43, 42, .035);
     }
     .date {
       border-right: 1px solid var(--line);
@@ -182,6 +216,14 @@
       gap: 8px;
       color: var(--muted);
       font-size: 14px;
+    }
+    .meta-item {
+      display: inline-flex;
+      max-width: min(100%, 520px);
+      align-items: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .tag {
       display: inline-flex;
@@ -296,6 +338,19 @@
       border-radius: 8px;
       color: var(--muted);
     }
+    .about {
+      margin: 0 auto 16px;
+      padding: 0 4px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .about summary {
+      width: fit-content;
+      color: var(--ink);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .about p { max-width: 900px; margin: 8px 0 0; }
     footer {
       padding: 24px 0 36px;
       border-top: 1px solid var(--line);
@@ -303,52 +358,73 @@
       font-size: 14px;
     }
     @media (max-width: 760px) {
+      .hero { padding: 16px 0; }
+      .hero-row { display: block; }
+      .lead { font-size: 13px; }
+      .stats { margin-top: 12px; }
+      .stat { min-width: 0; flex: 1; }
       .filters {
         position: static;
         top: auto;
       }
-      .stats, .filter-grid, .calendar-layout { grid-template-columns: 1fr; }
+      .filter-grid, .calendar-layout { grid-template-columns: 1fr; }
       .views { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .event, .day-row { grid-template-columns: 1fr; }
       .date { border-right: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
       .list-head, .calendar-nav { display: block; }
+      .event .actions { justify-content: flex-start; }
     }
   </style>
 </head>
 <body>
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">ORTHO COURSE RADAR</p>
-      <h1>骨科進修雷達</h1>
-      <p class="lead">把骨科年會、關節重建、創傷、脊椎、運動醫學、影像與研究方法課程集中在一頁，快速找下一個值得報名的場次。</p>
-      <div class="stats" aria-label="課程統計">
-        <div class="stat"><b id="totalCount">0</b><span>筆課程公告</span></div>
-        <div class="stat"><b>7</b><span>骨科分類</span></div>
-        <div class="stat"><b id="updatedAt">—</b><span>資料更新</span></div>
+      <div class="hero-row">
+        <div>
+          <p class="eyebrow">ORTHO COURSE RADAR</p>
+          <h1>骨科進修雷達</h1>
+          <p class="lead">骨科年會、手術實作、關節重建、創傷、脊椎與運動醫學課程，一頁掌握。</p>
+        </div>
+        <div class="stats" aria-label="課程統計">
+          <div class="stat"><b id="totalCount">0</b><span>課程</span></div>
+          <div class="stat"><b id="sourceCount">0</b><span>來源</span></div>
+          <div class="stat"><b id="updatedAt">—</b><span>更新</span></div>
+        </div>
       </div>
     </div>
   </header>
 
   <nav class="wrap filters" aria-label="課程篩選">
     <div class="views" aria-label="顯示模式">
-      <button class="active" data-view="list">課程清單</button>
-      <button data-view="calendar">📅 活動行事曆</button>
-      <button data-view="webinars">Webinars</button>
-      <button data-view="announcements">📢 最新公告</button>
+      <button class="active" data-view="list">📋 課程 <span class="tab-count" id="eventTabCount">0</span></button>
+      <button data-view="calendar">📅 行事曆 <span class="tab-count" id="calendarTabCount">0</span></button>
+      <button data-view="webinars">🖥️ Webinars <span class="tab-count" id="webinarTabCount">0</span></button>
+      <button data-view="announcements">📢 公告 <span class="tab-count" id="announcementTabCount">0</span></button>
     </div>
-    <div class="filter-grid">
+    <div class="filter-toolbar">
       <input id="q" type="search" placeholder="搜尋：TKA、spine、trauma、ultrasound..." aria-label="搜尋課程">
-      <input id="from" type="date" aria-label="起始日期">
+      <button class="filter-toggle" id="filterToggle" aria-expanded="true" aria-controls="filterPanel">☰ 篩選</button>
     </div>
-    <div class="filter-options">
-      <label class="check"><input id="hideExpired" type="checkbox" checked>排除過期</label>
-      <span id="sortHint">排序：一律依活動日期由近到遠</span>
+    <div class="filter-panel open" id="filterPanel">
+      <div class="filter-grid">
+        <input id="from" type="date" aria-label="起始日期">
+        <button id="clearFilters">清除篩選</button>
+      </div>
+      <div class="filter-options">
+        <label class="check"><input id="hideExpired" type="checkbox" checked>排除過期</label>
+        <span id="sortHint">依活動日期由近到遠</span>
+      </div>
+      <div class="chips" id="timeChips" aria-label="時間快速篩選"></div>
+      <div class="chips" id="modeChips" aria-label="形式快速篩選"></div>
+      <div class="chips" id="catChips" aria-label="分類"></div>
+      <div class="chips" id="sourceChips" aria-label="來源"></div>
     </div>
-    <div class="chips" id="timeChips" aria-label="時間快速篩選"></div>
-    <div class="chips" id="modeChips" aria-label="形式快速篩選"></div>
-    <div class="chips" id="catChips" aria-label="分類"></div>
-    <div class="chips" id="sourceChips" aria-label="來源"></div>
   </nav>
+
+  <details class="wrap about">
+    <summary>骨科進修雷達是什麼？</summary>
+    <p>本站每週自動巡查骨科學會與相關機構的公開公告頁，整理活動日期、主題、形式與地點，並保留原始公告連結。這是個人彙整、不是官方報名管道；課程異動與最終資訊請以主辦單位公告為準。</p>
+  </details>
 
   <main class="wrap">
     <div class="list-head">
@@ -364,7 +440,8 @@
 
   <footer>
     <div class="wrap">
-      <p>資料由 <code>update_events.py</code> 抓取各學會／機構公開公告頁，只顯示標題與連結並導回原站；實際資訊以原公告為準。</p>
+      <p>資料每週自動彙整自各學會／機構的公開公告頁，僅顯示必要資訊並導回原站；實際資訊以原公告為準。</p>
+      <p>由 Chia-Yuan Chen / Homigin 建置與維護。</p>
     </div>
   </footer>
 
@@ -401,7 +478,8 @@
     ];
     const modeRanges = [
       ["全部形式", ""],
-      ["lab", "lab"]
+      ["🖥️ 線上", "線上"],
+      ["🦴 實作 / lab", "lab"]
     ];
 
     function makeChips(root, items, key) {
@@ -438,8 +516,9 @@
     }
 
     function modeOf(e) {
+      if (["lab", "線上", "實體"].includes(e.mode)) return e.mode;
       const text = `${e.mode || ""} ${e.title || ""} ${e.place || ""}`;
-      if (/cadaver|大體|simulation|simulator|動物實作|仿真|模型手術|手術體驗|手術.*實作|實作.*手術|真實病人|hands-?on|臨床手術技能|arthroscopic workshop|lab/i.test(text)) return "lab";
+      if (/cadaver|大體|simulation|simulator|動物實作|仿真|模型手術|手術體驗|手術.*實作|實作.*手術|真實病人|hands-?on|臨床手術技能|arthroscopic workshop|\blab\b/i.test(text)) return "lab";
       if (/線上|online|webinar|webcast|youtube|replay|直播/i.test(text)) return "線上";
       return "實體";
     }
@@ -491,6 +570,12 @@
       }
     }
 
+    function placeLabel(e) {
+      const place = String(e.place || "").trim();
+      if (!place || place === "原公告" || place.length > 180 || /^(Register Now|View Agenda)/i.test(place)) return "";
+      return place.length > 72 ? `${place.slice(0, 72)}…` : place;
+    }
+
     function eventCard(e, mode = "list") {
       const dateLabel = e.end_date && e.end_date !== e.date
         ? `${e.date.slice(5)}–${e.end_date.slice(5)}`
@@ -500,9 +585,14 @@
           <div class="date">${esc(dateLabel)}<small>${esc(e.date.slice(0, 4))}</small></div>
           <div>
             <h3>${esc(e.title)}</h3>
-            <div class="meta"><span class="tag">${esc(e.cat || modeOf(e))}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place || "")}</span></div>
+            <div class="meta">
+              <span class="tag">${esc(e.cat || modeOf(e))}</span>
+              <span class="meta-item">${modeOf(e) === "線上" ? "🖥️" : modeOf(e) === "lab" ? "🦴" : "📍"} ${esc(modeOf(e))}</span>
+              <span class="meta-item">${esc(e.source)}</span>
+              ${placeLabel(e) ? `<span class="meta-item" title="${esc(e.place)}">📍 ${esc(placeLabel(e))}</span>` : ""}
+            </div>
           </div>
-          <div class="actions"><button class="ics" data-ics="${esc(e.url)}">加入</button><a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">原站</a></div>
+          <div class="actions"><button class="ics" data-ics="${esc(e.url)}">＋ 行事曆</button><a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">原站 ↗</a></div>
         </article>
       `;
     }
@@ -545,7 +635,7 @@
                 <div class="day">${esc(e.date.slice(5))}</div>
                 <div>
                   <a class="open" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener">${esc(e.title)}</a>
-                  <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span><span>${esc(e.place)}</span></div>
+                  <div class="meta"><span class="tag">${esc(e.cat)}</span><span>${esc(modeOf(e))}</span><span>${esc(e.source)}</span>${placeLabel(e) ? `<span class="meta-item">📍 ${esc(placeLabel(e))}</span>` : ""}</div>
                 </div>
               </div>
             `).join("")}
@@ -601,11 +691,12 @@
     }
 
     document.querySelector(".views").addEventListener("click", (e) => {
-      if (e.target.tagName !== "BUTTON") return;
-      state.view = e.target.dataset.view;
+      const button = e.target.closest("button[data-view]");
+      if (!button) return;
+      state.view = button.dataset.view;
       state.month = "";
       state.day = "";
-      [...e.currentTarget.children].forEach(btn => btn.classList.toggle("active", btn === e.target));
+      [...e.currentTarget.children].forEach(btn => btn.classList.toggle("active", btn === button));
       render();
     });
     $("events").addEventListener("click", (e) => {
@@ -632,12 +723,45 @@
     $("q").addEventListener("input", render);
     $("from").addEventListener("input", render);
     $("hideExpired").addEventListener("change", render);
+    $("filterToggle").addEventListener("click", () => {
+      setFilterPanel(!$("filterPanel").classList.contains("open"));
+    });
+    $("clearFilters").addEventListener("click", () => {
+      $("q").value = "";
+      $("from").value = "";
+      $("hideExpired").checked = true;
+      state.cat = "";
+      state.source = "";
+      state.time = "";
+      state.mode = "";
+      for (const id of ["timeChips", "modeChips", "catChips", "sourceChips"]) {
+        [...$(id).children].forEach((button, index) => button.classList.toggle("active", index === 0));
+      }
+      render();
+    });
     $("totalCount").textContent = events.length;
+    $("sourceCount").textContent = new Set(events.map(event => event.source)).size;
+    $("eventTabCount").textContent = events.length;
+    $("calendarTabCount").textContent = events.length;
+    $("webinarTabCount").textContent = webinars.length;
+    $("announcementTabCount").textContent = announcements.length;
+    setFilterPanel(!window.matchMedia("(max-width: 760px)").matches);
     fetch("last-run.json")
       .then(response => response.ok ? response.json() : Promise.reject())
-      .then(run => $("updatedAt").textContent = String(run.updated || "").slice(0, 10) || "—")
+      .then(run => $("updatedAt").textContent = formatUpdated(run.updated))
       .catch(() => {});
     render();
+
+    function setFilterPanel(open) {
+      $("filterPanel").classList.toggle("open", open);
+      $("filterToggle").setAttribute("aria-expanded", String(open));
+      $("filterToggle").textContent = open ? "收合篩選" : "☰ 篩選";
+    }
+
+    function formatUpdated(value) {
+      const match = String(value || "").match(/^\d{4}-(\d{2})-(\d{2})T(\d{2}):(\d{2})/);
+      return match ? `${Number(match[1])}/${Number(match[2])} ${match[3]}:${match[4]}` : "—";
+    }
 
     function downloadICS(rows) {
       if (!rows.length) return;

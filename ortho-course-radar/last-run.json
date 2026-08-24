@@ -1,10 +1,10 @@
 {
-  "updated": "2026-08-24T14:42:52",
+  "updated": "2026-08-24T15:16:09",
   "events": 31,
   "announcements": 15,
   "webinars": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x10640ba10>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))"
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x10278c650>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))"
   },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
