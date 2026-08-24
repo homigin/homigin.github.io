@@ -91,7 +91,6 @@ AAHKS_SEARCH_API = "https://www.aahks.org/wp-json/wp/v2/search?per_page=5&search
 AAHKS_KEEP = re.compile(r"register now|registration now open|applications open|join .+course", re.I)
 AAHKS_DROP = re.compile(r"keynote|speaker|CME|highlight|abstract|exhibitor|paper|press release|branded events|agenda", re.I)
 AAHKS_MONTH = re.compile(r"\b(Jan\.?|January|Feb\.?|February|Mar\.?|March|Apr\.?|April|May|Jun\.?|June|Jul\.?|July|Aug\.?|August|Sep\.?|Sept\.?|September|Oct\.?|October|Nov\.?|November|Dec\.?|December)\s+(\d{1,2})(?:,?\s+(20\d{2}))?", re.I)
-
 ANNOUNCEMENT_SOURCES = [
     Source("JRS 台灣關節重建醫學會", "公告", ("https://jrs.org.tw/news/", "https://jrs.org.tw/"), wp="https://jrs.org.tw"),
     Source("TOTA 台灣骨科創傷醫學會", "公告", ("https://www.tota.org.tw/category/news/",), wp="https://www.tota.org.tw"),
@@ -184,16 +183,16 @@ def category(source_cat: str, text: str) -> str:
 
 def mode(text: str, place: str = "") -> str:
     hay = f"{text} {place}"
-    if re.search(r"cadaver|大體|simulation|simulator|animal|動物實作|仿真|模型手術|手術體驗|手術.*實作|實作.*手術|真實病人|hands-?on|臨床手術技能|arthroscopic workshop|lab", hay, re.I):
+    if re.search(r"cadaver|大體|simulation|simulator|animal|動物實作|仿真|模型手術|手術體驗|手術.*實作|實作.*手術|真實病人|hands-?on|臨床手術技能|arthroscopic workshop|\blab\b", hay, re.I):
         return "lab"
     if re.search(r"webinar|線上|online|webcast|youtube|replay|直播", hay, re.I):
         return "線上"
     return "實體"
 
 
-def fetch(url: str, verify: bool = True) -> str:
+def fetch(url: str, verify: bool = True, timeout: int = TIMEOUT) -> str:
     headers = {"User-Agent": "ortho-course-radar/0.1 (+local personal use)"}
-    r = requests.get(url, headers=headers, timeout=TIMEOUT, verify=verify)
+    r = requests.get(url, headers=headers, timeout=timeout, verify=verify)
     r.raise_for_status()
     if not r.encoding or "charset=" not in r.headers.get("content-type", "").lower():
         r.encoding = r.apparent_encoding
@@ -275,6 +274,49 @@ def from_html(source: Source) -> list[dict[str, str]]:
     if not fetched and last_error:
         raise last_error
     return out
+
+
+def parse_nass_listing(page_html: str, listing_url: str) -> list[dict[str, str]]:
+    """Read NASS's authoritative table columns instead of nearby description text."""
+    soup = BeautifulSoup(page_html, "html.parser")
+    parsed = []
+    for row in soup.select("tr.table-row"):
+        cells = row.find_all(["td", "th"], recursive=False)
+        if len(cells) < 4:
+            continue
+        title = clean(cells[0].get_text(" "))
+        date_text = clean(cells[1].get_text(" "))
+        event_date = first_date(date_text)
+        if not event_date:
+            continue  # OnDemand and other undated rows are not upcoming events.
+        details = cells[3].find("a", href=True)
+        if not title or not details:
+            raise ValueError(f"NASS dated row is missing a title or Details link: {date_text}")
+
+        venue = clean(cells[2].get_text(" "))
+        event_mode = mode(f"{title} {venue}")
+        event = {
+            "date": event_date,
+            "title": title,
+            "source": "NASS",
+            "cat": "脊椎",
+            "place": "線上" if event_mode == "線上" else venue or "原公告",
+            "url": urljoin(listing_url, details["href"]),
+            "mode": event_mode,
+        }
+        if event_end := end_date(date_text):
+            event["end_date"] = event_end
+        parsed.append(event)
+
+    return parsed
+
+
+def from_nass(source: Source) -> list[dict[str, str]]:
+    listing_url = source.urls[0]
+    parsed = parse_nass_listing(fetch(listing_url, source.verify, timeout=15), listing_url)
+    if not parsed:
+        raise ValueError("NASS listing contained no dated events")
+    return parsed
 
 
 def from_wp(source: Source) -> list[dict[str, str]]:
@@ -470,9 +512,11 @@ def main() -> None:
     errors: dict[str, str] = {}
     for source in SOURCES:
         try:
-            if source.wp:
+            if source.name == "NASS":
+                events.extend(from_nass(source))
+            elif source.wp:
                 events.extend(from_wp(source))
-            if source.urls:
+            if source.urls and source.name != "NASS":
                 events.extend(from_html(source))
         except Exception as exc:
             errors[source.name] = f"{type(exc).__name__}: {exc}"
