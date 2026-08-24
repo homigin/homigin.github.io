@@ -55,24 +55,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-08-16",
-    "title": "【歡迎報名】2026/08/16骨鬆專科醫師學分班(台南)(僅限本會醫師報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=607&t=0",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-16",
-    "title": "【歡迎報名】2026/08/16骨鬆衛教師認證課程及考試(台南)(僅限本會醫事人員報名)",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=605&t=0",
-    "mode": "實體"
-  },
-  {
     "date": "2026-08-20",
     "title": "Tw-DRGs 特材支付制度調整及骨科創傷相關品項說明",
     "source": "TOTA 台灣骨科創傷醫學會",
