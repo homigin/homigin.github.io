@@ -1,10 +1,14 @@
 {
-  "updated": "2026-08-24T15:16:09",
-  "events": 31,
+  "updated": "2026-08-30T22:30:22",
+  "events": 37,
   "announcements": 15,
   "webinars": 23,
   "errors": {
-    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x10278c650>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))"
+    "TWSS 台灣脊椎外科醫學會": "ConnectTimeout: HTTPSConnectionPool(host='www.twss.org.tw', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.twss.org.tw', port=443) at 0x7f47420e7cb0>, 'Connection to www.twss.org.tw timed out. (connect timeout=6)'))",
+    "TOFAS 台灣足踝醫學會": "HTTPError: 500 Server Error: Internal Server Error for url: https://www.tofas.org.tw/",
+    "台灣骨質疏鬆症學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.toa1997.org.tw/",
+    "Chang Gung STARC": "HTTPError: 403 Client Error: Forbidden for url: https://starc.cgmh.org.tw/",
+    "OTA": "HTTPError: 403 Client Error: Forbidden for url: https://ota.org/education/person-events/meetings-and-courses"
   },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",

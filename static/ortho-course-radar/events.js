@@ -1,24 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-07-25",
-    "title": "2026年骨創年會議程發表!",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/19917-2/",
-    "mode": "實體",
-    "end_date": "2026-07-26"
-  },
-  {
-    "date": "2026-07-26",
-    "title": "2026.07.26 住院醫師聯合教育訓練課程",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/education/2026-07-26-%e4%bd%8f%e9%99%a2%e9%86%ab%e5%b8%ab%e8%81%af%e5%90%88%e6%95%99%e8%82%b2%e8%a8%93%e7%b7%b4%e8%aa%b2%e7%a8%8b/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-07-31",
     "title": "2026年第9屆 Young Surgeon Forum 得獎名單揭曉",
     "source": "TOTA 台灣骨科創傷醫學會",
@@ -64,7 +45,7 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-08-22",
+    "date": "2026-08-29",
     "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
     "source": "TOTA 台灣骨科創傷醫學會",
     "cat": "創傷",
@@ -73,48 +54,39 @@ window.ORTHO_EVENTS = [
     "mode": "lab"
   },
   {
-    "date": "2026-08-27",
-    "title": "台灣骨鬆肌少關節防治學會【DR. BONE Webinar (線上研討會)】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "線上研討會",
-    "url": "https://bone.org.tw/education/events/11588/",
-    "mode": "線上"
-  },
-  {
     "date": "2026-08-29",
-    "title": "中華民國關節鏡及膝關節醫學會【2026 Taiwan Advanced knee Arthroscopic course】",
-    "source": "TOA 台灣骨科醫學會",
+    "title": "2026.08.29-30 2026 Taiwan Advanced knee Arthroscopic course",
+    "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
-    "place": "中山醫學大學 解剖教室",
-    "url": "https://bone.org.tw/education/events/11577/",
+    "place": "原公告",
+    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-08-29-30-2026-taiwan-advanced-knee-arthroscopic-course/",
     "mode": "實體"
   },
   {
-    "date": "2026-08-29",
-    "title": "台灣脊椎微創醫學會【台灣脊椎微創醫學會/台灣脊椎微創內視鏡醫學會秋季國際研討會暨 部桃/北醫脊椎實作工作坊】",
+    "date": "2026-09-05",
+    "title": "台灣肌肉骨骼神經超音波醫學會【The First Asian Musculoskeletal Ultrasound Summit (1st AMUS)】",
     "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "COZZI Blu 和逸飯店 桃園館",
-    "url": "https://bone.org.tw/education/events/11573/",
+    "cat": "超音波",
+    "place": "政大公企中心2F 國際會議廳",
+    "url": "https://bone.org.tw/education/events/11593/",
     "mode": "實體"
   },
   {
-    "date": "2026-08-30",
-    "title": "新竹臺大分院護理部、小兒部、骨科部、復健部、教學部、臺大護理學系【115 年度DDH發展性髖關節發育不良重點超音波教育訓練課程】",
+    "date": "2026-09-05",
+    "title": "國立成功大學醫學院附設醫院骨科部【成大醫院骨科部 Research Day】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "研究",
+    "place": "國立成功大學醫學院附設醫院 住院大樓7A日光室",
+    "url": "https://bone.org.tw/education/events/11613/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-11",
+    "title": "屏基醫療財團法人屏東基督教醫院【淺談微創人工髖關節手術(演講)】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "關節重建",
-    "place": "新竹台大分院生醫醫院竹北院區 五樓第一會議室",
-    "url": "https://bone.org.tw/education/events/11601/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-30",
-    "title": "超音波導引下的復健治療策略與設備實戰應用115.08.30 (共5時20分)(5點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "超音波",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4497.html",
+    "place": "約翰大樓6樓簡報室",
+    "url": "https://bone.org.tw/education/events/11597/",
     "mode": "實體"
   },
   {
@@ -124,6 +96,42 @@ window.ORTHO_EVENTS = [
     "cat": "關節重建",
     "place": "原公告",
     "url": "https://jrs.org.tw/115%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e9%97%9c%e7%af%80%e9%87%8d%e5%bb%ba%e9%86%ab%e5%ad%b8%e6%9c%83115%e5%b9%b4%e5%ba%a6%e5%b9%b4%e6%9c%83%e6%9a%a8%e5%ad%b8%e8%a1%93%e7%a0%94%e8%a8%8e/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "台灣增生療法醫學會、亞東紀念醫院【Prolo 202 Musculoskeletal Ultrasound Essential Workshop】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "亞東紀念醫院 復健中心 4F",
+    "url": "https://bone.org.tw/education/events/11592/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "台灣骨鬆肌少關節防治學會【TBMJ 2026年會暨國際學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "高雄展覽館304a",
+    "url": "https://bone.org.tw/education/events/11602/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "屏東榮民總醫院【急診創傷訓練課程ETTC】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "創傷",
+    "place": "5樓會議室",
+    "url": "https://bone.org.tw/education/events/11596/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-12",
+    "title": "聯新國際醫院【115年桃竹苗區骨科月會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "中壢南方莊園渡假飯店",
+    "url": "https://bone.org.tw/education/events/11595/",
     "mode": "實體"
   },
   {
@@ -145,12 +153,39 @@ window.ORTHO_EVENTS = [
     "mode": "線上"
   },
   {
+    "date": "2026-09-17",
+    "title": "高雄市立民生醫院【中老年族群骨質疏鬆預防保健】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "骨鬆",
+    "place": "高雄市苓雅區凱旋二路132號10樓 (高雄市高齡整合長期照護中心10樓)",
+    "url": "https://bone.org.tw/education/events/11599/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-19",
+    "title": "中山醫學大學附設醫院骨科部、仁愛長庚醫院骨科部【中區月會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "中山醫學大學正心樓0213教室",
+    "url": "https://bone.org.tw/education/events/11615/",
+    "mode": "實體"
+  },
+  {
     "date": "2026-09-19",
     "title": "中華民國骨質疏鬆症學會【2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Clinician】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "骨鬆",
     "place": "衛生福利部臺南醫院 急診大樓6樓 大會議廳",
     "url": "https://bone.org.tw/education/events/11529/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-09-19",
+    "title": "台灣術後加速康復學會【2026年台灣術後加速康復學會/義大醫院/台灣麻醉醫學會 骨科關節置換手術ERAS工作坊】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "義守大學醫學院/5樓大講堂",
+    "url": "https://bone.org.tw/education/events/11616/",
     "mode": "實體"
   },
   {
@@ -188,6 +223,24 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/education/2026%e6%89%8b%e8%a1%93%e8%a7%80%e6%91%a9%e9%86%ab%e5%b8%ab%e4%ba%a4%e6%b5%81%e8%a8%88%e5%8a%83/",
     "mode": "實體"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "林口長庚紀念醫院【2026 Atlas Shoulder Summit肩端學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "肩肘",
+    "place": "林口長庚醫院研究大樓一樓會議廳",
+    "url": "https://bone.org.tw/education/events/11598/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "2026/10/03 第十九屆第一次CME (I) – Comprehensive Management of DRUJ Disorders (實體及線上課程)",
+    "source": "TSSH 台灣手外科醫學會",
+    "cat": "手外科",
+    "place": "原公告",
+    "url": "https://handsurgery.com.tw/2026-10-03-%e7%ac%ac%e5%8d%81%e4%b9%9d%e5%b1%86%e7%ac%ac%e4%b8%80%e6%ac%a1cme-i-comprehensive-management-of-druj-disorders-%e5%af%a6%e9%ab%94%e5%8f%8a%e7%b7%9a%e4%b8%8a%e8%aa%b2%e7%a8%8b/",
+    "mode": "線上"
   },
   {
     "date": "2026-10-06",
