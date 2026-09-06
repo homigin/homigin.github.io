@@ -1,14 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-07-31",
-    "title": "2026年第9屆 Young Surgeon Forum 得獎名單揭曉",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/2026%e5%b9%b4%e7%ac%ac9%e5%b1%86-young-surgeon-forum-%e5%be%97%e7%8d%8e%e5%90%8d%e5%96%ae%e6%8f%ad%e6%9b%89/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-08-15",
     "title": "匯聚亞洲創傷骨科新視野，共啟臨床創新與國際交流新篇章",
     "source": "TOTA 台灣骨科創傷醫學會",
@@ -46,15 +37,6 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-08-29",
-    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-08-29",
     "title": "2026.08.29-30 2026 Taiwan Advanced knee Arthroscopic course",
     "source": "台灣關節鏡及膝關節醫學會",
     "cat": "運動醫學",
@@ -63,22 +45,13 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-09-05",
-    "title": "台灣肌肉骨骼神經超音波醫學會【The First Asian Musculoskeletal Ultrasound Summit (1st AMUS)】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "政大公企中心2F 國際會議廳",
-    "url": "https://bone.org.tw/education/events/11593/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-05",
-    "title": "國立成功大學醫學院附設醫院骨科部【成大醫院骨科部 Research Day】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "研究",
-    "place": "國立成功大學醫學院附設醫院 住院大樓7A日光室",
-    "url": "https://bone.org.tw/education/events/11613/",
-    "mode": "實體"
+    "date": "2026-09-03",
+    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
+    "mode": "lab"
   },
   {
     "date": "2026-09-11",
