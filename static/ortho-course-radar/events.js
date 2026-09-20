@@ -1,41 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-08-15",
-    "title": "匯聚亞洲創傷骨科新視野，共啟臨床創新與國際交流新篇章",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/%e5%8c%af%e8%81%9a%e4%ba%9e%e6%b4%b2%e5%89%b5%e5%82%b7%e9%aa%a8%e7%a7%91%e6%96%b0%e8%a6%96%e9%87%8e%ef%bc%8c%e5%85%b1%e5%95%9f%e8%87%a8%e5%ba%8a%e5%89%b5%e6%96%b0%e8%88%87%e5%9c%8b%e9%9a%9b%e4%ba%a4/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-15",
-    "title": "2026.08.15 大體膝關節鏡實作研習會 2026 Current Concepts in Knee Preservation- Precision PSI Around-the-Knee Osteotomy Cadaver Course",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/conference/2026-08-15-%e5%a4%a7%e9%ab%94%e8%86%9d%e9%97%9c%e7%af%80%e9%8f%a1%e5%af%a6%e4%bd%9c%e7%a0%94%e7%bf%92%e6%9c%83-2026-current-concepts-in-knee-preservation-precision-psi-around-the-knee-osteotomy-cadav/",
-    "mode": "lab"
-  },
-  {
-    "date": "2026-08-16",
-    "title": "Apply for the APKASS-SLARD Travelling Fellowship 2027! (by 16 August 2026)",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "關節重建",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/activity/apply-for-the-apkass-slard-travelling-fellowship-2027-by-16-august-2026/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-08-20",
-    "title": "Tw-DRGs 特材支付制度調整及骨科創傷相關品項說明",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/tw-drgs-%e7%89%b9%e6%9d%90%e6%94%af%e4%bb%98%e5%88%b6%e5%ba%a6%e8%aa%bf%e6%95%b4%e5%8f%8a%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e7%9b%b8%e9%97%9c%e5%93%81%e9%a0%85%e8%aa%aa%e6%98%8e/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-08-29",
     "title": "2026.08.29-30 2026 Taiwan Advanced knee Arthroscopic course",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -43,15 +7,6 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-08-29-30-2026-taiwan-advanced-knee-arthroscopic-course/",
     "mode": "實體"
-  },
-  {
-    "date": "2026-09-09",
-    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
-    "mode": "lab"
   },
   {
     "date": "2026-09-12",
@@ -63,49 +18,13 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-09-15",
-    "title": "Bertolotti Syndrome: Interventional and Surgical Evaluation, Management, and Treatment",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "線上",
-    "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={ACC37F58-5F84-F111-AB0F-6045BDF0AE24}",
-    "mode": "線上"
-  },
-  {
-    "date": "2026-09-17",
-    "title": "高雄市立民生醫院【中老年族群骨質疏鬆預防保健】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "高雄市苓雅區凱旋二路132號10樓 (高雄市高齡整合長期照護中心10樓)",
-    "url": "https://bone.org.tw/education/events/11599/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "中山醫學大學附設醫院骨科部、仁愛長庚醫院骨科部【中區月會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "中山醫學大學正心樓0213教室",
-    "url": "https://bone.org.tw/education/events/11615/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "中華民國骨質疏鬆症學會【2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Clinician】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "骨鬆",
-    "place": "衛生福利部臺南醫院 急診大樓6樓 大會議廳",
-    "url": "https://bone.org.tw/education/events/11529/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-19",
-    "title": "台灣術後加速康復學會【2026年台灣術後加速康復學會/義大醫院/台灣麻醉醫學會 骨科關節置換手術ERAS工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "義守大學醫學院/5樓大講堂",
-    "url": "https://bone.org.tw/education/events/11616/",
-    "mode": "實體"
+    "date": "2026-09-14",
+    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！(已截止報名)",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
+    "mode": "lab"
   },
   {
     "date": "2026-09-19",
@@ -114,33 +33,6 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "原公告",
     "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-20",
-    "title": "社團法人台灣中西醫結合復健醫學會【超音波解剖暨臨床實戰經驗分享工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "台北維醫診所",
-    "url": "https://bone.org.tw/education/events/11581/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-20",
-    "title": "跑者足踝練習與步態調整策略(實體+直播)115.09.20(共6時40分)(3點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "足踝",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4524.html",
-    "mode": "線上"
-  },
-  {
-    "date": "2026-09-20",
-    "title": "頸腰椎超音波進階實作工作坊115.09.20(共4時40分)(4點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "超音波",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4522.html",
     "mode": "實體"
   },
   {
@@ -177,6 +69,15 @@ window.ORTHO_EVENTS = [
     "cat": "肩肘",
     "place": "林口長庚醫院研究大樓一樓會議廳",
     "url": "https://bone.org.tw/education/events/11598/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "SECC Congress 2026 Taipei 暨2026智慧急重症醫療國際會議&The 10th Asia-Pacific Conference on ICU Early Rehabilitation Taipei 2026：115.10.03(共4時20分) 、115.1",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "復健相關",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4496.html",
     "mode": "實體"
   },
   {
@@ -269,6 +170,15 @@ window.ORTHO_EVENTS = [
     "cat": "綜合",
     "place": "張榮發基金會國際會議中心801會議室",
     "url": "https://bone.org.tw/education/events/11634/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-12-05",
+    "title": "【2026年台灣復健專科超音波導引脊椎注射工作坊及認證】115.12.05-115.12.06舉辦，115.11.08報名截止",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "脊椎",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/hot/hot_info.asp?/535.html",
     "mode": "實體"
   },
   {

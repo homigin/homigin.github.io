@@ -1,9 +1,9 @@
 window.ORTHO_ANNOUNCEMENTS = [
   {
-    "date": "2026-04-11",
-    "title": "2026/04/11 台灣手外科醫學會 專科醫師甄審注意事項",
+    "date": "2026-10-04",
+    "title": "2026/10/04 長庚醫學週",
     "source": "TSSH 台灣手外科醫學會",
-    "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85/"
+    "url": "https://handsurgery.com.tw/2026-10-04-%e9%95%b7%e5%ba%9a%e9%86%ab%e5%ad%b8%e9%80%b1/"
   },
   {
     "date": "2026-04-11",
