@@ -36,15 +36,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-09-24",
-    "title": "From Awareness to Action: Bone Health Optimization, Osteoporosis Education, and Secondary Fracture Prevention in Spine Care—The National Spine Health Foundation Approach",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "線上",
-    "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={DBAA8BCB-7784-F111-AB0F-6045BDF0AE24}",
-    "mode": "線上"
-  },
-  {
     "date": "2026-09-29",
     "title": "2026手術觀摩醫師交流計劃",
     "source": "台灣關節鏡及膝關節醫學會",

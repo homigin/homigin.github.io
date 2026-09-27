@@ -12,6 +12,12 @@ window.ORTHO_ANNOUNCEMENTS = [
     "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%a6%9c%e5%96%ae/"
   },
   {
+    "date": "2026-09-27",
+    "title": "TOTA 國際交流｜OTA × IOTA 2026 Nashville・前進 IOTA 2028 Kyoto",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/tota-%e5%9c%8b%e9%9a%9b%e4%ba%a4%e6%b5%81%ef%bd%9cota-x-iota-2026-nashville%e3%83%bb%e5%89%8d%e9%80%b2-iota-2028-kyoto/"
+  },
+  {
     "date": "2026-08-20",
     "title": "Tw-DRGs 特材支付制度調整及骨科創傷相關品項說明",
     "source": "TOTA 台灣骨科創傷醫學會",
