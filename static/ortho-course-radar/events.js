@@ -1,14 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-08-29",
-    "title": "2026.08.29-30 2026 Taiwan Advanced knee Arthroscopic course",
-    "source": "台灣關節鏡及膝關節醫學會",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.taiwanarthroscopy.org.tw/activity/2026-08-29-30-2026-taiwan-advanced-knee-arthroscopic-course/",
-    "mode": "實體"
-  },
-  {
     "date": "2026-09-12",
     "title": "2026.09.12 115年中華民國關節重建醫學會115年度年會暨學術研討會",
     "source": "JRS 台灣關節重建醫學會",
@@ -45,31 +36,13 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-10-03",
-    "title": "台灣手外科醫學會【第十九屆第一次CME (I) – Comprehensive Management of DRUJ Disorders】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "手外科",
-    "place": "嘉義基督教醫院 住院大樓D棟 B1圖書館會議室",
-    "url": "https://bone.org.tw/education/events/11621/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-03",
-    "title": "林口長庚紀念醫院【2026 Atlas Shoulder Summit肩端學術研討會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "肩肘",
-    "place": "林口長庚醫院研究大樓一樓會議廳",
-    "url": "https://bone.org.tw/education/events/11598/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-03",
-    "title": "SECC Congress 2026 Taipei 暨2026智慧急重症醫療國際會議&The 10th Asia-Pacific Conference on ICU Early Rehabilitation Taipei 2026：115.10.03(共4時20分) 、115.1",
+    "date": "2026-09-30",
+    "title": "【TNMSKUS 與 TSNR 共同合辦 Optimizing BoNT-A Treatment for Post-Stroke Upper Limb Spasticity 國際線上免費講座】115.09.30舉辦（無復健積分）",
     "source": "復健醫學會 MSK / sports / pain",
-    "cat": "復健相關",
+    "cat": "超音波",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4496.html",
-    "mode": "實體"
+    "url": "https://www.pmr.org.tw/hot/hot_info.asp?/537.html",
+    "mode": "線上"
   },
   {
     "date": "2026-10-06",
@@ -110,12 +83,57 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
+    "date": "2026-10-18",
+    "title": "115年度秋季學術研討會 115.10.18 (共3時10分)(2點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "運動醫學",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4540.html",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-18",
+    "title": "肌肉骨骼系統超音波工作坊—2026診斷及注射班115.10.18(共6時25分)(6點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4523.html",
+    "mode": "實體"
+  },
+  {
     "date": "2026-10-19",
     "title": "中華民國小兒骨科醫學會【2026 台灣小兒骨科骨盆足踝進階模擬手術研習營】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "足踝",
     "place": "花蓮慈濟大學模擬醫學中心",
     "url": "https://bone.org.tw/education/events/11536/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-23",
+    "title": "中華民國骨科醫學會【中華民國骨科醫學會115年度第90次聯合學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "台北萬豪酒店",
+    "url": "https://bone.org.tw/education/events/11637/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-23",
+    "title": "第一屆亞洲惡病質學術研討會 First Asian Conference for Cachexia 115.10.23(4時30分)、115.10.24(4時20分)(3/3點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "復健相關",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4545.html",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-24",
+    "title": "115 年兒童發展暨早期療育專業研討會-看懂身體的求救訊號：兒少創傷知情與感官調節115.10.24(共6時)(3點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4538.html",
     "mode": "實體"
   },
   {

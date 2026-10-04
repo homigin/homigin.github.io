@@ -1,15 +1,15 @@
 window.ORTHO_WEBINARS = [
   {
-    "date": "2026-09-28",
-    "title": "EFORT EDUCATIONAL WEBINAR SEPTEMBER 2026 EFORT Webinar | 3D SURGICAL PLANNING OF TIBIAL FRACTURES: FROM ACUTE SETTING TO CORRECTION OF POST ",
+    "date": "2026-10-26",
+    "title": "EFORT EDUCATIONAL WEBINAR OCTOBER 2026 EFORT Webinar | DIGITALISATION AND AI IN ORTHOPAEDICS AND TRAUMATOLOGY: KEY INSIGHTS & FUTURE TRENDS ",
     "source": "EFORT",
     "cat": "創傷",
     "place": "線上",
-    "url": "https://efort.webinargeek.com/20260928",
+    "url": "https://efort.webinargeek.com/20261026",
     "mode": "線上"
   },
   {
-    "date": "2026-09-27",
+    "date": "2026-10-04",
     "title": "AO Spine / Trauma / Recon webinars search",
     "source": "AO Foundation",
     "cat": "Webinar",
