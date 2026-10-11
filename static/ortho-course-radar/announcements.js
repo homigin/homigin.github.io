@@ -1,5 +1,11 @@
 window.ORTHO_ANNOUNCEMENTS = [
   {
+    "date": "2026-10-27",
+    "title": "2026/10/27 臺北榮總骨科部手外科 特別講座",
+    "source": "TSSH 台灣手外科醫學會",
+    "url": "https://handsurgery.com.tw/2026-10-27-%e8%87%ba%e5%8c%97%e6%a6%ae%e7%b8%bd%e9%aa%a8%e7%a7%91%e9%83%a8%e6%89%8b%e5%a4%96%e7%a7%91-%e7%89%b9%e5%88%a5%e8%ac%9b%e5%ba%a7/"
+  },
+  {
     "date": "2026-10-04",
     "title": "2026/10/04 長庚醫學週",
     "source": "TSSH 台灣手外科醫學會",

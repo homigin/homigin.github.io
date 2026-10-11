@@ -45,12 +45,12 @@ window.ORTHO_EVENTS = [
     "mode": "線上"
   },
   {
-    "date": "2026-10-06",
-    "title": "Interdisciplinary Approach to Evaluating Lumbopelvic Pain in Athletes",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "線上",
-    "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={A2BE056C-7C84-F111-AB0F-6045BDF0AE24}",
+    "date": "2026-10-03",
+    "title": "2026/10/03 第十九屆第一次CME (I) – Comprehensive Management of DRUJ Disorders (實體及線上課程)",
+    "source": "TSSH 台灣手外科醫學會",
+    "cat": "手外科",
+    "place": "原公告",
+    "url": "https://handsurgery.com.tw/2026-10-03-%e7%ac%ac%e5%8d%81%e4%b9%9d%e5%b1%86%e7%ac%ac%e4%b8%80%e6%ac%a1cme-i-comprehensive-management-of-druj-disorders-%e5%af%a6%e9%ab%94%e5%8f%8a%e7%b7%9a%e4%b8%8a%e8%aa%b2%e7%a8%8b/",
     "mode": "線上"
   },
   {
@@ -134,6 +134,15 @@ window.ORTHO_EVENTS = [
     "cat": "創傷",
     "place": "原公告",
     "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4538.html",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-27",
+    "title": "2026/10/27 臺北榮總骨科部手外科 特別講座",
+    "source": "TSSH 台灣手外科醫學會",
+    "cat": "手外科",
+    "place": "原公告",
+    "url": "https://handsurgery.com.tw/2026-10-27-%e8%87%ba%e5%8c%97%e6%a6%ae%e7%b8%bd%e9%aa%a8%e7%a7%91%e9%83%a8%e6%89%8b%e5%a4%96%e7%a7%91-%e7%89%b9%e5%88%a5%e8%ac%9b%e5%ba%a7/",
     "mode": "實體"
   },
   {
