@@ -1,23 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-09-12",
-    "title": "2026.09.12 115年中華民國關節重建醫學會115年度年會暨學術研討會",
-    "source": "JRS 台灣關節重建醫學會",
-    "cat": "關節重建",
-    "place": "原公告",
-    "url": "https://jrs.org.tw/115%e5%b9%b4%e4%b8%ad%e8%8f%af%e6%b0%91%e5%9c%8b%e9%97%9c%e7%af%80%e9%87%8d%e5%bb%ba%e9%86%ab%e5%ad%b8%e6%9c%83115%e5%b9%b4%e5%ba%a6%e5%b9%b4%e6%9c%83%e6%9a%a8%e5%ad%b8%e8%a1%93%e7%a0%94%e8%a8%8e/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-09-14",
-    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！(已截止報名)",
-    "source": "TOTA 台灣骨科創傷醫學會",
-    "cat": "創傷",
-    "place": "原公告",
-    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
-    "mode": "lab"
-  },
-  {
     "date": "2026-09-19",
     "title": "【7/19開始報名(技術師班)】2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Technologist ",
     "source": "台灣骨質疏鬆症學會",
@@ -52,53 +34,6 @@ window.ORTHO_EVENTS = [
     "place": "原公告",
     "url": "https://handsurgery.com.tw/2026-10-03-%e7%ac%ac%e5%8d%81%e4%b9%9d%e5%b1%86%e7%ac%ac%e4%b8%80%e6%ac%a1cme-i-comprehensive-management-of-druj-disorders-%e5%af%a6%e9%ab%94%e5%8f%8a%e7%b7%9a%e4%b8%8a%e8%aa%b2%e7%a8%8b/",
     "mode": "線上"
-  },
-  {
-    "date": "2026-10-12",
-    "title": "Coding Update 2026",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "San Antonio, TX",
-    "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={B8DE4586-C827-F111-8341-7C1E5202050A}",
-    "mode": "實體",
-    "end_date": "2026-10-13"
-  },
-  {
-    "date": "2026-10-14",
-    "title": "2026 NASS Annual Meeting",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "San Antonio, TX",
-    "url": "http://www.spine.org/am",
-    "mode": "實體",
-    "end_date": "2026-10-17"
-  },
-  {
-    "date": "2026-10-17",
-    "title": "NASS Advanced Practice Provider Course: Bridging the Gap in Comprehensive Spine Care",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "San Antonio, TX",
-    "url": "https://www.spine.org/Education/Continuing-Education/Event-Details?MeetingId={8577EE85-9C23-F111-8341-7C1E52577E1E}",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-18",
-    "title": "115年度秋季學術研討會 115.10.18 (共3時10分)(2點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "運動醫學",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4540.html",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-18",
-    "title": "肌肉骨骼系統超音波工作坊—2026診斷及注射班115.10.18(共6時25分)(6點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "超音波",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4523.html",
-    "mode": "實體"
   },
   {
     "date": "2026-10-19",
@@ -143,6 +78,33 @@ window.ORTHO_EVENTS = [
     "cat": "手外科",
     "place": "原公告",
     "url": "https://handsurgery.com.tw/2026-10-27-%e8%87%ba%e5%8c%97%e6%a6%ae%e7%b8%bd%e9%aa%a8%e7%a7%91%e9%83%a8%e6%89%8b%e5%a4%96%e7%a7%91-%e7%89%b9%e5%88%a5%e8%ac%9b%e5%ba%a7/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-30",
+    "title": "TBMJ 骨肌關行動力論壇(Webinar) 115.10.30(共50分)(0.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "骨鬆",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4559.html",
+    "mode": "線上"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "中華民國醫用超音波學會【第八屆亞太醫用超音波新進展國際論壇中華民國醫用超音波學會42週年暨2026年年會暨第四次學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "超音波",
+    "place": "台北國際會議中心",
+    "url": "https://bone.org.tw/education/events/11643/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-31",
+    "title": "台灣痠痛研究學會、台灣中青年神經外科醫學會、台灣神經脊椎外科醫學會、台灣神經腫瘤學學會【台灣中青年神經外科醫學會及台灣痠痛研究學會《SNG2026》聯合年會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "脊椎",
+    "place": "COZZI Blu 和逸飯店桃園館/中央研究院生物醫學科學研究所",
+    "url": "https://bone.org.tw/education/events/11646/",
     "mode": "實體"
   },
   {
