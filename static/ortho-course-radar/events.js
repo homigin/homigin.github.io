@@ -1,14 +1,5 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-09-19",
-    "title": "【7/19開始報名(技術師班)】2026/09/19-20 ISCD Quality Bone Densitometry Course: Performance, Interpretation, and Clinical Application for Technologist ",
-    "source": "台灣骨質疏鬆症學會",
-    "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.toa1997.org.tw/events/content.php?id=610&t=0",
-    "mode": "實體"
-  },
-  {
     "date": "2026-09-29",
     "title": "2026手術觀摩醫師交流計劃",
     "source": "台灣關節鏡及膝關節醫學會",
@@ -36,57 +27,30 @@ window.ORTHO_EVENTS = [
     "mode": "線上"
   },
   {
-    "date": "2026-10-19",
-    "title": "中華民國小兒骨科醫學會【2026 台灣小兒骨科骨盆足踝進階模擬手術研習營】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "足踝",
-    "place": "花蓮慈濟大學模擬醫學中心",
-    "url": "https://bone.org.tw/education/events/11536/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-23",
-    "title": "中華民國骨科醫學會【中華民國骨科醫學會115年度第90次聯合學術研討會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "綜合",
-    "place": "台北萬豪酒店",
-    "url": "https://bone.org.tw/education/events/11637/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-10-23",
-    "title": "第一屆亞洲惡病質學術研討會 First Asian Conference for Cachexia 115.10.23(4時30分)、115.10.24(4時20分)(3/3點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "復健相關",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4545.html",
-    "mode": "實體"
-  },
-  {
     "date": "2026-10-24",
-    "title": "115 年兒童發展暨早期療育專業研討會-看懂身體的求救訊號：兒少創傷知情與感官調節115.10.24(共6時)(3點)",
-    "source": "復健醫學會 MSK / sports / pain",
+    "title": "台灣骨科創傷醫學會第十屆理事、監事選舉結果公告",
+    "source": "TOTA 台灣骨科創傷醫學會",
     "cat": "創傷",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4538.html",
+    "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e7%90%86%e4%ba%8b%e3%80%81%e7%9b%a3%e4%ba%8b%e9%81%b8%e8%88%89%e7%b5%90%e6%9e%9c%e5%85%ac/",
     "mode": "實體"
   },
   {
     "date": "2026-10-27",
-    "title": "2026/10/27 臺北榮總骨科部手外科 特別講座",
-    "source": "TSSH 台灣手外科醫學會",
+    "title": "台北榮總骨科部手外科 x 美國手外科醫學會（ASSH）x 台灣手外科醫學會【2026/10/27 臺北榮總骨科部手外科 特別講座 (實際&線上)】",
+    "source": "TOA 台灣骨科醫學會",
     "cat": "手外科",
-    "place": "原公告",
-    "url": "https://handsurgery.com.tw/2026-10-27-%e8%87%ba%e5%8c%97%e6%a6%ae%e7%b8%bd%e9%aa%a8%e7%a7%91%e9%83%a8%e6%89%8b%e5%a4%96%e7%a7%91-%e7%89%b9%e5%88%a5%e8%ac%9b%e5%ba%a7/",
-    "mode": "實體"
+    "place": "台北榮總骨科部 18 樓大會議室",
+    "url": "https://bone.org.tw/education/events/11658/",
+    "mode": "線上"
   },
   {
     "date": "2026-10-30",
-    "title": "TBMJ 骨肌關行動力論壇(Webinar) 115.10.30(共50分)(0.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
+    "title": "台灣骨鬆肌少關節防治學會【TBMJ骨肌關行動力論壇(Webinar)】",
+    "source": "TOA 台灣骨科醫學會",
     "cat": "骨鬆",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4559.html",
+    "place": "線上研討會",
+    "url": "https://bone.org.tw/education/events/11656/",
     "mode": "線上"
   },
   {
@@ -114,6 +78,24 @@ window.ORTHO_EVENTS = [
     "cat": "骨鬆",
     "place": "光田醫院向上院區",
     "url": "https://bone.org.tw/education/events/11585/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "台灣區域麻醉暨止痛醫學會【疼痛擂台8：真實病人工作坊-全脊守護，從頸到骶】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "疼痛",
+    "place": "中山醫學大學附設醫院 汝川大樓17樓1702會議室",
+    "url": "https://bone.org.tw/education/events/11642/",
+    "mode": "lab"
+  },
+  {
+    "date": "2026-11-07",
+    "title": "桃園長庚紀念醫院【2026長庚運動醫學第七屆年度學術研討會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "運動醫學",
+    "place": "林口長庚紀念醫院 復健大樓一樓 第一會議廳",
+    "url": "https://bone.org.tw/education/events/11649/",
     "mode": "實體"
   },
   {
@@ -168,6 +150,15 @@ window.ORTHO_EVENTS = [
     "cat": "超音波",
     "place": "台北維醫診所",
     "url": "https://bone.org.tw/education/events/11583/",
+    "mode": "實體"
+  },
+  {
+    "date": "2027-01-09",
+    "title": "台灣疼痛醫學會【Vision Interventional Pain Symposium Hualien Chapter (VIPS-Hualien 2027)】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "疼痛",
+    "place": "花蓮慈濟醫院",
+    "url": "https://bone.org.tw/education/events/11648/",
     "mode": "實體"
   },
   {

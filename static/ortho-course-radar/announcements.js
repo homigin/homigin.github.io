@@ -18,6 +18,12 @@ window.ORTHO_ANNOUNCEMENTS = [
     "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%a6%9c%e5%96%ae/"
   },
   {
+    "date": "2026-10-24",
+    "title": "繼續閱讀",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e7%90%86%e4%ba%8b%e3%80%81%e7%9b%a3%e4%ba%8b%e9%81%b8%e8%88%89%e7%b5%90%e6%9e%9c%e5%85%ac/"
+  },
+  {
     "date": "2026-09-27",
     "title": "TOTA 國際交流｜OTA × IOTA 2026 Nashville・前進 IOTA 2028 Kyoto",
     "source": "TOTA 台灣骨科創傷醫學會",
