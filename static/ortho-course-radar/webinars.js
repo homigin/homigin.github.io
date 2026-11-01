@@ -1,15 +1,15 @@
 window.ORTHO_WEBINARS = [
   {
-    "date": "2026-10-26",
-    "title": "EFORT EDUCATIONAL WEBINAR OCTOBER 2026 EFORT Webinar | DIGITALISATION AND AI IN ORTHOPAEDICS AND TRAUMATOLOGY: KEY INSIGHTS & FUTURE TRENDS ",
+    "date": "2026-11-30",
+    "title": "THE GLOBAL PJI FORUM: PATHOGENS, PATIENTS AND PRACTICE ",
     "source": "EFORT",
-    "cat": "創傷",
+    "cat": "Webinar",
     "place": "線上",
-    "url": "https://efort.webinargeek.com/20261026",
+    "url": "https://efort.webinargeek.com/20261130",
     "mode": "線上"
   },
   {
-    "date": "2026-10-25",
+    "date": "2026-11-01",
     "title": "AO Spine / Trauma / Recon webinars search",
     "source": "AO Foundation",
     "cat": "Webinar",
