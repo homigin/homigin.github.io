@@ -1,20 +1,20 @@
 window.ORTHO_EVENTS = [
   {
-    "date": "2026-10-03",
-    "title": "2026/10/03 第十九屆第一次CME (I) – Comprehensive Management of DRUJ Disorders (實體及線上課程)",
-    "source": "TSSH 台灣手外科醫學會",
-    "cat": "手外科",
-    "place": "原公告",
-    "url": "https://handsurgery.com.tw/2026-10-03-%e7%ac%ac%e5%8d%81%e4%b9%9d%e5%b1%86%e7%ac%ac%e4%b8%80%e6%ac%a1cme-i-comprehensive-management-of-druj-disorders-%e5%af%a6%e9%ab%94%e5%8f%8a%e7%b7%9a%e4%b8%8a%e8%aa%b2%e7%a8%8b/",
-    "mode": "線上"
-  },
-  {
     "date": "2026-10-24",
     "title": "台灣骨科創傷醫學會第十屆理事、監事選舉結果公告",
     "source": "TOTA 台灣骨科創傷醫學會",
     "cat": "創傷",
     "place": "原公告",
     "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e7%90%86%e4%ba%8b%e3%80%81%e7%9b%a3%e4%ba%8b%e9%81%b8%e8%88%89%e7%b5%90%e6%9e%9c%e5%85%ac/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-10-24",
+    "title": "繼續閱讀",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
+    "place": "原公告",
+    "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e5%b8%b8%e5%8b%99%e7%90%86%e7%9b%a3%e4%ba%8b%e6%9a%a8%e7%90%86%e4%ba%8b%e9%95%b7%e9%81%b8/",
     "mode": "實體"
   },
   {
@@ -33,42 +33,6 @@ window.ORTHO_EVENTS = [
     "cat": "關節重建",
     "place": "原公告",
     "url": "https://jrs.org.tw/announcement-18th-board/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-06",
-    "title": "天主教中華聖母修女會醫療財團法人天主教聖馬爾定醫院【神經顯微重建手術之臨床與基礎研究】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "研究",
-    "place": "天主教中華聖母修女會醫療財團法人天主教聖馬爾定醫院10樓學術講堂",
-    "url": "https://bone.org.tw/education/events/11659/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-07",
-    "title": "國立臺灣大學醫學院附設醫院脊椎腫瘤中心【脊椎腫瘤中心論壇】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "臺大醫學院201講堂",
-    "url": "https://bone.org.tw/education/events/11660/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-07",
-    "title": "桃園長庚紀念醫院【2026長庚運動醫學第七屆年度學術研討會】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "運動醫學",
-    "place": "林口長庚紀念醫院 復健大樓一樓 第一會議廳",
-    "url": "https://bone.org.tw/education/events/11649/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-07",
-    "title": "ASIA IDDSI CONFERENCE 2026: “IDDSI REALITIES” 115.11.07(共1時30分)(1點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "復健相關",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4575.html",
     "mode": "實體"
   },
   {
@@ -114,6 +78,15 @@ window.ORTHO_EVENTS = [
     "cat": "超音波",
     "place": "台北維醫診所",
     "url": "https://bone.org.tw/education/events/11582/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-11-22",
+    "title": "肌筋膜疼痛評估與治療: 臨床實務工作坊(上)115.11.22(共6時40分)(3.5點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "疼痛",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4566.html",
     "mode": "實體"
   },
   {
@@ -194,7 +167,7 @@ window.ORTHO_EVENTS = [
     "title": "2027 NASS Annual Meeting",
     "source": "NASS",
     "cat": "脊椎",
-    "place": "原公告",
+    "place": "Boston, MA",
     "url": "http://www.spine.org/am",
     "mode": "實體",
     "end_date": "2027-09-25"
