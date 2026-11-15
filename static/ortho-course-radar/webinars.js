@@ -9,7 +9,7 @@ window.ORTHO_WEBINARS = [
     "mode": "線上"
   },
   {
-    "date": "2026-11-08",
+    "date": "2026-11-15",
     "title": "AO Spine / Trauma / Recon webinars search",
     "source": "AO Foundation",
     "cat": "Webinar",

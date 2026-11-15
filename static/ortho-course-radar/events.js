@@ -36,22 +36,13 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-11-13",
-    "title": "2026 Biologic Interventions for Spinal Pathologies",
-    "source": "NASS",
-    "cat": "脊椎",
-    "place": "Nashville, TN",
-    "url": "https://www.spine.org/Biologics-Course",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-15",
-    "title": "教育演講11 膝關節疾患復健治療面面觀115.11.15(共1時30分)(1.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "關節重建",
+    "date": "2026-11-10",
+    "title": "骨盆創傷手術實戰進階！第7屆 Advanced Pelvic Simulation Surgery Workshop 熱烈登場！(已截止報名)",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "cat": "創傷",
     "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4552.html",
-    "mode": "實體"
+    "url": "https://www.tota.org.tw/%e9%aa%a8%e7%9b%86%e5%89%b5%e5%82%b7%e6%89%8b%e8%a1%93%e5%af%a6%e6%88%b0%e9%80%b2%e9%9a%8e%ef%bc%81%e7%ac%ac7%e5%b1%86-advanced-pelvic-simulation-surgery-workshop-%e7%86%b1%e7%83%88%e7%99%bb%e5%a0%b4/",
+    "mode": "lab"
   },
   {
     "date": "2026-11-17",
