@@ -1,15 +1,39 @@
 window.ORTHO_ANNOUNCEMENTS = [
   {
-    "date": "2026-04-11",
-    "title": "2026/04/11 台灣手外科醫學會 專科醫師甄審注意事項",
+    "date": "2026-10-27",
+    "title": "2026/10/27 臺北榮總骨科部手外科 特別講座",
     "source": "TSSH 台灣手外科醫學會",
-    "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a0%85/"
+    "url": "https://handsurgery.com.tw/2026-10-27-%e8%87%ba%e5%8c%97%e6%a6%ae%e7%b8%bd%e9%aa%a8%e7%a7%91%e9%83%a8%e6%89%8b%e5%a4%96%e7%a7%91-%e7%89%b9%e5%88%a5%e8%ac%9b%e5%ba%a7/"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "2026/10/04 長庚醫學週",
+    "source": "TSSH 台灣手外科醫學會",
+    "url": "https://handsurgery.com.tw/2026-10-04-%e9%95%b7%e5%ba%9a%e9%86%ab%e5%ad%b8%e9%80%b1/"
   },
   {
     "date": "2026-04-11",
     "title": "2026/04/11 台灣手外科醫學會 專科醫師甄審榜單",
     "source": "TSSH 台灣手外科醫學會",
     "url": "https://handsurgery.com.tw/2026-04-11-%e5%8f%b0%e7%81%a3%e6%89%8b%e5%a4%96%e7%a7%91%e9%86%ab%e5%ad%b8%e6%9c%83-%e5%b0%88%e7%a7%91%e9%86%ab%e5%b8%ab%e7%94%84%e5%af%a9%e6%a6%9c%e5%96%ae/"
+  },
+  {
+    "date": "2026-10-27",
+    "title": "台灣骨科創傷醫學會第十屆常務理監事暨理事長選舉結果公告",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e5%b8%b8%e5%8b%99%e7%90%86%e7%9b%a3%e4%ba%8b%e6%9a%a8%e7%90%86%e4%ba%8b%e9%95%b7%e9%81%b8/"
+  },
+  {
+    "date": "2026-10-24",
+    "title": "繼續閱讀",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/%e5%8f%b0%e7%81%a3%e9%aa%a8%e7%a7%91%e5%89%b5%e5%82%b7%e9%86%ab%e5%ad%b8%e6%9c%83%e7%ac%ac%e5%8d%81%e5%b1%86%e7%90%86%e4%ba%8b%e3%80%81%e7%9b%a3%e4%ba%8b%e9%81%b8%e8%88%89%e7%b5%90%e6%9e%9c%e5%85%ac/"
+  },
+  {
+    "date": "2026-09-27",
+    "title": "TOTA 國際交流｜OTA × IOTA 2026 Nashville・前進 IOTA 2028 Kyoto",
+    "source": "TOTA 台灣骨科創傷醫學會",
+    "url": "https://www.tota.org.tw/tota-%e5%9c%8b%e9%9a%9b%e4%ba%a4%e6%b5%81%ef%bd%9cota-x-iota-2026-nashville%e3%83%bb%e5%89%8d%e9%80%b2-iota-2028-kyoto/"
   },
   {
     "date": "2026-08-20",
@@ -40,6 +64,12 @@ window.ORTHO_ANNOUNCEMENTS = [
     "title": "第九屆理監事選舉結果出爐！",
     "source": "TOTA 台灣骨科創傷醫學會",
     "url": "https://www.tota.org.tw/%e7%ac%ac%e4%b9%9d%e5%b1%86%e7%90%86%e7%9b%a3%e4%ba%8b%e9%81%b8%e8%88%89%e7%b5%90%e6%9e%9c%e5%87%ba%e7%88%90%ef%bc%81/"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "賀！張毓翰醫師榮任第十八屆中華民國關節重建醫學會理事長",
+    "source": "JRS 台灣關節重建醫學會",
+    "url": "https://jrs.org.tw/announcement-18th-board/"
   },
   {
     "date": "2025-09-09",
