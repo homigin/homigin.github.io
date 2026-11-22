@@ -36,11 +36,10 @@ SOURCES = [
     Source("JRS 台灣關節重建醫學會", "關節重建", ("https://jrs.org.tw/events/",), wp="https://jrs.org.tw"),
     Source("台灣關節鏡及膝關節醫學會", "運動醫學", ("https://www.taiwanarthroscopy.org.tw/category/activity/",), wp="https://www.taiwanarthroscopy.org.tw"),
     Source("TOTA 台灣骨科創傷醫學會", "創傷", ("https://www.tota.org.tw/category/news/",), wp="https://www.tota.org.tw"),
-    Source("TWSS 台灣脊椎外科醫學會", "脊椎", ("https://www.twss.org.tw/",)),
+    Source("TWSS 台灣脊椎外科醫學會", "脊椎", ("https://twssam.org.tw/",)),
     Source("TORS 台灣骨科研究學會", "研究", ("https://www.tors.org.tw/",)),
-    Source("TOFAS 台灣足踝醫學會", "足踝", ("https://www.tofas.org.tw/",)),
     Source("TSES 台灣肩肘醫學會", "肩肘", ("https://www.shoulder-elbow.org.tw/category/conference/",), wp="https://www.shoulder-elbow.org.tw", verify=False),
-    Source("TSSH 台灣手外科醫學會", "手外科", ("https://handsurgery.com.tw/category/new/", "https://www.tssh.org.tw/")),
+    Source("TSSH 台灣手外科醫學會", "手外科", ("https://handsurgery.com.tw/category/new/",)),
     Source("TASM 台灣運動醫學醫學會", "運動醫學", ("https://www.tasm.org.tw/", "https://www.tasm.org.tw/news/")),
     Source("TNMSKUS 台灣神經肌肉骨骼超音波醫學會", "超音波", ("https://www.tnmskus.org.tw/seminar/all/1",)),
     Source("台灣骨質疏鬆症學會", "骨鬆", ("https://www.toa1997.org.tw/",)),
@@ -97,7 +96,6 @@ ANNOUNCEMENT_SOURCES = [
     Source("TSSH 台灣手外科醫學會", "公告", ("https://handsurgery.com.tw/category/new/",)),
     Source("TSES 台灣肩肘醫學會", "公告", ("https://www.shoulder-elbow.org.tw/category/news/", "https://www.shoulder-elbow.org.tw/"), verify=False),
     Source("TORS 台灣骨科研究學會", "公告", ("https://www.tors.org.tw/",)),
-    Source("TOFAS 台灣足踝醫學會", "公告", ("https://www.tofas.org.tw/",)),
 ]
 
 

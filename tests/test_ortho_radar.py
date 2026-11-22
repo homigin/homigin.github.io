@@ -15,6 +15,10 @@ SPEC.loader.exec_module(RADAR)
 
 
 class NassParserTests(unittest.TestCase):
+    def test_hand_surgery_source_does_not_claim_simulation_society_domain(self):
+        hand = next(source for source in RADAR.SOURCES if source.name == "TSSH 台灣手外科醫學會")
+        self.assertEqual(hand.urls, ("https://handsurgery.com.tw/category/new/",))
+
     def test_listing_parses_all_current_events_from_authoritative_columns(self):
         html = """
         <table>
