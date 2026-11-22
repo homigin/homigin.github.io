@@ -46,20 +46,11 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-11-17",
-    "title": "台灣脊椎外科醫學會【2026年「脊椎進階模擬手術研習營」】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "脊椎",
-    "place": "花蓮美侖飯店、花蓮慈濟大學模擬醫學中心",
-    "url": "https://bone.org.tw/education/events/11662/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-19",
-    "title": "台灣手外科醫學會【TSSH simulative surgery workshop 慈濟無語良師模擬醫學課程】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "手外科",
-    "place": "慈濟大學模擬醫學中心",
-    "url": "https://bone.org.tw/education/events/11622/",
+    "title": "台灣關節重建醫學會獲選2026 AAHKS 年會Guest Society，二十餘位醫師赴美交流",
+    "source": "JRS 台灣關節重建醫學會",
+    "cat": "關節重建",
+    "place": "原公告",
+    "url": "https://jrs.org.tw/2026-aahks-guest-society/",
     "mode": "實體"
   },
   {
@@ -82,11 +73,47 @@ window.ORTHO_EVENTS = [
   },
   {
     "date": "2026-11-28",
+    "title": "2026.11.28 中華民國電腦輔助骨科手術學會 CAOS-Taiwan 2026 年會暨 Knee and Spine Robotic Workshop",
+    "source": "JRS 台灣關節重建醫學會",
+    "cat": "脊椎",
+    "place": "原公告",
+    "url": "https://jrs.org.tw/caos-taiwan-2026-knee-and-spine-robotic-workshop/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "台灣電腦輔助⾻科⼿術學會【台灣電腦輔助⾻科⼿術學會2026年度學術研討會-2026 Annual meeting of CAOS – Taiwan International congress on Computer-assisted Orthopedic surgery】台灣電",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "台中 林酒店 台灣廳",
+    "url": "https://bone.org.tw/education/events/11677/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-11-28",
     "title": "台灣顯微重建外科醫學會【Taiwan Society for Reconstructive Microsurgery 2026 Annual Meeting Legacy and Innovation: Shaping the Future of Microsurgery】",
     "source": "TOA 台灣骨科醫學會",
     "cat": "綜合",
     "place": "張榮發基金會國際會議中心801會議室",
     "url": "https://bone.org.tw/education/events/11634/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-11-29",
+    "title": "神經肌肉骨骼超音波工作坊—2026進階班115.11.29(共7時)(7點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "超音波",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4572.html",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-12-01",
+    "title": "敏盛綜合醫院【骨科GRAND ROUND- 人還沒老，髖關節就先壞了？！缺血性髖關節壞死淺談】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "關節重建",
+    "place": "敏盛綜合醫院20樓演講廳",
+    "url": "https://bone.org.tw/education/events/11675/",
     "mode": "實體"
   },
   {
@@ -105,6 +132,15 @@ window.ORTHO_EVENTS = [
     "cat": "脊椎",
     "place": "國立故宮博物院南部院區",
     "url": "https://bone.org.tw/education/events/11666/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-12-05",
+    "title": "臺中榮民總醫院 骨科部、澄清醫院中港分院 骨科【中部地區聯合學術討論會】",
+    "source": "TOA 台灣骨科醫學會",
+    "cat": "綜合",
+    "place": "臺中榮民總醫院 教學大樓1樓第五會議室",
+    "url": "https://bone.org.tw/education/events/11676/",
     "mode": "實體"
   },
   {

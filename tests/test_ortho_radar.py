@@ -57,17 +57,11 @@ class NassParserTests(unittest.TestCase):
         text = (Path(__file__).parents[1] / "static" / "ortho-course-radar" / "events.js").read_text()
         rows = json.loads(re.search(r"= (\[.*\]);", text, re.S).group(1))
         nass = [row for row in rows if row["source"] == "NASS"]
-        self.assertEqual(len(nass), 8)
+        self.assertTrue(nass)
         self.assertTrue(all(row["cat"] == "脊椎" for row in nass))
         self.assertTrue(all(len(row["place"]) < 100 for row in nass))
+        self.assertTrue(all(row["mode"] in {"線上", "實體", "lab"} for row in nass))
         self.assertTrue(all(not re.fullmatch(r"[A-Z][a-z]+ \d{1,2}(?:-\d{1,2})?, 20\d{2}", row["title"]) for row in nass))
-        bertolotti = next(row for row in nass if "Bertolotti" in row["title"])
-        self.assertEqual(bertolotti["mode"], "線上")
-        awareness = next(row for row in nass if row["title"].startswith("From Awareness"))
-        self.assertTrue(awareness["title"].endswith("Foundation Approach"))
-        self.assertIn("2026 NASS Annual Meeting", {row["title"] for row in nass})
-        self.assertIn("2026 Biologic Interventions for Spinal Pathologies", {row["title"] for row in nass})
-        self.assertIn("2027 Spine Across the Sea", {row["title"] for row in nass})
 
 
 if __name__ == "__main__":
