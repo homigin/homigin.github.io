@@ -1,9 +1,12 @@
 {
-  "updated": "2026-11-22T09:10:58",
-  "events": 22,
+  "updated": "2026-11-23T00:38:22",
+  "events": 21,
   "announcements": 20,
   "webinars": 23,
-  "errors": {},
+  "errors": {
+    "台灣骨質疏鬆症學會": "HTTPError: 403 Client Error: Forbidden for url: https://www.toa1997.org.tw/",
+    "Chang Gung STARC": "HTTPError: 403 Client Error: Forbidden for url: https://starc.cgmh.org.tw/"
+  },
   "not_configured_yet": [
     "各醫學中心骨科教育課程：多數已由 TOA 學術活動頁部分涵蓋",
     "Cadaver Lab / Simulation Center：多數已由 TOA 學術活動頁 keyword 部分涵蓋",

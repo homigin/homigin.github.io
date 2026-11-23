@@ -54,24 +54,6 @@ window.ORTHO_EVENTS = [
     "mode": "實體"
   },
   {
-    "date": "2026-11-22",
-    "title": "社團法人台灣中西醫結合復健醫學會【超音波解剖暨臨床實戰經驗分享工作坊】",
-    "source": "TOA 台灣骨科醫學會",
-    "cat": "超音波",
-    "place": "台北維醫診所",
-    "url": "https://bone.org.tw/education/events/11582/",
-    "mode": "實體"
-  },
-  {
-    "date": "2026-11-22",
-    "title": "肌筋膜疼痛評估與治療: 臨床實務工作坊(上)115.11.22(共6時40分)(3.5點)",
-    "source": "復健醫學會 MSK / sports / pain",
-    "cat": "疼痛",
-    "place": "原公告",
-    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4566.html",
-    "mode": "實體"
-  },
-  {
     "date": "2026-11-28",
     "title": "2026.11.28 中華民國電腦輔助骨科手術學會 CAOS-Taiwan 2026 年會暨 Knee and Spine Robotic Workshop",
     "source": "JRS 台灣關節重建醫學會",
@@ -141,6 +123,15 @@ window.ORTHO_EVENTS = [
     "cat": "綜合",
     "place": "臺中榮民總醫院 教學大樓1樓第五會議室",
     "url": "https://bone.org.tw/education/events/11676/",
+    "mode": "實體"
+  },
+  {
+    "date": "2026-12-05",
+    "title": "International Foot & Ankle Integrated Care Forum (國際足踝整合照護研討會)115.12.05(共1時30分)(1點)",
+    "source": "復健醫學會 MSK / sports / pain",
+    "cat": "足踝",
+    "place": "原公告",
+    "url": "https://www.pmr.org.tw/active_news/active_info.asp?/4563.html",
     "mode": "實體"
   },
   {
